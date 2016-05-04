@@ -152,12 +152,12 @@ function menu_focus( element, i ) {
 	else
 		$('.navbar').addClass('inv');
 	
-	$('.nav > li').removeClass('active');
+	$('#nav-menu > li').removeClass('active');
 	$(element).addClass('active');
 	
 	var icon = $(element).find('.icon');
 	
-	var left_pos = icon.offset().left - $('.nav').offset().left;
+	var left_pos = icon.offset().left - $('#nav-menu').offset().left;
 	var el_width =  $(element).find('.text').width();
 	
 	$('.active-menu').stop(false, false).animate(
@@ -189,7 +189,7 @@ function enable_arrows( dataslide ) {
 *************/
 jQuery(document).ready(function ($) {
 	//Cache some variables
-	var links = $('.nav').find('li');
+	var links = $('#nav-menu').find('li');
 	slide = $('.slide');
 	button = $('.button');
 	mywindow = $(window);
@@ -224,7 +224,7 @@ jQuery(document).ready(function ($) {
 
 /***************
 * = Menu hover *
-***************/
+***************
 jQuery(document).ready(function ($) {
 	//Cache some variables
 	var menu_item = $('.nav').find('li');
@@ -248,6 +248,7 @@ jQuery(document).ready(function ($) {
 		}
 	);
 });
+*/
 
 /******************
 * = Gallery hover *
@@ -340,8 +341,12 @@ jQuery(document).ready(function ($) {
 		}
 	});
     
+//    Далі мої скрипти
+    
     var contactform =  document.getElementById('contactform');
     contactform.setAttribute('action', 'https://formspree.io/' + 'inga.goncharuk' + '@' + 'gmail' + '.' + 'com');
+    
+//    $('#slide-4-tabs li:first').addClass('active');
 });
 
 $('.nasha-woda-row-2 .col-lg-3').on('mouseover', function() {
