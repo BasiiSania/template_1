@@ -380,8 +380,8 @@ $(window).scroll(function() {
         });
         $('#phone-number').css({
             'color': '#ffffff',
-            'background': 'url(../images/phone_empty.svg) no-repeat',
-            'background-size': '28px'
+            'background-position': '2px -81px'
+//            'background-size': '28px'
         });
 
     //Otherwise remove inline styles and thereby revert to original stying
