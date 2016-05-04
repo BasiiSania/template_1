@@ -119,9 +119,7 @@ h6 {
 
 .navbar.inv {
     background-color:#A1DBFF;
-        
 }
-
 .navbar .nav a {
     color:#474747;
     font-weight:600;
@@ -129,7 +127,6 @@ h6 {
 	transition: all .5 linear;
     text-transform: uppercase;
 }
-
 .nav .icon  {
     color: rgba( 180, 220, 255, 0 );
     position:absolute;
@@ -141,11 +138,9 @@ h6 {
 .navbar.inv a {
 	color: white;
 }
-
 .navbar-responsive-collapse {
 	margin: 0 auto;
 }
-
 .navbar .nav li {
     display: inline-block;
     padding-top:30px;
@@ -168,7 +163,6 @@ h6 {
 
 
 .active-menu {
-
     background: url(../images/wave.svg);
     background-position: -4px 0px;
 /*    background-size: 244px 6px;*/
@@ -176,7 +170,7 @@ h6 {
 	content: ' ';
 	display: block;
 	height: 6px;
-	left: 0;
+	left: 0; /*не впливає*/
 	position: absolute;
 	top: 0;
 	transition: all .5 linear;
@@ -714,42 +708,40 @@ h6 {
   -o-transition: .2s all;
   transition: .2s all;
     background: -webkit-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -moz-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -o-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -ms-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: linear-gradient(0deg, #09affb 0%,  #80d8fd 100%);
-
-
 }
 #zamovyty-btn3:hover,
 #zamovyty-btn3:focus{
-     box-shadow: 0px 2px 43px 0.00px rgba(6, 71, 101, 0.43);
-   text-decoration: none; 
-}
+    box-shadow: 0px 2px 43px 0.00px 
+        rgba(6, 71, 101, 0.43);
+    text-decoration: none; }
 #zamovyty-btn3:active{
-   text-decoration: none; 
-}
-
+   text-decoration: none; }
+#slide-4-tsilodobovo{
+    font-size:20px;
+    left:-24px;}
 
 #slide-4 ul {
 	text-align: center;
     font-size:25px; 
     text-transform: uppercase;
     font-weight:700;
-    height: 458px;
-    background-color:#fff;
-    border-color: #fff;
-	}
-
+    min-height: 460px;
+    border-width: 0px;}
 #slide-4 li {
     display:block;
     width:100%;
+    height:25%;
     text-align: center;
     background-color: rgba(41, 166, 223, 1);
 	border-radius: 0px;
-    padding: 0px;}
+    padding: 0px;
+    border-width: 0px;}
 #slide-4 li a{
 margin: 0px;
 padding: 40px 0px;
 border-radius: 0px;
     color: #ffffff;
-    border: 0px;
+    border-width: 0px;
 	}
 #slide-4 li a:hover{
     background-color: rgba(51, 176, 233, 1);
@@ -770,7 +762,7 @@ border-radius: 0px;
     padding:10% 0%;}
 #slide-4-info{ box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
 background: #fff;    
-height:458px;
+height:461px;
 margin:0px;
 left:2.1%;
 z-index:2;}

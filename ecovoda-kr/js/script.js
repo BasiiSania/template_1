@@ -123,7 +123,9 @@ $(function() {
 		);
 	});
 	$(window).resize();
-});*/
+});
+*/
+
 
 var delay = (function(){
 	var timer = 0;
@@ -337,6 +339,9 @@ jQuery(document).ready(function ($) {
 			}
 		}
 	});
+    
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', 'https://formspree.io/' + 'basyanya' + '@' + 'ukr' + '.' + 'net');
 });
 
 $('.nasha-woda-row-2 .col-lg-3').on('mouseover', function() {
@@ -380,3 +385,15 @@ $(window).scroll(function() {
 
     }
 });
+
+function foo()
+{
+    document.getElementById('contactform').submit();
+   alert("Submit button clicked!");
+   return true;
+};
+function fooSubmited()
+{
+   alert("SuBMITED!");
+   return true;
+};
