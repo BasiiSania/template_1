@@ -341,7 +341,7 @@ jQuery(document).ready(function ($) {
 	});
     
     var contactform =  document.getElementById('contactform');
-    contactform.setAttribute('action', 'https://formspree.io/' + 'basyanya' + '@' + 'ukr' + '.' + 'net');
+    contactform.setAttribute('action', 'https://formspree.io/' + 'inga.goncharuk' + '@' + 'gmail' + '.' + 'com');
 });
 
 $('.nasha-woda-row-2 .col-lg-3').on('mouseover', function() {
@@ -386,14 +386,14 @@ $(window).scroll(function() {
     }
 });
 
-function foo()
+function zamovlenniaSend()
 {
     document.getElementById('contactform').submit();
-   alert("Submit button clicked!");
-   return true;
+    return true;
 };
-function fooSubmited()
-{
-   alert("SuBMITED!");
-   return true;
-};
+//
+//function fooSubmited()
+//{
+//   alert("SuBMITED!");
+//   return true;
+//};

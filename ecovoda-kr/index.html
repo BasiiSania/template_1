@@ -492,11 +492,11 @@ basiy
 -
 gmail.com" method="POST">
 <form class="form-vertical" role="form" id="contactform" method="POST"> -->
-<form class="form-horizontal" role="form" id="contactform" method="POST" onsubmit="return fooSubmited()">
+<form class="form-horizontal" role="form" id="contactform" method="POST">
   <div class="form-group">
 	<input type="text" name="_gotcha" style="display:none" />
 	<input type="hidden" name="_subject" value="Замовлення води на сайті Еко" />
-	<input type="hidden" name="_next" value="//localhost/thanks.html" />
+	<input type="hidden" name="_next" value="thanks.html" />
   </div>
 
   <div class="form-group">
@@ -676,7 +676,7 @@ name="Кількість" onchange="zminaZamovVartist(this.value)">
 
   <div class="form-group">
     <div class="col-sm-12">
-      <button type="submit" class="btn btn-default" onclick="return foo();" id="zamovyty-btn2">Надіслати замовлення</button>
+      <button type="submit" class="btn btn-default" onclick="return zamovlenniaSend();" id="zamovyty-btn2">Надіслати замовлення</button>
 
 <!--                           <fieldset class="col-md-12">
                                <input type="submit" value="Send Message" class="main-button">
