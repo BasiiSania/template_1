@@ -347,6 +347,23 @@ jQuery(document).ready(function ($) {
     contactform.setAttribute('action', 'https://formspree.io/' + 'inga.goncharuk' + '@' + 'gmail' + '.' + 'com');
     
 //    $('#slide-4-tabs li:first').addClass('active');
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+    if(dd<10) {    dd='0'+dd} 
+    if(mm<10) {    mm='0'+mm} 
+    today = mm+'.'+dd+'.'+yyyy;
+     $('#mydatepicker .input-group.date').datepicker({
+            format: "DD - dd MM yyyy",
+            startDate: today,
+            language: "uk",
+            orientation: "bottom left",
+            daysOfWeekDisabled: "0",
+            autoclose: true,
+            todayHighlight: true,
+            showOnFocus: false
+        });
 });
 
 $('.nasha-woda-row-2 .col-lg-3').on('mouseover', function() {
@@ -390,6 +407,21 @@ $(window).scroll(function() {
 
     }
 });
+
+function chasDostavky(currentDiv){
+    $('#slide-5 label').attr('style', '');
+        
+    $(currentDiv).css({
+        'font-weight':'700',
+        'color': '#333',
+        'background-color':'#cef'
+    });
+    $(currentDiv).find('input').attr('checked', true);
+
+//    alert("FIN!");
+
+    return true;
+}
 
 function zamovlenniaSend()
 {
