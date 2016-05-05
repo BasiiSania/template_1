@@ -854,17 +854,24 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 
 #slide-5 h3 {
     font-family: "Open Sans", sans-serif; font-weight: 700;
-    color: #555;
+    color: #444;
     font-size:40px;
     text-align: left;
-    padding:2%;
-    padding-bottom: 0px;}
+    padding: 55px 0px 0px 50px;
+}
 #slide-5-waves{
     font-size:0.1px;
     height: 21px;
     background:url(../images/waves-background-1.png);
     background-position: 0px 0px;
 }
+#slide-5 .form-group{
+    padding: 18px 0px 29px 0px;
+}
+#slide-5 .help-block{ 
+    position: absolute; margin-top:40px; margin-left:6px;
+    top: 11px;
+    color:#777; font-weight:400; }
 
 .radio-inline input {display: none;
     position:absolute;

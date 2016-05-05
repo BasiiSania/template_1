@@ -489,7 +489,7 @@ basiy
 gmail.com" method="POST">
 <form class="form-vertical" role="form" id="contactform" method="POST"> -->
 <form class="form-horizontal" role="form" id="contactform" method="POST">
-  <div class="form-group">
+  <div class="form-group" style="display:none">
 	<input type="text" name="_gotcha" style="display:none" />
 	<input type="hidden" name="_subject" value="Замовлення води на сайті Еко" />
 	<input type="hidden" name="_next" value="thanks.html" />
@@ -542,14 +542,15 @@ gmail.com" method="POST">
         <label  class="radio-inline" for="Час" onclick="chasDostavky(this); return false;">
         19<span class="time-mins">00</span>&mdash;21<span class="time-mins">00</span></label>
         </div>
-        <div id="help2" class="help-block" style="margin-top:40px; color:#777; font-weight:400; top:5px">
+        <div id="help2" class="help-block" style="">
             &nbsp;&nbsp;Оберіть зручний час доставки
           </div>
 
       </div>
   </div>
+   
+    <!--
 <div class="form-group">
-<!--
     <div class="col-sm-6">
         <div class="radio">
             <label  class="form-control">
@@ -583,14 +584,8 @@ gmail.com" method="POST">
           <input class="form-control" type="radio" name="Час доставки" id="optradio3" value="Вечір">Option 3
         </label>   
     </div>
+</div> 
 -->
-
-     <div class="col-sm-6">
-         
-         
-    </div>
-    
-</div>    
 
 <div class="form-group">
     <div class="col-sm-6">
@@ -601,42 +596,24 @@ gmail.com" method="POST">
     <div class="col-sm-6">
       <input type="text" class="form-control" id="inputMail" 
 	placeholder="E-mail" aria-describedby="help4" name="Ел.пошта">
-	<span id="help4" class="help-block" style="color:#777; font-weight:400;">&nbsp;&nbsp;Ми вишлемо вам підтвердження замовлення</span>
+	<span id="help4" class="help-block">
+        &nbsp;&nbsp;Ми вишлемо вам підтвердження замовлення</span>
     </div>
  </div>
 
-<div class="form-group"  style="padding-top:15px">
-    <div class="col-sm-3">
-<input type="number" class="form-control" id="inputNumber"  min="1" max="9"   step="1"   value="1" aria-describedby="help5"
+<div class="form-group" >
+    <div class="col-sm-3" style="margin-top:10px">
+        <input type="number" class="form-control" id="inputNumber"  min="1" max="9"   step="1"   value="1" aria-describedby="help5"
 name="Кількість" onchange="zminaZamovVartist(this.value)">
-        
-<!--      <input type="text" class="form-control" id="inputBottlesNumber" 
-	placeholder="1, 2, 3..." aria-describedby="help5" name="Кількість" required>
- <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      1
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li><a href="#">6</a></li>
-      <li><a href="#">7</a></li>
-      <li><a href="#">8</a></li>
-      <li><a href="#">9</a></li>
-    </ul>
-  </div>
--->
-	<span id="help5" class="help-block" style="color:#777; font-weight:400;">&nbsp;&nbsp;Кількість бутилів</span>
+  
+	   <span id="help5" class="help-block"> &nbsp;&nbsp;Кількість бутилів</span>
     </div>
 	<div class="col-sm-3">
-		<span style="color:#6FCFF9; font-weight:700; top:15px;">ціна: 48 грн за бутиль</span>
+		<span style="color:#6FCFF9; font-weight:700; top:25px;">ціна: 48 грн за бутиль</span>
 	</div>
 	<div class="col-sm-6">
-        <span style="color:#444; font-size: 20px; font-weight:400; top:-22px;">всього: &nbsp;&nbsp;&nbsp;&nbsp;</span> <span id="zamov-vartist" style="color:#6FCFF9; font-size: 50px; font-weight:700; top:-22px;">48</span><span style="color:#6FCFF9; font-size: 50px; font-weight:700; top:-22px;"> грн</span>
+        <span style="color:#444; font-size: 20px; font-weight:400; top:21px;">всього: &nbsp;&nbsp;&nbsp;&nbsp;</span> <div style="float:right; height:70px; color:#6FCFF9; font-size: 50px; font-weight:700; top:-37px; width:70%;">
+        <span id="zamov-vartist" >48</span> грн </div>
 	</div>
   </div>
 <!--<div style="text-align:center; font-size:20px; font-weight:700; color: #d8a; padding:30px 0px;"> Будь-ласка, заповніть всі поля! </div>-->
