@@ -411,9 +411,9 @@
         </form>
             
         </div></div>
-        <div class="tab-pane" id="profile-r" style="text-align:left;">
-            <div  style="font-size:18px; padding-top: 30px;">
-                <p>При замовленні можна обрати зручний для вас час доставки</p>
+        <div class="tab-pane" id="dostavka-r" style="text-align:left;">
+            <div  style="font-size:17px; font-weight:600; color:#888; padding: 0px 20px 0px 20px;">
+                <p>При замовленні Ви можете обрати зручний для вас час доставки</p>
                 <div class="col-xs-3">
                     Ранок 
                     <br>День 
@@ -424,29 +424,44 @@
                     <br>.....................
                     <br>.....................
                 </div>
-                <div class="col-xs-6" style="z-index:5; background-color: #fff;">
-                    &nbsp; 9:00 &mdash; 12:00
-                    <br>13:00  &mdash; 18:00
-                    <br>19:00  &mdash; 21:00
+                <div class="col-xs-6" style="z-index:5; background-color: #fff; font-size:23px; font-weight:400; color:#333; line-height: 28pt;">
+                    &nbsp; 9<span class="time-mins">00</span>&mdash;
+                    12<span class="time-mins">00</span>
+                    <br>13<span class="time-mins">00</span>&mdash;
+                    18<span class="time-mins">00</span>
+                    <br>19<span class="time-mins">00</span>&mdash;
+                    21<span class="time-mins">00</span>
                 </div>
                 &nbsp;
                 <br>
                 <p>Ми доставляємо у всі будні дні, а також у суботу &mdash; на ранок або день</p>
-                <p style="color:#555">Доставка відбувається на наступний день після замовлення або на  вказану дату</p>
+                <p style=" font-weight:400; color:#888;">Доставка відбувається на наступний день після замовлення або на  вказану дату</p>
             </div>
     </div>
-        <div class="tab-pane" id="messages-r">Інформацію поки що не внесено</div>
-        <div class="tab-pane" id="settings-r">Інформацію поки що не внесено</div>
+        <div class="tab-pane" id="aktsii-r">Інформацію поки що не внесено</div>
+        <div class="tab-pane" id="opys-tovariv-r">Інформацію поки що не внесено</div>
       </div>
 </div>
 
     <div class="col-xs-6"> <!-- required for floating -->
       <!-- Nav tabs -->
       <ul class="nav nav-tabs tabs-right" id="slide-4-tabs">
-        <li class="active"><a href="#home-r" data-toggle="tab">Ціни</a></li>
-        <li><a href="#profile-r" data-toggle="tab">Доставка</a></li>
-        <li><a href="#messages-r" data-toggle="tab">Акції</a></li>
-        <li><a href="#settings-r" data-toggle="tab">Опис товарів</a></li>
+        <li class="active">
+            <a href="#home-r" data-toggle="tab">Ціни</a></li>
+        <li>
+            <div class="separator">&nbsp;</div>
+            <a href="#profile-r" data-toggle="tab">Доставка</a>
+            
+        </li>
+            
+        <li>
+            <div class="separator">&nbsp;</div>
+            <a href="#messages-r" data-toggle="tab">Акції</a>
+            
+        </li>
+        <li>
+            <div class="separator">&nbsp;</div>
+            <a href="#settings-r" data-toggle="tab">Опис товарів</a></li>
       </ul>
     </div>
 </div>
@@ -647,7 +662,7 @@ name="Кількість" onchange="zminaZamovVartist(this.value)">
 		</div><!-- /container -->
 	</div><!-- /slide5 -->
 
-    <!-- === slide-6 ФУТЕР, плюс можна тут реалізувати вікно ЗВ-ЯЗОК === -->
+    <!-- === slide-6 ФУТЕР, плюс можна тут реалізувати вікно ЗВ-ЯЗОК=== -->
 	<div class="slide story" id="slide-6" data-slide="6">
 		<div class="container">
             <div class="col-sm-6">
