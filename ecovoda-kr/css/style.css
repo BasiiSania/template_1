@@ -75,6 +75,7 @@ h6 {
 #zamovyty-btn {
         float: right;
     margin: 0px;
+    width: 180px;
     padding: 11px 28px 11px 28px;
     top: -10px;
         font-size: 16px;
@@ -86,8 +87,6 @@ h6 {
     -o-transition: .2s all;
     transition: .2s all;
     border-radius: 30px;
-    color: #3a91e2;
-    color: #6ac7ed;
     color: #39AEE4;
     border: 2px solid #3a91e2;
     border-color: #39AEE4;
@@ -109,11 +108,11 @@ h6 {
 
 .navbar {
 	background-color: #fff;
-	background-color: rgba( 255, 255, 255, .99 );
-	border-bottom: 0 none;
-	font-size:15px;
+/*	border-bottom: 0 none;*/
+    border-bottom: none;
 	transition: .25s all linear;
 	height: 80px;
+    font-size:15px;
 	text-align: center;
 }
 
@@ -124,10 +123,10 @@ h6 {
 */
 
 .navbar.inv {
-    background-color:#A1DBFF;
+    background-color:#A2E3FF;
 }
 .navbar .nav a {
-    color:#474747;
+    color:#333;
     font-weight:600;
     padding: 0px;
 	transition: all .5 linear;
@@ -238,8 +237,6 @@ h6 {
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
 
-/* __________________________________ГОЛОВНА */
-
 .slide {
 	padding: 0px;
     padding-top:50px;
@@ -251,9 +248,11 @@ h6 {
     }
 }
 
+/* __________________________________ГОЛОВНА */
 #slide-1 {
     color:#ffffff;
     font-size: 16px;
+    margin-bottom: 0px;
 }
 
 #header-left{background: -webkit-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%);
@@ -376,6 +375,7 @@ h6 {
 #title-text{
     max-width: 345px;
     margin: 0 auto;
+    color:#fff;
 }
 
 #home-row-1 h5 {
@@ -496,7 +496,6 @@ h6 {
 #slide-2 {
     z-index:1;
 	background-color: #ffffff;
-    margin-top:45px;
 	padding: 100px 0px 0px 0px;
     font-size: 20px;
     color: #222;}

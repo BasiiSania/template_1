@@ -393,7 +393,7 @@ $(window).scroll(function() {
     if ( $(window).scrollTop() >= 650 ) {
         $('#zamovyty-btn').css({
             'color': '#ffffff',
-            'border-color': '#ffffff'
+            'border': '3px solid #ffffff'
         });
         $('#phone-number').css({
             'color': '#ffffff',
