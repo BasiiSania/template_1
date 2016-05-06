@@ -142,7 +142,7 @@ h6 {
     position:absolute;
 }
 .navbar.inv a {
-	color: white;
+	color: #fff;
 }
 .navbar-responsive-collapse {
 	margin: 0 auto;
@@ -497,43 +497,39 @@ h6 {
     z-index:1;
 	background-color: #ffffff;
     margin-top:45px;
-	padding: 100px 0px;
-    font-size: 20px;color: #545454;}
+	padding: 100px 0px 0px 0px;
+    font-size: 20px;
+    color: #222;}
 #slide-2 h4 {
     font-family: "Open Sans", sans-serif; 
     font-weight: 600;
     font-size: 18px;}
-.nasha-woda-row-1 p {font-weight: 400;
+.nasha-woda-row-1 p {
+    padding: 20px 29px 0px 0px;
+    font-weight: 400;
     font-size: 14px;
     text-align: left;}
 .nasha-woda-row-1 h4 {
     text-align: left;}
 #slide-2 h3 {
-    font-family: "Open Sans", sans-serif; font-weight: 700;
-    text-align: left;
     width:63%;
-    font-size: 55px;
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 700;
+    text-align: left;
+    color:#3a3a3a;
+    font-size: 48px;
     background:url(../images/waves-background-1.png) no-repeat;
     background-position: 0% 70%;
     background-size: 100%}
 
-/*сss з шаблону фотокаруселі*/
-.img-full {
-    min-width: 100%;
-    margin:0px;
-}
+.img-full {min-width: 100%;margin:0px;}
 .box {
-    margin-bottom: 20px;
-    padding: 30px 0px;
+    margin-bottom: 0px;
+    padding: 0px;
     background: #fff;
-    background: rgba(255,255,255,0.9);
+/*    background: rgba(255,255,255,0.9);*/
 }
-@media screen and (min-width:1200px) {
-    .box:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
+@media screen and (min-width:1200px) {.box:after {content: ''; display: table; clear: both;}
 }
 /*кінець сss з шаблону*/
 #carousel-right-arrow {
@@ -548,9 +544,9 @@ h6 {
 }
 .box .carousel-indicators{
     width: 137px;
-    border-color: whitesmoke;
-    bottom: -40px;
+    bottom: -55px;
     left: 118%;
+    border-color: whitesmoke;
 }
 .box .carousel-indicators li{
     background-color:#ABDEF1;}
@@ -563,8 +559,6 @@ h6 {
     z-index:1;
 	background-color: #ffffff;
 	padding: 100px 0px 0px 0px;
-    
-
 	color: #444;
 	font-weight: 400;
 	font-size: 14px;
