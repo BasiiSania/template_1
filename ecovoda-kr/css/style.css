@@ -562,7 +562,8 @@ h6 {
 #slide-3 {
     z-index:1;
 	background-color: #ffffff;
-	padding: 100px 0px;
+	padding: 100px 0px 0px 0px;
+    
 
 	color: #444;
 	font-weight: 400;
@@ -579,8 +580,11 @@ h6 {
     background-position: 0% 60%;
     background-size: 250px 70px;}
 #slide-3 p{
+    padding: 10px;
 	text-align: left;
     font-size: 20px;
+    line-height: 26pt;
+    color:#222;
 }
 #slide-3  h4 {
     font-family: "Open Sans", sans-serif; 
