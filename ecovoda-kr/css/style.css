@@ -571,7 +571,11 @@ h6 {
     .nasha-woda-row-2 {
         width: 122%;left: -10%;}
 }
-@media (min-width: 1420px) {
+@media (min-width: 1400px) {
+    .nasha-woda-row-2 {
+        width: 130%;left: -13.5%;}
+}
+@media (min-width: 1500px) {
     .nasha-woda-row-2 {
         width: 138%;left: -17.7%;}
 }
@@ -619,8 +623,8 @@ h6 {
 #zamovyty-btn3 {
 /*    z-index: 10000;*/
 	display: block;
-	margin: 30px auto;
-    margin-top: 60px;
+	margin: 15px auto;
+    margin-top: 50px;
 	left: -6%; 
     width:240px;
   padding: 11px 28px 11px 28px;
