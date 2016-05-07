@@ -279,58 +279,40 @@ h6 {
 }
 @media (max-width: 768px) {
     #header-left{
-        min-height: 500px;
-    }
+        min-height: 500px;   }
     #emblema-div{
         padding:0px;
         margin-top:30px;
         font-size: 16px;
-        font-weight: 500;
-    }
+        font-weight: 500;    }
     #emblema-div img{
         width: 150px;
         padding: 10px 0px;
-        margin: 5px 5px;
-    }
+        margin: 5px 5px;    }
 }
-
-
 #header-image{
     background: url(../images/photo_top_x2.jpg) no-repeat center top;
     background-size: cover;
     min-height: 550px;
 }
-
 #maxwidth{
         max-width: 400px;
         margin: 0 auto;
     }
-
 @media (max-width: 1200px) {
     #header-image {
-		display: none;
-	}
-}
+		display: none;	}  }
 @media (min-width: 1200px) {
     #header-image {
-	min-height: 700px;
-	}
+	min-height: 700px;	}
     #header-left {
-	min-height: 700px;
-	}
-}
+	min-height: 700px;	}   }
 @media (min-width: 1500px) {
     #header-image {
-	   min-height: 800px;
-	}
+	   min-height: 800px;	}
     #header-left {
-	   min-height: 800px;
-	}
-    #maxwidth {
-        max-width: 500px;
-    }
+	   min-height: 800px;  }
 }
-
 #zamovity_button{
     top:-18px;
     padding: 11px 28px 11px 28px;
@@ -343,11 +325,8 @@ h6 {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
-/*z-index:100;*/
    
-  -webkit-transition: .2s all;
-  -o-transition: .2s all;
-  transition: .2s all;
+    -webkit-transition: .2s all; -o-transition: .2s all; transition: .2s all;
     border-radius: 30px;
     border: 0px;
     box-shadow: 0px 2px 7px 0.00px rgba(6, 71, 101, 0.26);
@@ -364,7 +343,6 @@ h6 {
 #slide-1-row-2 {
     padding-top: 25px;
 }
-
 #home-row-1 h2 {
     color:#ffffff;
     font-weight: 600;
@@ -377,7 +355,6 @@ h6 {
     margin: 0 auto;
     color:#fff;
 }
-
 #home-row-1 h5 {
     color:#ffffff;
     font-weight: 700;
@@ -388,111 +365,61 @@ h6 {
 #home-row-1 .col-sm-8{
     min-width: 200px;
 }
-
 #slide-1-row-2 {
     font-size: 16px;
 }
 #work-time{
+    line-height: 20pt;
     text-align: right;
 }
-/*
-
-#slide-1-row-2 .col-12 {
-    height: 232px;
-    padding-top: 30px;
-}
-
-#slide-1-row-2 .col-12 .home-hover {
-    height: 166px;
-    overflow: hidden;
-    padding-top: 26px;
-    transition: all ease-in .5s;
-}
-
-#slide-1-row-2 .col-12 .home-hover:hover {
-    height: 166px;
-    padding-top: 0;
-}
-*/
-
 @media (max-width: 767px) {
     #maxwidth{
-        max-width: 190px;
-    }
+        max-width: 190px;}
     #home-row-1,
     #slide-1-row-2 {
-            padding: 20px 0px;
-    }
-
+        padding: 20px 0px;}
     #home-row-1 h2 {
             font-size: 27px;
-            font-weight: 700;
-    }
+            font-weight: 700;   }
     #home-row-1 p {
-            font-size: 16px;
-    }
-    #home-row-1 .other-info{
-        display: none;
-    }
-    #slide-1-row-2 .other-info{
-        display: none;
-    }
-    #arrows {
-        top: 500px;
-    }
+            font-size: 16px;    }
+    #home-row-1 .other-info{    display: none;    }
+    #slide-1-row-2 .other-info{    display: none;  }
+/*_____________________________________________________СТРІЛКА ПРОКРУТКИ ВНИЗ*/
 }
-/*________________________________________________СТРІЛКА ПРОКРУТКИ ВНИЗ*/
 #arrows {
-/*	z-index: 1000;*/
-        z-index: 1;
-	top: 595px;
-	height: 80px;
+    z-index: 1;
+	top: 595px;	
 	position: fixed;
-    left:0; right:0;
-    margin: 0 auto;
-
-	width: 80px;
+    left:0; right:0; margin: 0 auto;
+	width: 80px; height: 80px;
     border-radius: 40px;
     background-color: white;
-    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
-    
-}
-
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);}
 #arrows div {
 	background-image: url('../images/go-down.svg');
     background-repeat:no-repeat;
 	cursor: pointer;
-	height: 100px;
-	position: absolute;
-	width: 150px;
-}
-
-#arrows div.disabled {
-	cursor: default;
-}
+    position: absolute;
+	height: 100px; width: 150px;}
 #arrow-down {
 	background-position: 49% 88%;
     background-size: 25px;
 	left: -33px;
 	bottom: 19px;
 }
-#arrow-down.disabled {
-	background-position: 0 -30px;
-}
-.navigation-slide {
-	cursor: pointer;
-}
+#arrow-down.disabled {	background-position: 0 -30px;
+} .navigation-slide { 	cursor: pointer;} #arrows div.disabled {	cursor: default; }
+
 @media screen and(min-height:900px){
     #arrows {
         top: 719px;}
 }
 @media screen and(max-height:590px){
     #arrows {
-       top: 500px; 
-    }
+       top: 500px;     }
 }
 /* _______________________________________________ НАША ВОДA */
-
 #slide-2 {
     z-index:1;
 	background-color: #ffffff;
@@ -504,7 +431,7 @@ h6 {
     font-weight: 600;
     font-size: 18px;}
 .nasha-woda-row-1 p {
-    padding: 20px 29px 0px 0px;
+    padding: 20px 11% 0px 0px;
     font-weight: 400;
     font-size: 14px;
     text-align: left;}
@@ -646,7 +573,7 @@ h6 {
 }
 @media (min-width: 1420px) {
     .nasha-woda-row-2 {
-        width: 135%;left: -16%;}
+        width: 138%;left: -17.7%;}
 }
 
 
@@ -660,7 +587,7 @@ h6 {
     min-height:516px;
 }
 #slide-4 .row {
-        width: 115%; left: -6%;}
+        width: 122%; left: -10%;}
 
 #slide-4-title {
     font-family: "Open Sans", sans-serif;
@@ -693,6 +620,7 @@ h6 {
 /*    z-index: 10000;*/
 	display: block;
 	margin: 30px auto;
+    margin-top: 60px;
 	left: -6%; 
     width:240px;
   padding: 11px 28px 11px 28px;
