@@ -47,6 +47,19 @@ h6 {
     top:-5pt;
 }
 
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+.slide {
+	padding: 0px;
+    padding-top:50px;
+	text-align: center;       
+}
+@media (max-width: 768px) {
+    .slide {
+    padding-top:20px;
+    }
+}
 /* _____________________________________________________________ ВЕРХ, МЕНЮ */
 
 #phone-number{
@@ -188,22 +201,16 @@ h6 {
     background: none;
 }
 
-@media (max-width: 767px) {
-	
+@media (max-width: 767px) {	
 	.nav li {
         background-color: white;
-        width:100%;
-        padding: 10px 0px;
-	}
-	
+        width:98%;
+        padding: 10px 0px;	}
 	.navbar-responsive-collapse  {
-		width: 100%;
-	}
-	
+		width: 110%   !important; 
+        left:0  !important;	}
 	.active-menu {
-		display: none !important;
-	}
-	
+		display: none !important;	}
 	.navbar-toggle {
         width: 100%;
         margin: 0 auto;
@@ -211,41 +218,17 @@ h6 {
         color: #61C0E2;
         font-weight: 600;
         letter-spacing: 2px;
-	}
-	
+        top:5px}
 	.navbar {
 		background-color: #fff !important;
 		padding: 0px;
-        height:50px;
-	}
-	
+        height:50px;	}	
 	.navbar .nav a {
-            color: #474747;
-            font-size: 14px;
-	}
-	
+        color: #474747;
+        font-size: 14px;	}
 	.navbar.inv .icon{
-            display: none;        
-	}
-	
-	.navbar-brand {
-		margin: 0;
-		text-align: left;
-	}
-}
-
-:focus {outline:none;}
-::-moz-focus-inner {border:0;}
-
-.slide {
-	padding: 0px;
-    padding-top:50px;
-	text-align: center;       
-}
-@media (max-width: 768px) {
-    .slide {
-    padding-top:20px;
-    }
+        display: none;     	}
+	.navbar-brand {margin: 0;text-align: left;}
 }
 
 /* __________________________________ГОЛОВНА */
@@ -254,15 +237,48 @@ h6 {
     font-size: 16px;
     margin-bottom: 0px;
 }
-
-#header-left{background: -webkit-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%);
-    background: -moz-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%);
-    background: -o-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%);
-    background: -ms-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%);
-    background: linear-gradient(0deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%);
-    min-height: 550px;
-/*opacity: 0.8;*/
+#header-left{
+    background: -webkit-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%); background: -moz-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%); background: -o-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%); background: -ms-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%); background: linear-gradient(0deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%);
+    min-height: 650px;
 }
+
+#header-image{
+    background: url(../images/photo_top_x2.jpg) no-repeat center top;
+    background-size: cover;
+    min-height: 550px;
+}
+
+#maxwidth{
+        max-width: 400px;
+        min-width: 214px;
+        margin: 0 auto;
+    }
+@media (max-width: 1199px) {
+    #header-image {
+		display: none;}
+    #maxwidth{
+        max-width: none;
+        width:65%;}
+}
+@media (max-width: 767px) {
+    #header-left{
+        min-height: 550px; }
+}
+@media (min-width: 1200px) {
+    #header-image {
+	   min-height: 700px;	}
+    #header-left {
+	   min-height: 700px;	}   
+}
+@media (min-width: 1500px) {
+    #header-image {
+	   min-height: 800px;	}
+    #header-left {
+	   min-height: 800px;  } }
+
+#home-row-1,
+#slide-1-row-2 {
+    padding-top: 25px;}
 
 #emblema-div{
     padding:0px;
@@ -270,54 +286,84 @@ h6 {
     color: #1071B7;
     font-family: "Roboto Slab", sans-serif;
     font-size: 20px;
-    font-weight: 400;
-    text-shadow: 1px 0 0 currentColor;
-}
+    font-weight: 700; letter-spacing: 0.5pt;}
 #emblema-div img{
     padding:10px;
-    margin: 0px;
+    margin: 0px;}
+#emblema-misto{
+    height:30px; width:253px; 
+    margin: 0 auto;}
+#emblema-misto div{
+    float:left; 
+    margin: 0px 20px;}
+#emblema-misto .line{
+    margin:15px 0px;
+    background-color: #1071B7;
+    width:30px; height:2px;}
+
+#home-row-1 h2 {
+    color:#ffffff;
+    font-weight: 600;
+    font-size:35px;
+    letter-spacing: 0.6px;
+    margin: 55px 0px  30px 0px;
 }
-@media (max-width: 768px) {
-    #header-left{
-        min-height: 500px;   }
+#title-text{padding: 0% 10%;
+}
+#slide-1-row-2 .col-sm-6{  min-height:30px }
+#slide-1-row-2 h5 {
+    color:#ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1pt;
+    text-align: right;
+    right:20px;
+}
+#work-time{
+    line-height: 20pt;
+    text-align: right;
+    right:20px;
+}
+@media (max-width: 767px) {
+    #home-row-1,
+    #slide-1-row-2 {
+        padding: 20px 0px;}
+    #home-row-1 p {
+        font-size: 16px;    }
     #emblema-div{
         padding:0px;
-        margin-top:30px;
-        font-size: 16px;
-        font-weight: 500;    }
+        margin: 29px 0px 0px 0px;
+        font-size: 14px;
+        font-weight: 700; }
     #emblema-div img{
-        width: 150px;
+        width: 50%;/* width: 130px;*/
         padding: 10px 0px;
-        margin: 5px 5px;    }
-}
-#header-image{
-    background: url(../images/photo_top_x2.jpg) no-repeat center top;
-    background-size: cover;
-    min-height: 550px;
-}
-#maxwidth{
-        max-width: 400px;
+        margin: 3px;    }
+    #emblema-misto{
+        width:169px;}
+    #emblema-misto div{
+    margin: 0px 10px;}
+    #emblema-misto .line{
+        margin:11px 0px;
+        width:20px; height:1px;}
+    #home-row-1 h2 {
+        font-size: 27px;
+        font-weight: 700; margin: 25px 0; }
+    #title-text{
+        padding: 0% 6%;}
+    #home-row-1 .other-info{    display: none;    }
+    #slide-1-row-2 .other-info{    display: none;  }
+    #home-row-1 h5 {
         margin: 0 auto;
-    }
-@media (max-width: 1200px) {
-    #header-image {
-		display: none;	}  }
-@media (min-width: 1200px) {
-    #header-image {
-	min-height: 700px;	}
-    #header-left {
-	min-height: 700px;	}   }
-@media (min-width: 1500px) {
-    #header-image {
-	   min-height: 800px;	}
-    #header-left {
-	   min-height: 800px;  }
+        text-align: center;
+        top: 109px; right:0px;   }
 }
+
 #zamovity_button{
-    top:-18px;
+    top:-8px;
     padding: 11px 28px 11px 28px;
     margin: 20px auto;
-    width: 160px;
+    width: 165px;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
@@ -325,7 +371,6 @@ h6 {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
-   
     -webkit-transition: .2s all; -o-transition: .2s all; transition: .2s all;
     border-radius: 30px;
     border: 0px;
@@ -338,63 +383,21 @@ h6 {
 #zamovity_button:active{
      color: #fff;
    text-decoration: none; }
-
-#home-row-1,
-#slide-1-row-2 {
-    padding-top: 25px;
-}
-#home-row-1 h2 {
-    color:#ffffff;
-    font-weight: 600;
-    font-size:35px;
-    letter-spacing: 0.6px;
-    margin: 55px 0px  30px 0px;
-}
-#title-text{
-    max-width: 345px;
-    margin: 0 auto;
-    color:#fff;
-}
-#home-row-1 h5 {
-    color:#ffffff;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 1pt;
-    text-align:  right
-}
-#home-row-1 .col-sm-8{
-    min-width: 200px;
-}
-#slide-1-row-2 {
-    font-size: 16px;
-}
-#work-time{
-    line-height: 20pt;
-    text-align: right;
-}
 @media (max-width: 767px) {
-    #maxwidth{
-        max-width: 190px;}
-    #home-row-1,
-    #slide-1-row-2 {
-        padding: 20px 0px;}
-    #home-row-1 h2 {
-            font-size: 27px;
-            font-weight: 700;   }
-    #home-row-1 p {
-            font-size: 16px;    }
-    #home-row-1 .other-info{    display: none;    }
-    #slide-1-row-2 .other-info{    display: none;  }
-/*_____________________________________________________СТРІЛКА ПРОКРУТКИ ВНИЗ*/
+    #zamovity_button{top: -50px;}
 }
+
+#slide-1-under-btn{ position:absolute; right:0px; left:0px; margin:70px auto;}
+
+/*_____________________________________________________СТРІЛКА ПРОКРУТКИ ВНИЗ*/
 #arrows {
     z-index: 1;
-	top: 595px;	
+	top: 615px;	
 	position: fixed;
     left:0; right:0; margin: 0 auto;
 	width: 80px; height: 80px;
     border-radius: 40px;
-    background-color: white;
+    background-color: #6293CB;
     box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);}
 #arrows div {
 	background-image: url('../images/go-down.svg');
@@ -411,16 +414,17 @@ h6 {
 #arrow-down.disabled {	background-position: 0 -30px;
 } .navigation-slide { 	cursor: pointer;} #arrows div.disabled {	cursor: default; }
 
-@media screen and(min-height:900px){
+@media screen and (min-height:900px) {
     #arrows {
         top: 719px;}
 }
-@media screen and(max-height:590px){
+@media screen and (max-height:590px)  and (max-width:767px) {
     #arrows {
-       top: 500px;     }
+	top: 485px;	 background-color: rgba(0, 0, 0, 0.1);}
 }
 /* _______________________________________________ НАША ВОДA */
 #slide-2 {
+/*    margin-top: 50px;*/
     z-index:1;
 	background-color: #ffffff;
 	padding: 100px 0px 0px 0px;
