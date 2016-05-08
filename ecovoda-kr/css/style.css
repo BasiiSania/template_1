@@ -290,12 +290,13 @@ h6 {
 #emblema-div img{
     padding:10px;
     margin: 0px;}
-#emblema-misto{
-    height:30px; width:253px; 
+#emblema-misto{overflow: hidden;
+    height:30px; width:274px; 
     margin: 0 auto;}
 #emblema-misto div{
     float:left; 
-    margin: 0px 20px;}
+    margin: 0px;
+    padding: 0px 20px;}
 #emblema-misto .line{
     margin:15px 0px;
     background-color: #1071B7;
@@ -340,9 +341,9 @@ h6 {
         padding: 10px 0px;
         margin: 3px;    }
     #emblema-misto{
-        width:169px;}
+        width:173px;}
     #emblema-misto div{
-    margin: 0px 10px;}
+    padding: 0px 10px;}
     #emblema-misto .line{
         margin:11px 0px;
         width:20px; height:1px;}
