@@ -411,7 +411,8 @@ h6 {
     background-size: 25px;
 	left: -33px;
 	bottom: 19px;
-}
+    font-size:0.01px; width:60px; height:60px;
+    color: rgba(200, 200, 200, 0);}
 #arrow-down.disabled {	background-position: 0 -30px;
 } .navigation-slide { 	cursor: pointer;} #arrows div.disabled {	cursor: default; }
 
@@ -435,12 +436,18 @@ h6 {
     font-family: "Open Sans", sans-serif; 
     font-weight: 600;
     font-size: 18px;}
+.nasha-woda-row-1 img{
+    width:23px; 
+    top:4px}
 .nasha-woda-row-1 p {
     padding: 20px 11% 0px 0px;
     font-weight: 400;
     font-size: 14px;
     text-align: left;}
 .nasha-woda-row-1 h4 {
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 600;
+    font-size: 18px;
     text-align: left;}
 #slide-2 h3 {
     width:63%;
@@ -452,6 +459,18 @@ h6 {
     background:url(../images/waves-background-1.png) no-repeat;
     background-position: 0% 70%;
     background-size: 100%}
+@media (max-width:1199px) {
+    .nasha-woda-row-1 {
+        padding: 10px 11% 0px 11%;}
+    .nasha-woda-row-1 .row{
+        padding: 27px 0px 0px 0px;}
+    .nasha-woda-row-1 img{top:-3px}
+    .nasha-woda-row-1 h4 {
+        margin: 0px 0px 0px 0px;
+    line-height: 18pt}
+    .nasha-woda-row-1 p {
+        padding: 3px 0px 0px 0px;}
+}
 
 .img-full {min-width: 100%;margin:0px;}
 .box {
