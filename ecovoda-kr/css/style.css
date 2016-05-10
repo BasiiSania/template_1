@@ -224,7 +224,7 @@ h6 {
 		display: none !important;	}
 	.navbar-toggle {
         width: 30%;
-        right:31% !important;
+        right:32% !important;
         font-size: 18px;
         color: #61C0E2;
         font-weight: 600;
@@ -670,6 +670,17 @@ h6 {
         padding:35px 45% 10px 80px;}
     #plant-svg:hover {
             background-position: -7% 19%;}
+    #slide-3 h3{
+        margin-top: 60px;
+        font-size:40px
+    }
+    #slide-3 p{
+        padding: 10px;
+        text-align: left;
+        font-size: 16px;
+        font-weight:600;
+        line-height: 18pt;
+    }
 }
 
 	

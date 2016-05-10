@@ -353,9 +353,9 @@ jQuery(document).ready(function ($) {
     var yyyy = today.getFullYear();
     if(dd<10) {    dd = '0'+dd;} 
     if(mm<10) {    mm = '0'+mm;} 
-    today = dd+'.'+mm+'.'+yyyy;
+    today = mm+'.'+dd+'.'+yyyy;
      $('#mydatepicker .input-group.date').datepicker({
-            format: "DD - dd MM yyyy",
+            format: "MM dd - DD",
             startDate: today,
             language: "uk",
             orientation: "bottom left",
