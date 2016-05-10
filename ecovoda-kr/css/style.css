@@ -47,6 +47,7 @@ h6 {
     top:-5pt;
 }
 
+
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
 
@@ -644,9 +645,10 @@ h6 {
 }
 @media (max-width: 767px) {
     .nasha-woda-row-2 {
+        width: auto;    
         max-width: 360px;
         margin: 0 auto;
-        left:-4%}
+        left:-2.5%}
     .nasha-woda-row-2 .col-lg-3{
         height:230px;
         text-align: left;
