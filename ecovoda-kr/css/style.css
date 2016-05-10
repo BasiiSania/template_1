@@ -57,7 +57,7 @@ h6 {
 }
 @media (max-width: 768px) {
     .slide {
-    padding-top:20px;
+    padding-top:10px;
     }
 }
 /* _____________________________________________________________ ВЕРХ, МЕНЮ */
@@ -68,7 +68,6 @@ h6 {
     margin: 0 auto;
     left:0; right:0;
     top: 24px;
-    
     padding-top: 2px;
     font-weight:700;
     font-size: 18px;
@@ -91,7 +90,7 @@ h6 {
     width: 180px;
     padding: 11px 28px 11px 28px;
     top: -10px;
-        font-size: 16px;
+    font-size: 16px;
     text-align: center;
     text-transform: uppercase;
     font-weight:700;
@@ -114,9 +113,20 @@ h6 {
      background: #3aade2;
    text-decoration: none; 
 }
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
     #phone-number {
         display: none;}
+}
+
+@media (max-width: 768px) and (min-width: 500px) {
+    #phone-number {
+        display: block;
+        top:13px;}
+    #zamovyty-btn {
+        width:130px;
+        font-size: 14px;
+        padding: 8px 10px 8px 10px;
+    }
 }
 
 .navbar {
@@ -205,22 +215,22 @@ h6 {
 	.nav li {
         background-color: white;
         width:98%;
-        padding: 10px 0px;	}
+        padding: 10px 0px 10px 0px;	}
 	.navbar-responsive-collapse  {
-		width: 110%   !important; 
-        left:0  !important;	}
+            width: 110%   !important; 
+            left:-9px  !important;}
 	.active-menu {
 		display: none !important;	}
 	.navbar-toggle {
-        width: 100%;
-        margin: 0 auto;
+        width: 30%;
+        right:31% !important;
         font-size: 18px;
         color: #61C0E2;
         font-weight: 600;
         letter-spacing: 2px;
-        top:5px}
+        padding: 5px 0px 1px 0px}
 	.navbar {
-		background-color: #fff !important;
+		background-color: #A2E3FF !important;
 		padding: 0px;
         height:50px;	}	
 	.navbar .nav a {
@@ -547,15 +557,12 @@ h6 {
     line-height: 26pt;
     color:#222;
 }
-#slide-3  h4 {
-    font-family: "Open Sans", sans-serif; 
-    font-weight: 700;
-    font-size: 18px;}
 
 .nasha-woda-row-2 {
-    margin-bottom: 100px;color: #ffffff;
+    margin-bottom: 100px;
+    color: #ffffff;
     text-align: center;
-	font-size: 14px;
+    font-size: 14px;
     width: 110%;
     left: -3.4%;
     height: 333px;
@@ -574,6 +581,10 @@ h6 {
     height:60px;width:20%;
     fill: #ffffff;
     padding:0px; margin: 50px 0px 10px 0px;}
+#slide-3  h4 {
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 700;
+    font-size: 18px;}
 
 .nasha-woda-row-2 .col-lg-3:hover{
     background-color: #ffffff;
@@ -612,20 +623,16 @@ h6 {
     .nasha-woda-row-2 {
         width: 122%;left: -10%;}
 }
-/*
 @media (min-width: 1400px) {
     .nasha-woda-row-2 {
-        width: 130%;left: -13.5%;}
-}
+        width: 130%;left: -13.5%;} }
 @media (min-width: 1500px) {
     .nasha-woda-row-2 {
         width: 138%;left: -17.7%;}
-}*/
-
-@media (max-width: 1199px) and (min-width: 768px) {
+}
+@media (max-width: 1199px) {
     .nasha-woda-row-2 {
-    height: 573px;
-    }
+        height: auto; }
     #slide-3 h3 {
         max-width: none;
         background-position: 0px 26px;
@@ -633,23 +640,34 @@ h6 {
         margin: 4% 9%;
         padding-bottom: 10px}
     #slide-3 p {
-        margin: 1% 8%;
-    }
+        margin: 1% 8%;    }
 }
-
 @media (max-width: 767px) {
     .nasha-woda-row-2 {
-        height: 1377px;
+        max-width: 360px;
+        margin: 0 auto;
+        left:-4%}
+    .nasha-woda-row-2 .col-lg-3{
+        height:230px;
+        text-align: left;
+        padding:0px 10%;
+        margin: 0px !important;}
+    .nasha-woda-row-2 .col-lg-3 div{
+        float: left; width:25%; margin:1px}
+    .nasha-woda-row-2 svg{
+        height:50px;width:80%;
+        margin: 25px 0px 15px 0px;}
+    .nasha-woda-row-2 .col-lg-3 h4 {
+        padding: 30px 35% 5px 35%;
+        line-height: 20pt;
     }
-    #slide-3 h3 {
-        max-width: none;
-        background-position: 0px 26px;
-        background-size: 390px 71px;
-        margin: 4% 9%;
-        padding-bottom: 10px}
-    #slide-3 p {
-        margin: 1% 8%;
-    }
+    #plant-svg {
+        height:230px;
+        background-position: 14% 18%;}
+    #plant-svg h4{
+        padding:35px 45% 10px 80px;}
+    #plant-svg:hover {
+            background-position: -7% 19%;}
 }
 
 	
