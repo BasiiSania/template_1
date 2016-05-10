@@ -1098,16 +1098,13 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 
 #slide-6 {
     z-index:1;
-    margin:0px 100px;
-    width:150%;
-    left:-31%;
+    margin:0px;
     background-color: #222;
-    padding-top: 100px;
-
+    padding-top: 0px;
     background-image: url(../images/eco-woda-footer_screenshot.jpg);
     background-repeat: no-repeat;
-    background-position:top;
-    background-size: 1457px 306px;
+    background-position: 50% 0%;
+    background-size: 100%;
     min-height:306px;
     color:black;
     font-size:0.5px;
@@ -1115,54 +1112,9 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 
 
 @media (max-width: 767px) {
-	#slide-6 {background-size: 50%;
-	}
-}
-	
-	#slide-6 .line-row .hr {
-		background-color: #4e4e4e;
-		color: #4e4e4e;
-	}
-
-	#slide-6 a {
-		color: inherit;
-		outline: none;
-		text-decoration: none;
-	}
-
-@media (max-width: 767px) {
-	.with-hover-text{
-		margin-bottom: 2em;
-		margin-top: 1em;
-	}
-}
-	
-	#contact-row-4 {
-		padding-top: 125px;
-	}
-	
-	#contact-row-4 .col-12 {
-		height: 175px;
-		overflow: hidden;
-		padding-top: 20px;
-		transition: all ease-in .5s;
-	}
-	
-	#contact-row-4 img {
-		display: block;
-		margin: 0 auto;
-		max-height: 100%;
-		max-width: 100%;
-	}
-	
-	#contact-row-4 .col-12:hover {
-		height: 175px;
-		padding-top: 0;
-	}
-	
-	#contact-row-4 .col-12 .hover-text {
-		display: none;
-		font-size: 20px;
+	#slide-6 {
+            background-size: 150%;
+            min-height:156px;
 	}
 
 #slide-7 {
