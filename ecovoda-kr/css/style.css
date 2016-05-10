@@ -223,8 +223,8 @@ h6 {
 	.active-menu {
 		display: none !important;	}
 	.navbar-toggle {
-        width: 30%;
-        right:32% !important;
+        width: 32%;
+        right:31% !important;
         font-size: 18px;
         color: #61C0E2;
         font-weight: 600;
@@ -898,7 +898,17 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     background-size: 70%;
     box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
     min-height: 677px;
-    width:900px;}
+    max-width:900px;}
+
+@media (max-width:768px) and (min-width:371px) {
+    #slide-5 .container{
+        background-position: 50% 110%;
+        background-size: 122%} }
+@media (max-width:370px) {
+    #slide-5 .container{
+        background-position: 50% 107.5%;
+        background-size: 157%}
+}
 
 #slide-5 h3 {
     font-family: "Open Sans", sans-serif; font-weight: 700;
@@ -917,19 +927,38 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     padding: 18px 0px 29px 0px;
 }
 #slide-5 .help-block{ 
-    position: absolute; margin-top:40px; margin-left:6px;
+    position: absolute; margin-top:40px;
     top: 11px;
-    color:#777; font-weight:400; }
+    color:#aaa; font-weight:400; }
 
+
+@media (max-width:768px) {
+    #slide-5 h3{
+        font-size:30px;
+        padding-top: 15px;}
+    #slide-5 .container{
+        max-width:550px;}
+    form {
+        margin:10px 13%;}
+    #slide-5 .form-group{
+        padding: 18px 0px 19px 0px;}
+    #slide-5 .help-block{ 
+        font-size:13px; font-weight: 600}
+    #slide-5 .form-control{
+        font-size: 16px;
+        font-weight: 600}
+}
+/*
 .radio-inline input {display: none;
     position:absolute;
     opacity:0.1; width:1px;
     padding:0px; margin:0px;
-}
+}*/
 .radio-inline {
-	position: relative;
-	float: left;
+    position: relative;
+    float: left;
     padding:0px; margin: 0px;
+    padding-right:3px;
     width:33.3%;
     border-radius:0px;
     font-size:20px;
@@ -946,9 +975,87 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     color: #fff;}
 #slide-5 input[type="radio"]{
     display:none}
-#slide-5 .time-mins {
-    font-size:60%;
-    top:-5pt;
+@media (max-width:767px) {
+    .radio-inline{
+        font-size:16px;
+        font-weight:600;
+        line-height: 25pt;} }
+@media (max-width:370px) {
+    .radio-inline{
+        width:max-content;}
+    #form-tshas{
+        width:106%;
+        padding: 0 auto 0 auto;}
+    #form-tshas .help-block{left:5%}
+}
+#form-kilkist{
+    margin-bottom:0px; 
+    padding-bottom:0px}
+#form-kilkist .col-sm-3 {
+    min-height:100px;
+    color:#6FCFF9; 
+    font-weight:700;
+    }
+#form-kilkist .col-sm-6 {}
+#form-kilkist .col-sm-6 > span{
+    color:#444; font-size: 20px; font-weight:400; top:21px;
+}  
+#zamov-vartist-div{
+    float:right; 
+    height:70px; 
+    top:-10px; 
+    right:25%; 
+    width:200px; 
+    text-align: right; 
+    color:#6FCFF9; 
+    font-size: 50px; 
+    font-weight:700; }
+@media (max-width:767px) {
+    #form-kilkist {
+    }
+    #form-kilkist .col-sm-3 {
+        min-height: 60px;
+    }
+    #form-kilkist .col-sm-6 {min-height: 30px;}
+    #form-kilkist .col-sm-6 > span{
+        color:#777; font-size: 18px;
+        font-weight:600; top:1px;}  
+    #zamov-vartist-div{
+        height:40px; 
+        top:-11px; 
+        right:47%; 
+        width:130px; 
+        color:#6FCFF9; 
+        font-size: 30px; 
+        font-weight:700; }  
+}
+@media (max-width:1000px) and (min-width:768px) {
+    #zamov-vartist-div{
+        right:10%;}   
+}
+@media (max-width:500px) {
+    #zamov-vartist-div{
+        right:15%;
+    }   
+}
+
+#text-zapovnit-polia-div {
+    text-align:center; 
+    font-size:20px; 
+    font-weight:700; 
+    color: #EF9DB1; 
+    margin:12px 0px; 
+    min-height:29px;}
+#text-zapovnit-polia{display:none}
+@media (max-width:767px) {
+/*    #text-zapovnit-polia{display:block}*/
+    #text-zapovnit-polia-div {
+        text-align:center; 
+        font-size:18px; 
+        font-weight:700; 
+        color: #EF9DB1; 
+        margin:10px 0px 0px 0px; 
+        min-height:29px;}
 }
 
 #nadislaty-btn {
@@ -979,6 +1086,12 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     outline:none;}
 #nadislaty-btn:active{
    text-decoration: none; 
+}
+@media (max-width:767px) {
+    #nadislaty-btn {
+	top:-20px;
+        font-size: 14px;
+    }
 }
 
 /*ФУТЕР, можна тут реалізувати вікно зв-язку*/

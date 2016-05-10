@@ -513,12 +513,17 @@
     <div class="col-sm-6">
       <input type="text" class="form-control" id="inputName"
 	 placeholder="Прізвище та ім'я" aria-describedby="helpBlock2" name="Прізвище та ім'я" required>
-	<span id="helpBlock2" class="help-block"  style="color:#777; font-weight:400;">&nbsp;&nbsp;Як зазначено в контракті</span>
+	<span id="helpBlock2" class="help-block"  style="">
+            Як зазначено в контракті</span>
     </div>
+  </div>
+
+  <div class="form-group">
     <div class="col-sm-6">
       <input type="text" class="form-control" id="inputAddress" 
 	placeholder="Адреса" aria-describedby="helpAddress" name="Адреса">
-<!--	<span id="helpAddress" class="help-block" style="color:#3aade2; font-weight:700;">Внести в картку клієнта нову адресу</span>-->
+<!--	<span id="helpAddress" class="help-block">
+        Внести в картку клієнта нову адресу</span>-->
     </div>
   </div>
 
@@ -535,8 +540,13 @@
 <!--            <input type="text" class="form-control" placeholder="Дата доставки" id="inputDate">-->
         
       </div><!--
-		<span id="help1" class="help-block" style="color:#3aade2; font-weight:400;">&nbsp;&nbsp; Завтра, післязавтра, найближча субота</span>-->
-    <div class="col-sm-6">
+		<span id="help1" class="help-block">
+            Завтра, післязавтра, найближча субота</span>-->
+
+  </div>
+
+  <div class="form-group">
+      <div class="col-sm-6" id="form-tshas">
         <div>
             <input  type="radio" name="Час" id="radio1" value="Ранок">
             <label  class="radio-inline" for="radio1" aria-describedby="help2" onclick="chasDostavky(this); return false;">
@@ -553,7 +563,7 @@
             19<span class="time-mins">00</span>&mdash;21<span class="time-mins">00</span></label>
         </div>
         <div id="help2" class="help-block" style="">
-            &nbsp;&nbsp;Оберіть зручний час доставки
+            Оберіть зручний час доставки
         </div>
 
       </div>
@@ -599,31 +609,36 @@
     <div class="col-sm-6">
       <input type="text" class="form-control" id="inputPhone" 
 	placeholder="Телефон" aria-describedby="help3" name="Тел.номер" required>
-	<span id="help3" class="help-block" style="color:#777; font-weight:400;">&nbsp;&nbsp;Ми зв'яжемось з вами у випадку форсмажору</span>
+	<span id="help3" class="help-block">
+        Ми зв'яжемось з вами у випадку форсмажору</span>
     </div>
+</div>
+<div class="form-group">
     <div class="col-sm-6">
       <input type="text" class="form-control" id="inputMail" 
 	placeholder="E-mail" aria-describedby="help4" name="_replyto">
 	<span id="help4" class="help-block">
-        &nbsp;&nbsp;Ми вишлемо вам підтвердження замовлення</span>
+        Ми вишлемо вам підтвердження замовлення</span>
     </div>
  </div>
 
-<div class="form-group" style="margin-bottom:0px; padding-bottom:0px" >
+<div id="form-kilkist" class="form-group" style="" >
     <div class="col-sm-3" style="margin-top:10px">
         <input type="number" class="form-control" id="inputNumber"  min="1" max="9"   step="1"   value="1" aria-describedby="help5"
 name="Кількість" onchange="zminaZamovVartist(this.value)">
   
-	   <span id="help5" class="help-block"> &nbsp;&nbsp;Кількість бутилів</span>
+	   <span id="help5" class="help-block"> Кількість бутилів</span>
     </div>
 	<div class="col-sm-3">
-		<span style="color:#6FCFF9; font-weight:700; top:25px;">ціна: 48 грн за бутиль</span>
+		<span style="top:25px; text-align: center">ціна: 48 грн за бутиль</span>
 	</div>
 	<div class="col-sm-6">
-        <span style="color:#444; font-size: 20px; font-weight:400; top:21px;">всього: &nbsp;&nbsp;&nbsp;&nbsp;</span> <div style="float:right; height:70px; top:-10px; right:25%; width:200px; text-align: right; color:#6FCFF9; font-size: 50px; font-weight:700; ">
+        <span style="">всього:</span> 
+        <div id="zamov-vartist-div" style="">
         <span id="zamov-vartist" >48</span> грн </div>
 	</div>
-    <div class="col-sm-12" style="text-align:center; font-size:20px; font-weight:700; color: #EF9DB1; margin:12px 0px; min-height:29px;"><span id="text-zapovnit-polia" style="display:none">Будь-ласка, заповніть всі поля! </span>
+    <div class="col-sm-12" id="text-zapovnit-polia-div" style="">
+        <span id="text-zapovnit-polia">Будь-ласка, заповніть всі поля! </span>
     </div>
   </div>
     
