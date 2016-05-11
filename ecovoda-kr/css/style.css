@@ -65,11 +65,12 @@ h6 {
 
 #phone-number{
     font-family: "Roboto Slab", sans-serif;
+    line-height: 17pt;
     position: fixed;
     margin: 0 auto;
     left:0; right:0;
-    top: 24px;
-    padding-top: 2px;
+    top: 19px;
+    padding-top: 0px;
     font-weight:700;
     font-size: 18px;
     letter-spacing: 1pt;
@@ -83,14 +84,14 @@ h6 {
     
     background: url(../images/phone_blue_white.png) no-repeat;
     background-size: 30px;
-    background-position: 1px 0px;
+    background-position: 1px 5px;
 /*	z-index: 1;*/}
 #zamovyty-btn {
         float: right;
     margin: 0px;
     width: 180px;
     padding: 11px 28px 11px 28px;
-    top: -10px;
+    top: -22px;
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
@@ -335,6 +336,7 @@ h6 {
     line-height: 20pt;
     text-align: right;
     right:20px;
+    min-width: 204px;
 }
 @media (max-width: 767px) {
     #home-row-1,
@@ -715,11 +717,11 @@ h6 {
     padding:0px;
     width:240px;
     margin: 20px auto;
-    left:-14%;
+    left:-12%;
     text-align: right;
 /*    width: 88%;*/
 }
-#slide-4 #work-time{
+#work-time{
     text-align: right;
     line-height: 160%;
     font-size: 20px;
@@ -729,7 +731,7 @@ h6 {
 	display: block;
 	margin: 15px auto;
     margin-top: 40px;
-	left: -6%; 
+	left: -11%; 
     width:240px;
   padding: 11px 28px 11px 28px;
   font-size: 16px;
@@ -757,7 +759,7 @@ h6 {
    text-decoration: none; }
 #slide-4-tsilodobovo{
     font-size:20px;
-    left:-24px;}
+    left:-39px;}
 
 #slide-4 ul {
 	text-align: center;
@@ -985,12 +987,17 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
         width:max-content;}
     #form-tshas{
         width:106%;
-        padding: 0 auto 0 auto;}
+        padding: 0 auto;}
     #form-tshas .help-block{left:5%}
 }
 #form-kilkist{
     margin-bottom:0px; 
     padding-bottom:0px}
+#inputNumber {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    color:#333 !important;
+}
 #form-kilkist .col-sm-3 {
     min-height:100px;
     color:#6FCFF9; 
@@ -998,12 +1005,12 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     }
 #form-kilkist .col-sm-6 {}
 #form-kilkist .col-sm-6 > span{
-    color:#444; font-size: 20px; font-weight:400; top:21px;
+    color:#444; font-size: 20px; font-weight:400; top:16px;
 }  
 #zamov-vartist-div{
     float:right; 
     height:70px; 
-    top:-10px; 
+    top:-15px; 
     right:25%; 
     width:200px; 
     text-align: right; 

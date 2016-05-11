@@ -398,7 +398,7 @@ $(window).scroll(function() {
         });
         $('#phone-number').css({
             'color': '#ffffff',
-            'background-position': '2px -81px'
+            'background-position': '2px -76px'
 //            'background-size': '28px'
         });
 
