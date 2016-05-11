@@ -344,7 +344,8 @@ jQuery(document).ready(function ($) {
 //    Далі мої скрипти
     
     var contactform =  document.getElementById('contactform');
-    contactform.setAttribute('action', 'https://formspree.io/' + 'inga.goncharuk' + '@' + 'gmail' + '.' + 'com');
+    contactform.setAttribute('action', 'https://formspree.io/' + 'beregovoi0210' + '@' + 'gmail' + '.' + 'com');
+    
     
 //    $('#slide-4-tabs li:first').addClass('active');
     var today = new Date();
@@ -378,12 +379,12 @@ $('.nasha-woda-row-2 .col-lg-3').on('mouseleave', function() {
 });
 
 function zminaZamovVartist(val) {
-    var vartist_num = val*48;
+    var vartist_num = val*35;
     document.getElementById('zamov-vartist').innerHTML = vartist_num.toString();
 }
 
 function zminaTsina(val) {
-    var vartist_num = val*48;
+    var vartist_num = val*35;
     document.getElementById('textTsina').innerHTML = vartist_num.toString();
 }
 
