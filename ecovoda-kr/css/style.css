@@ -856,9 +856,6 @@ form input[type="password"]:focus {
   -webkit-box-shadow:0px 0px 0.5px 3px #f8f8f8 !important; -moz-box-shadow:0px 0px 0.5px 3px #f8f8f8 !important; box-shadow: 0px 0px 0.5px 3px #f8f8f8 !important; 
   outline: none !important;
 }
-form {margin:40px 30px; 
-    text-align: left;
-z-index:2;}
  #slide-5 .date {border: none !important;
     -webkit-box-shadow:0px 0px 0.5px 3px #f8f8f8; -moz-box-shadow:0px 0px 0.5px 3px #f8f8f8; box-shadow: 0px 0px 0.5px 3px #f8f8f8; z-index: 0; } 
 #slide-5 .input-group-addon{background-color: #fff;border-radius: 0px;font-size: 20px;height:43px;
@@ -894,13 +891,10 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 }
 #slide-5 .container{
     background-color: #ffffff;
-    background-image: url(../images/photo_button_lg.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 115%;
-    background-size: 70%;
     box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
-    min-height: 677px;
-    max-width:900px;}
+/*    min-height: 677px;*/
+    max-width:900px;
+    padding-bottom: 0px !important;}
 
 @media (max-width:768px) and (min-width:371px) {
     #slide-5 .container{
@@ -911,6 +905,10 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
         background-position: 50% 107.5%;
         background-size: 157%}
 }
+
+#slide-5 form {margin:40px 30px 0px 30px; 
+    text-align: left;
+    z-index:2;}
 
 #slide-5 h3 {
     font-family: "Open Sans", sans-serif; font-weight: 700;
@@ -1041,14 +1039,16 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     }   
 }
 
-#text-zapovnit-polia-div {
+#text-zapovnit-polia {
+    position: absolute;
     text-align:center; 
     font-size:20px; 
     font-weight:700; 
     color: #EF9DB1; 
-    margin:12px 0px; 
-    min-height:29px;}
-#text-zapovnit-polia{display:none}
+    top: 148px;
+    z-index: 3;
+    display:none;
+}
 @media (max-width:767px) {
 /*    #text-zapovnit-polia{display:block}*/
     #text-zapovnit-polia-div {
@@ -1060,9 +1060,18 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
         min-height:29px;}
 }
 
+#nadislaty-div{
+    background-image: url(../images/photo_button_lg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 65.7%;
+    background-size: 700px;
+    margin-bottom: 0px;
+    width:140%; left:-16%;
+}
 #nadislaty-btn {
 	display: block;
-	margin: 0 auto;
+	margin: 0px auto;
+        margin-top: 40px; margin-bottom:50px; 
 	left:0; right:0;
     padding: 11px 28px 11px 28px;
     font-size: 16px;
@@ -1091,8 +1100,11 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 }
 @media (max-width:767px) {
     #nadislaty-btn {
-	top:-20px;
         font-size: 14px;
+    }
+    #nadislaty-div{
+        background-position: 50% 75%;
+        background-size: 500px;
     }
 }
 
@@ -1106,7 +1118,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     background-image: url(../images/eco-woda-footer_screenshot.jpg);
     background-repeat: no-repeat;
     background-position: 50% 0%;
-    background-size: 100%;
+    background-size: 110%;
     min-height:306px;
     color:black;
     font-size:0.5px;
@@ -1115,8 +1127,8 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 
 @media (max-width: 767px) {
 	#slide-6 {
-            background-size: 150%;
-            min-height:156px;
+            background-size: 190%;
+            min-height:256px;
 	}
 }
 
