@@ -52,13 +52,13 @@ h6 {
 ::-moz-focus-inner {border:0;}
 
 .slide {
-	padding: 0px;
-    padding-top:50px;
+	
+	padding: 100px 0px 0px 0px;
 	text-align: center;       
 }
 @media (max-width: 768px) {
     .slide {
-    padding-top:10px;
+    padding-top:60px;
     }
 }
 /* _____________________________________________________________ ВЕРХ, МЕНЮ */
@@ -123,7 +123,7 @@ h6 {
 @media (max-width: 768px) and (min-width: 500px) {
     #phone-number {
         display: block;
-        top:13px;}
+        top:5px;}
     #zamovyty-btn {
         width:130px;
         font-size: 14px;
@@ -248,6 +248,7 @@ h6 {
     color:#ffffff;
     font-size: 16px;
     margin-bottom: 0px;
+    padding-top: 50px;
 }
 #header-left{
     background: -webkit-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%); background: -moz-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%); background: -o-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%); background: -ms-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%); background: linear-gradient(0deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%);
@@ -275,6 +276,8 @@ h6 {
 @media (max-width: 767px) {
     #header-left{
         min-height: 550px; }
+    #slide-1 {
+        padding-top: 30px;}
 }
 @media (min-width: 1200px) {
     #header-image {
@@ -442,7 +445,6 @@ h6 {
     margin-top: 50px;
     z-index:1;
 	background-color: #ffffff;
-	padding: 100px 0px 0px 0px;
     font-size: 20px;
     color: #222;}
 #slide-2 h4 {
@@ -538,7 +540,6 @@ h6 {
 #slide-3 {
     z-index:1;
 	background-color: #ffffff;
-	padding: 100px 0px 0px 0px;
 	color: #444;
 	font-weight: 400;
 	font-size: 14px;
@@ -562,6 +563,7 @@ h6 {
 }
 
 .nasha-woda-row-2 {
+    padding-top: 0px !important;
     margin-bottom: 100px;
     color: #ffffff;
     text-align: center;
@@ -572,22 +574,22 @@ h6 {
     }
 
 .nasha-woda-row-2 .col-lg-3{
+    margin: 0px !important;
     background-color: #3AADE3;
     height:320px;
     padding:0% 4%;}
     
-.nasha-woda-row-2 img{
-	margin-top: 50px;
-	width:150px; 
-	left:45px;}
 .nasha-woda-row-2 svg{
     height:60px;width:20%;
     fill: #ffffff;
     padding:0px; margin: 50px 0px 10px 0px;}
 #slide-3  h4 {
+    margin-top: 0px;
+    padding-top: 10px;
     font-family: "Open Sans", sans-serif; 
     font-weight: 700;
-    font-size: 18px;}
+    font-size: 18px;
+    }
 
 .nasha-woda-row-2 .col-lg-3:hover{
     background-color: #ffffff;
@@ -609,7 +611,7 @@ h6 {
     background-color: #3AADE3;
     height:320px;
 }
-#plant-svg h4{ margin-top:150px;}
+#plant-svg h4{ padding-top:135px;}
 #plant-svg:hover {
 	background-repeat: no-repeat;
 	background-color: #ffffff;
@@ -662,17 +664,20 @@ h6 {
         height:50px;width:80%;
         margin: 25px 0px 15px 0px;}
     .nasha-woda-row-2 .col-lg-3 h4 {
-        padding: 30px 35% 5px 35%;
+        padding: 10% 35%;
+        top:20px;
         line-height: 20pt;
     }
     #plant-svg {
         height:230px;
         background-position: 14% 18%;}
     #plant-svg h4{
-        padding:35px 45% 10px 80px;}
+        padding:15px 45% 20px 80px;}
     #plant-svg:hover {
             background-position: -7% 19%;}
     #slide-3 h3{
+        background-position: 0px 29px;
+        background-size: 300px 71px;
         margin-top: 60px;
         font-size:40px
     }
@@ -691,7 +696,7 @@ h6 {
     z-index:1;
 	background-color: #ffffff;
     color:#3c3b3b;
-	padding: 100px 0px;
+	padding-bottom: 60px;
     min-height:516px;
 }
 #slide-4 .row {
@@ -889,7 +894,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     z-index:1;
     background-color: #bae9fd;
     color:#aaa;
-    padding: 100px 0px;
+    padding-bottom: 100px;
 }
 #slide-5 .container{
     background-color: #ffffff;
@@ -901,11 +906,13 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 @media (max-width:768px) and (min-width:371px) {
     #slide-5 .container{
         background-position: 50% 110%;
-        background-size: 122%} }
+        background-size: 122%}
+    #slide-5 {padding-bottom: 60px;}}
 @media (max-width:370px) {
     #slide-5 .container{
         background-position: 50% 107.5%;
         background-size: 157%}
+    #slide-5 {padding-bottom: 60px;}
 }
 
 #slide-5 form {margin:40px 30px 0px 30px; 
@@ -991,8 +998,8 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     #form-tshas .help-block{left:5%}
 }
 #form-kilkist{
-    margin-bottom:0px; 
-    padding-bottom:0px}
+    margin-bottom:0px !important; 
+    padding-bottom:0px !important;}
 #inputNumber {
     font-size: 20px !important;
     font-weight: 400 !important;
@@ -1078,7 +1085,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 #nadislaty-btn {
 	display: block;
 	margin: 0px auto;
-        margin-top: 40px; margin-bottom:50px; 
+    margin-top: 40px; margin-bottom:50px; 
 	left:0; right:0;
     padding: 11px 28px 11px 28px;
     font-size: 16px;
@@ -1108,10 +1115,12 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 @media (max-width:767px) {
     #nadislaty-btn {
         font-size: 14px;
+        margin-top: 35px; margin-bottom:40px; 
     }
     #nadislaty-div{
-        background-position: 50% 75%;
-        background-size: 500px;
+        width:115%; left:-4%;
+        background-position: 50% 61%;
+        background-size: 630px;
     }
 }
 
