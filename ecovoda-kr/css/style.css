@@ -329,11 +329,12 @@ h6 {
 #slide-1-row-2 .col-sm-6{  min-height:30px }
 #slide-1-row-2 h5 {
     color:#ffffff;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 18px;
     letter-spacing: 1pt;
     text-align: right;
     right:20px;
+    min-width: 204px;
 }
 #work-time{
     line-height: 20pt;
@@ -371,9 +372,9 @@ h6 {
     #home-row-1 .other-info{    display: none;    }
     #slide-1-row-2 .other-info{    display: none;  }
     #home-row-1 h5 {
+        right:21%;
         margin: 0 auto;
-        text-align: center;
-        top: 109px; right:0px;   }
+        top: 109px;    }
 }
 
 #zamovity_button{
