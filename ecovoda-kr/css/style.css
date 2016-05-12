@@ -703,7 +703,7 @@ h6 {
 #slide-4 .row {
         width: 122%; left: -10%;}
 
-#slide-4-title {
+.slide-4-title {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
 	font-size: 45px;
