@@ -12,6 +12,7 @@
 html {
 	height: 100%;
 	max-width: 100%;
+        overflow-x: hidden;
 }
 
 body {
@@ -1228,8 +1229,6 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 @media (max-width:550px) {
     #nadislaty-div{
         width:139.9%; left:-13.5%;
-        background-position: 50% 61%;
-        background-size: 630px;
     }
 }
 
