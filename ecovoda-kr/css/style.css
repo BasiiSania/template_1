@@ -697,27 +697,57 @@ h6 {
     z-index:1;
 	background-color: #ffffff;
     color:#3c3b3b;
-	padding-bottom: 60px;
-    min-height:516px;
 }
 #slide-4 .row {
-        width: 122%; left: -10%;}
-
+    min-width: 385px;
+}
 .slide-4-title {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-	font-size: 45px;
-    text-align: left;
-    line-height: 120%;
+    text-align:left;
     
     background-image:url(../images/waves-background-1.png);
-    background-repeat: no-repeat;
-    background-position: 0% 70%;
-    background-size: 280px 80px;
-    
-    margin: 0px;
-	left:40px;
-    top:-10px;}
+    background-repeat: no-repeat;}
+
+@media(min-width:1199px) {
+    #slide-4 {
+        padding-bottom: 60px;
+        min-height:516px;
+    }
+    #slide-4 .row {
+            width: 122%; left: -10%;}
+    .slide-4-title {
+        font-size: 45px;
+        line-height: 120%;
+
+        background-position: 0% 70%;
+        background-size: 280px 80px;
+
+        margin: 0px;
+        left:40px;
+        top:-10px;} }
+@media(max-width:1199px) and (min-width:768px) {
+#slide-4 .row {
+    width: 112%; left: -5%;}
+.slide-4-title {
+    background-position: 0px 34px;
+    background-size: 409px 60px;
+    margin: 0px 0px 25px 40px;
+    padding-bottom:10px}
+}
+@media(max-width:767px) {
+#slide-4 .row {
+    width: 100%; left:0%; }
+.slide-4-title {
+    font-size: 40px;
+    background-position: 0px 28px;
+    background-size: 100% 60px;
+    margin: 0px 10% 25px 10%;
+    padding: 0px;}  }
+@media(max-width:377px) {
+    #slide-4 .row {left:-10%; }
+}
+
 #slide-4 h6 {
     font-size:28px;
     padding:0px;
@@ -822,11 +852,68 @@ left:2.1%;
 z-index:2;}
 #slide-4 .tab-pane p{
     padding:5px;}
+
+@media(max-width:767px){
+    #slide-4 ul {
+        text-align: center;
+        font-size:17px; 
+        text-transform: uppercase;
+        font-weight:700;
+        height: auto;
+        border-width: 0px;}
+    #slide-4 li {
+        display:block;
+        width:50%;
+        height:63px;}
+    #slide-4 li a{
+        padding: 21px 0px;
+        height:63px;
+        }
+    #slide-4 .active a{z-index:3;
+        color: #000;
+        border: 0px;
+        width:100%; left:0%; padding-left:0%;}    
+    #slide-4 .nav .active{
+        box-shadow: none;
+        z-index:3;}
+    #slide-4 .separator{display:none}
+    #slide-4 .tab-pane{
+        padding: 25px 0px;}
+    #slide-4-info{
+        background: #fff;    
+        width:93%;
+        margin:0 auto;
+        z-index:2;
+    
+        left:0;
+        height:auto;
+        min-height:420px}
+    #slide-4 .tab-pane p{
+        padding:0px;}
+}
+
+
+
 #dostavka-r .col-xs-3{
     font-size:20px; 
     font-weight:400; 
     color:#333;
     line-height: 30pt;}
+#dostavka-r .col-xs-6 {
+    z-index:5; background-color: #fff; font-size:23px; font-weight:400; color:#333; line-height: 28pt;
+}
+@media(max-width:767px){
+    #dostavka-r {
+        padding-right:0px; margin-right: 0px}
+    #dostavka-r .col-xs-3{
+        font-size:17px; 
+        font-weight:400; 
+        color:#333;
+        line-height: 27pt;}
+    #dostavka-r .col-xs-6 {
+        z-index:5; background-color: #fff; font-size:20px; font-weight:400; color:#333; line-height: 25pt;
+    }
+}
 #number-tsina{
     border-radius: 0px;
     border-color:#ccc;
@@ -837,6 +924,21 @@ z-index:2;}
     color:#555;
     height:43px;
     text-align: center}
+
+#opys-tovariv-r{}
+#opys-tovariv-r img{
+    width:140px; 
+    right: -35%;}
+#opys-tovariv-r .col-xs-8{
+    text-align: left; 
+    padding-left: 10%; 
+    line-height: 14pt}
+@media(max-width:767px) {
+    #opys-tovariv-r{}
+    #opys-tovariv-r img {
+        width:140px; 
+        right: 0%;}
+}
 /*__
 ______________________________________________________ЗАМОВИТИ*/
 
