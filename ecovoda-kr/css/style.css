@@ -120,7 +120,7 @@ h6 {
         display: none;}
 }
 
-@media (max-width: 768px) and (min-width: 500px) {
+@media (max-width: 768px) and (min-width: 550px) {
     #phone-number {
         display: block;
         top:5px;}
@@ -224,8 +224,9 @@ h6 {
 	.active-menu {
 		display: none !important;	}
 	.navbar-toggle {
-        width: 32%;
-        right:31% !important;
+        min-width: 99px;
+        width:42%;
+        right: 25% !important;
         font-size: 18px;
         color: #61C0E2;
         font-weight: 600;
