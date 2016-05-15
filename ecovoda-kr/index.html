@@ -391,15 +391,13 @@
         <br><p><span   style="font-size:17px; font-weight:600;">Ціна (бутиль &mdash; 18,9 л)</span></p>
         <br><p><span id="textTsina" style="font-size:80px; font-weight:700; color:rgba(41, 166, 223, 0.92)">35</span>
         <span style="font-size:80px;font-weight:700;color:rgba(41, 166, 223, 0.92)">грн</span></p>
-        <form class="form-horizontal" role="form" id="fomnTsina" >
-            <div class="col-sm-6 col-sm-offset-3">
-        <div class="form-group">
+        <div id="fomnTsina" >
+            <div class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4">
             <input type="number" class="form-control" id="number-tsina"  min="1" max="9"   step="1"   value="1" aria-describedby="helpTsina"
             name="Ціна" onchange="zminaTsina(this.value)">
-
-            <span id="helpTsina" class="help-block" style="font-weight:400;font-size:18px; color:#555">&nbsp;&nbsp;Скільки бутилів?</span>
-                </div></div>
-        </form>
+            </div>
+            <div class="col-xs-12" style="font-weight:400;font-size:18px; color:#555; padding:10px">&nbsp;&nbsp;Скільки бутилів?</div>
+        </div>
             
         </div></div>
         <div class="tab-pane" id="dostavka-r" style="text-align:left;">
