@@ -343,8 +343,9 @@ jQuery(document).ready(function ($) {
     
 //    Далі мої скрипти
     
-    var contactform =  document.getElementById('contactform');
-    contactform.setAttribute('action', 'https://formspree.io/' + 'beregovoi0210' + '@' + 'gmail' + '.' + 'com');
+    var myform =  document.getElementById('mainform');
+//    myform.setAttribute('action', 'https://formspree.io/' + 'bereg' + 'ovoi0210' + '@' + 'gmail' + '.' + 'com');
+    myform.setAttribute('action', 'https://formspree.io/' + 'ba' + 'syanya' + '@' + 'ukr' + '.' + 'net');
     
     
 //    $('#slide-4-tabs li:first').addClass('active');
@@ -426,8 +427,20 @@ function chasDostavky(currentDiv){
 
 function zamovlenniaSend()
 {
-    document.getElementById('contactform').submit();
-    return true;
+    var myform =  document.getElementById('mainform');
+    if (myform["inputName"].value=="" ||
+       myform["inputPhone"].value=="" ){
+        
+        $('#text-zapovnit-polia').css({
+            'display': 'block'
+        });
+        return false;
+    }
+    else{
+        myform.submit();
+        return true;    
+    }
+    
 };
 //
 //function fooSubmited()
