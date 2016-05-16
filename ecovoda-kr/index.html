@@ -516,7 +516,8 @@
 	<input type="hidden" name="_subject" value="Замовлення води на сайті Еко" />
 	<input type="hidden" name="_next" value="thanks.html" />
   </div>
-
+<div class="row">    
+<div class="col-sm-6">
   <div class="form-group">
     <div >
       <input type="text" class="form-control" id="inputName"
@@ -525,7 +526,8 @@
             Як зазначено в контракті</span>
     </div>
   </div>
-
+</div>
+<div class="col-sm-6">
   <div class="form-group ">
     <div >
       <input type="text" class="form-control" id="inputAddress" 
@@ -534,7 +536,8 @@
         Внести в картку клієнта нову адресу</span>-->
     </div>
   </div>
-
+</div>
+<div class="col-sm-6">
   <div class="form-group ">
 	<div  id="mydatepicker">
        <div class="input-group date">
@@ -552,7 +555,8 @@
             Завтра, післязавтра, найближча субота</span>-->
 
   </div>
-
+</div>
+<div class="col-sm-6">
   <div class="form-group ">
       <div  id="form-tshas">
         <div>
@@ -612,15 +616,17 @@
     </div>
 </div> 
 -->
-
-<div class="form-group ">
+</div>
+<div class="col-sm-6">
+   <div class="form-group ">
       <input type="text" class="form-control" id="inputPhone" 
 	placeholder="Телефон" aria-describedby="help3" name="Тел.номер" required>
 	<span id="help3" class="help-block" style="top:29px">
         Ми зв'яжемось з вами у випадку форсмажору</span>
-    
+  </div>    
 </div>
-<div class="form-group">
+<div class="col-sm-6">
+  <div class="form-group">
     
       <input type="text" class="form-control" id="inputMail" 
 	placeholder="E-mail" aria-describedby="help4" name="_replyto">
@@ -628,9 +634,10 @@
         Ми вишлемо вам підтвердження замовлення</span>
     
  </div>
-
+</div>
+<div class="col-sm-12">
 <div id="form-kilkist" class="form-group" style="" >
-    <div class="col-sm-3" style="margin-top:10px">
+    <div class="col-sm-3" style="margin-top:10px;">
         <input type="number" class="form-control" id="inputNumber"  min="1" max="9"   step="1"   value="1" aria-describedby="help5"
 name="Кількість" onchange="zminaZamovVartist(this.value)">
   
@@ -648,14 +655,18 @@ name="Кількість" onchange="zminaZamovVartist(this.value)">
         Будь-ласка, заповніть всі поля!
     </div>
   </div>
-    
-
+</div>
+<div class="col-sm-12">
   <div class="form-group" id="nadislaty-div">
     <div class="col-sm-12">
-      <button type="submit" class="btn btn-default" onclick="return zamovlenniaSend();" id="nadislaty-btn">Надіслати замовлення</button>
+      <button type="submit" class="btn btn-default" 
+      onclick="return zamovlenniaSend();" id="nadislaty-btn">
+          Надіслати замовлення</button>
     </div>
   </div>
+</div>
     
+</div> <!-- кінець row-->    
 </form>
 
 <!--<script>
