@@ -123,7 +123,7 @@ h6 {
 @media (max-width: 768px) and (min-width: 550px) {
     #phone-number {
         display: block;
-        top:5px;}
+        top:3px;}
     #zamovyty-btn {
         width:130px;
         font-size: 14px;
@@ -222,7 +222,8 @@ h6 {
         width: 110%   !important; 
         left:-9px  !important;
         padding-bottom:5px;
-        background: #fff}
+        background: #fff;
+    }
 	.active-menu {
 		display: none !important;	}
 	.navbar-toggle {
@@ -230,7 +231,7 @@ h6 {
         width:42%;
         right: 25% !important;
         font-size: 18px;
-        color: #61C0E2;
+        color: #61C0E2; color: #fff;
         font-weight: 600;
         letter-spacing: 2px;
         padding: 5px 0px 1px 0px}
@@ -238,7 +239,7 @@ h6 {
         font-size:14px;
         padding:3px 2px 3px 4px; 
         border-radius:18px; 
-        border: 2px solid #61C0E2;
+        border: 2px solid #fff;
         top:-1px}
 	.navbar {
 		background-color: #A2E3FF !important;
@@ -251,7 +252,6 @@ h6 {
         font-size: 14px;}
 	.navbar.inv .icon{
         display: none;     	}
-	.navbar-brand {margin: 0;text-align: left;}
 }
 
 /* __________________________________ГОЛОВНА */
