@@ -221,7 +221,7 @@ h6 {
 	.navbar-responsive-collapse  {
         width: 110%   !important; 
         left:-9px  !important;
-        padding-bottom:10px;
+        padding-bottom:5px;
         background: #fff}
 	.active-menu {
 		display: none !important;	}
@@ -244,9 +244,11 @@ h6 {
 		background-color: #A2E3FF !important;
 		padding: 0px;
         height:50px;	}	
+	.navbar li {
+        padding-top: 15px !important}
 	.navbar .nav a {
         color: #474747;
-        font-size: 14px;	}
+        font-size: 14px;}
 	.navbar.inv .icon{
         display: none;     	}
 	.navbar-brand {margin: 0;text-align: left;}
