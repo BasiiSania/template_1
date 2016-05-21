@@ -392,10 +392,11 @@ function zminaTsina(val) {
 $(window).scroll(function() {
 
     //After scrolling 100px from the top...
-    if ( $(window).scrollTop() >= 650 ) {
+    if ( $(window).scrollTop() >= 630 ) {
         $('#zamovyty-btn').css({
             'color': '#ffffff',
-            'border': '3px solid #ffffff'
+            'border': '3px solid #ffffff',
+            'top': '-23px'
         });
         $('#phone-number').css({
             'color': '#ffffff',
@@ -418,7 +419,8 @@ function chasDostavky(currentDiv){
         'color': '#333',
         'background-color':'#cef'
     });
-    $(currentDiv).find('input').attr('checked', true);
+    
+    $(currentDiv).parent().find('input').attr('checked', true);
 
 //    alert("FIN!");
 

@@ -140,13 +140,12 @@ h6 {
     font-size:15px;
 	text-align: center;
 }
-
-/*
-.nav.inv {
-    background-color:#99ddee;
+#nav-menu{}
+.navbar-responsive-collapse {
+    overflow: visible; 
+    width:80%; left:10%;
+	margin: 0 auto;
 }
-*/
-
 .navbar.inv {
     background-color:#A2E3FF;
 }
@@ -167,9 +166,6 @@ h6 {
 }
 .navbar.inv a {
 	color: #fff;
-}
-.navbar-responsive-collapse {
-	margin: 0 auto;
 }
 .navbar .nav li {
     display: inline-block;

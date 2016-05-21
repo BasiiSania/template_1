@@ -62,7 +62,7 @@
 -->
 
 			
-			<div class="navbar-collapse collapse navbar-responsive-collapse"  data-toggle="collapse" data-target=".navbar-collapse" style="width:80%; left:10%">
+			<div class="navbar-collapse collapse navbar-responsive-collapse"  data-toggle="collapse" data-target=".navbar-collapse" style="">
 
 				<ul class="nav row" id="nav-menu">
 					<li data-slide="1" ><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="icon icon-home"></span> <span class="text"> Головна </span></a></li>
@@ -109,8 +109,8 @@
                         <div id="slide-1-row-2" class="row clearfix">                        
                             <div class="col-sm-6">
                                 <h5><img src="images/phone_empty.svg" style="width:30px;top:10px;right:20px">
-                                     099&nbsp;543&nbsp;08&nbsp;04
-                                    <br>098&nbsp;249&nbsp;33&nbsp;75&nbsp;</h5>
+                                     099&nbsp;543&nbsp;08&nbsp;04<br>
+                                    098&nbsp;249&nbsp;33&nbsp;75</h5>
                                 <div id="work-time">
                                     <span  class="other-info">Пн. - Пт. 9:00 &mdash; 18:00</span><br>
                                     <span class="other-info">Сб. 9:00 &mdash; 14:00</span>
@@ -472,11 +472,13 @@
 <div class="col-md-4 visible-lg-block">
     <div class="slide-4-title">Ціни <br>та доставка</div>
     <h6><img src="images/phone_empty_black.svg" style="width:40px; top:15px">
-        &nbsp;&nbsp;099 543 08 04<br>098 249 33 75</h6>
+        &nbsp;&nbsp;099&nbsp;543&nbsp;08&nbsp;04
+        <br>098&nbsp;249&nbsp;33&nbsp;75</h6>
     <div id="work-time">
-        <span  class="other-info">Пн. - Пт.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 &mdash; 18:00</span>
-        <br>
-        <span class="other-info">Сб.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 &mdash; 14:00&nbsp;</span>
+        <span  class="other-info">
+            Пн. - Пт.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 &mdash; 18:00<br>
+            Сб.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 &mdash; 14:00
+        </span>
     </div>
 <!--
     <div><a id="zamovyty-btn3" href="#slide-5">Замовити онлайн</a>
@@ -514,7 +516,7 @@
   <div class="form-group" style="display:none">
 	<input type="text" name="_gotcha" style="display:none" />
 	<input type="hidden" name="_subject" value="Замовлення води на сайті Еко" />
-	<input type="hidden" name="_next" value="thanks.html" />
+	<input type="hidden" name="_next" value="ecovoda-kr/thanks.html" />
   </div>
 <div class="row">    
 <div class="col-sm-6">
@@ -547,30 +549,27 @@
                 <img src="images/calendar.svg"  style="width:18px; top:-3px; margin-left:2px">
                 </span>
         </div>
-<!--            <input type="text" class="form-control" placeholder="Дата доставки" id="inputDate" data-provide="datepicker" data-date-format="DD - dd MM yyyy" data-date-language="uk" data-date-orientation="bottom left" data-date-daysOfWeekDisabled="0" data-date-showOnFocus=false>-->
-<!--            <input type="text" class="form-control" placeholder="Дата доставки" id="inputDate">-->
-        
       </div><!--
 		<span id="help1" class="help-block">
-            Завтра, післязавтра, найближча субота</span>-->
+            Завтра  післязавтра  найближча&nbsp;субота</span>-->
 
   </div>
 </div>
 <div class="col-sm-6">
-  <div class="form-group ">
+  <div class="form-group">
       <div  id="form-tshas">
         <div>
-            <input  type="radio" name="Час" id="radio1" value="Ранок">
+            <input  class="form-control" type="radio" name="Час" id="radio1" value="Ранок">
             <label  class="radio-inline" for="radio1" aria-describedby="help2" onclick="chasDostavky(this); return false;">
             9<span class="time-mins">00</span>&mdash;12<span class="time-mins">00</span></label>
         </div>
         <div>
-            <input  type="radio" name="Час" id="radio2" value="День">
+            <input  class="form-control" type="radio" name="Час" id="radio2" value="День">
             <label  class="radio-inline" for="radio2" aria-describedby="help2" onclick="chasDostavky(this); return false;">
             13<span class="time-mins">00</span>&mdash;18<span class="time-mins">00</span></label>
         </div>
         <div>	
-            <input   type="radio" name="Час" id="radio3" value="Вечір">
+            <input   class="form-control" type="radio" name="Час" id="radio3" value="Вечір">
             <label  class="radio-inline" for="radio3" aria-describedby="help2" onclick="chasDostavky(this); return false;">
             19<span class="time-mins">00</span>&mdash;21<span class="time-mins">00</span></label>
         </div>
@@ -628,7 +627,7 @@
 <div class="col-sm-6">
   <div class="form-group">
     
-      <input type="text" class="form-control" id="inputMail" 
+      <input type="email" class="form-control" id="inputMail" 
 	placeholder="E-mail" aria-describedby="help4" name="_replyto">
 	<span id="help4" class="help-block" style="top:29px">
         Ми вишлемо вам підтвердження замовлення</span>
