@@ -1254,22 +1254,63 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     z-index:1;
     margin:0px;
     background-color: #222;
-    padding-top: 0px;
-    background-image: url(../images/eco-woda-footer_screenshot.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-    background-size: 110%;
-    min-height:306px;
-    color:black;
-    font-size:0.5px;
+    padding: 0px 0px 40px 0px;
 }
 
+#footer-emblema-div{
+    padding:0px;
+    margin: 40px 0px 20px 0px;
+    color: #1071B7;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 18px;
+    font-weight: 700; letter-spacing: 0.5pt;}
+#footer-emblema-div img{
+    padding:10px;
+    margin: 0px;}
+#footer-emblema-misto{overflow: hidden;
+    height:30px; width:274px; 
+    margin: 0 auto;}
+#footer-emblema-misto div{
+    float:left; 
+    margin: 0px;
+    padding: 0px 20px;}
+#footer-emblema-misto .line{
+    margin:13px 0px;
+    background-color: #1071B7;
+    width:30px; height:2px;}
 
+#footer-title-text{
+    padding: 3% 0%;
+    width: 590px; margin: 0 auto;
+    background-image: url(../images/footer_dots.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 100%;
+    color: #555; font-size:14px;
+}
 @media (max-width: 767px) {
-	#slide-6 {
-            background-size: 190%;
-            min-height:256px;
-	}
+    #slide-6 {padding: 0px 0px 20px 0px;}
+    #footer-emblema-div{
+        padding:0px;
+        margin: 29px 0px 0px 0px;
+        font-size: 14px;
+        font-weight: 700; }
+    #footer-emblema-div img{
+        padding: 10px 0px;
+        margin: 3px;    }
+    #footer-emblema-misto{
+        width:173px;}
+    #footer-emblema-misto div{
+	padding: 0px 10px;}
+    #footer-emblema-misto .line{
+        margin:11px 0px;
+        width:20px; height:1px;}
+
+    #footer-title-text{
+       background-size: 150%;
+        padding: 3% 0%;
+	width: 260px;
+	font-size:13px;}
 }
 
 #slide-7 {
