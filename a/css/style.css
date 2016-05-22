@@ -421,7 +421,7 @@ h6 {
 /*_____________________________________________________СТРІЛКА ПРОКРУТКИ ВНИЗ*/
 #arrows {
     z-index: 1;
-	top: 555px;	
+	top: 655px;	
 	position: fixed;
     left:0; right:0; margin: 0 auto;
 	width: 80px; height: 80px;
