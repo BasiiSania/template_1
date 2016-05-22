@@ -344,8 +344,8 @@ jQuery(document).ready(function ($) {
 //    Далі мої скрипти
     
     var myform =  document.getElementById('mainform');
-//    myform.setAttribute('action', 'https://formspree.io/' + 'bereg' + 'ovoi0210' + '@' + 'gmail' + '.' + 'com');
-    myform.setAttribute('action', 'https://formspree.io/' + 'ba' + 'syanya' + '@' + 'ukr' + '.' + 'net');
+    myform.setAttribute('action', 'https://formspree.io/' + 'bereg' + 'ovoi0210' + '@' + 'gmail' + '.' + 'com');
+//    myform.setAttribute('action', 'https://formspree.io/' + 'ba' + 'syanya' + '@' + 'ukr' + '.' + 'net');
     
     
 //    $('#slide-4-tabs li:first').addClass('active');
