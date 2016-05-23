@@ -366,6 +366,10 @@ jQuery(document).ready(function ($) {
             todayHighlight: true,
             showOnFocus: false
         });
+    $("#menu-link-5").click(function(){
+      // перехід до гугл-форми по кліку на пункт меню -ЗВ'ЯЗОК-
+      window.location.href = "https://docs.google.com/forms/d/1jy1g8fZrPQOX_BGiJrkfKKTDACQ-HxTKgR-6mFRGvNE/viewform";
+    });    
 });
 
 $('.nasha-woda-row-2 .col-lg-3').on('mouseover', function() {
@@ -425,6 +429,11 @@ function chasDostavky(currentDiv){
 //    alert("FIN!");
 
     return true;
+}
+
+function temptemptmetpme()
+{
+    
 }
 
 function zamovlenniaSend()

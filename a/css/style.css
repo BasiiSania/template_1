@@ -143,7 +143,7 @@ h6 {
 #nav-menu{}
 .navbar-responsive-collapse {
     overflow: visible; 
-    width:80%; left:10%;
+    width:75%; left:10%;
 	margin: 0 auto;
 }
 .navbar.inv {
