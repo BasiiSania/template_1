@@ -91,15 +91,13 @@ h6 {
     margin: 0px;
     width: 180px;
     padding: 11px 28px 11px 28px;
-    top: -22px;
+    top: -25px;
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
     font-weight:700;
     font-family: "Roboto Slab";
-        -webkit-transition: .2s all;
-    -o-transition: .2s all;
-    transition: .2s all;
+    -webkit-transition: .2s all;-o-transition: .2s all;transition: .2s all;
     border-radius: 30px;
     color: #39AEE4;
     border: 2px solid #3a91e2;
@@ -115,7 +113,7 @@ h6 {
      background: #3aade2;
    text-decoration: none; 
 }
-@media (max-width: 1100px) {
+@media (max-width: 1099px) {
     #phone-number {
         display: none;}
 }
@@ -143,51 +141,38 @@ h6 {
 #nav-menu{}
 .navbar-responsive-collapse {
     overflow: visible; 
-    width:75%; left:10%;
-	margin: 0 auto;
+    width:62%; left:19%;
+    margin: 0 auto;
 }
 .navbar.inv {
-    background-color:#A2E3FF;
-}
+    background-color:#A2E3FF;}
 .navbar .nav a {
     color:#333;
     font-weight:600;
     padding: 0px;
-	transition: all .5 linear;
-    text-transform: uppercase;
-}
+    transition: all .5 linear;
+    text-transform: uppercase;}
 .nav .icon  {
     color: rgba( 180, 220, 255, 0 );
-    position:absolute;
-}
+    position:absolute;}
 .navbar.inv .icon{
     color: rgba( 180, 220, 255, 0 );
-    position:absolute;
-}
+    position:absolute;}
 .navbar.inv a {
-	color: #fff;
-}
+	color: #fff;}
 .navbar .nav li {
     display: inline-block;
     padding-top:30px;
-    margin-left:1%;
-    margin-right:1%;
-	text-align: center;
-	white-space: nowrap;
-    
-}
-
+    margin:0 1.3%;
+    text-align: center; white-space: nowrap;}
 .navbar .nav > li > a:hover {
 	background-color: inherit;
 	outline: none;
-    color: #3aade2;
-}
+    color: #3aade2;}
 .navbar .nav > li > a:focus {
 	background-color: inherit;
 	outline: none;
 }
-
-
 .active-menu {
     background: url(../images/wave.svg);
     background-position: -4px 0px;
@@ -201,22 +186,23 @@ h6 {
 	top: 0;
 	transition: all .5 linear;
 	width: 1px;
-	z-index: 9;
-}
-
+	z-index: 9;}
 .special-active-menu {
 	z-index: 8;
     background: none;
 }
-
+@media (min-width: 767px) and (max-width:1099px) {
+    .navbar-responsive-collapse 
+        {width:90%; left:5%;}    }
 @media (max-width: 767px) {	
 	.nav li {
         background-color: white;
         width:98%;
         padding: 10px 0px 10px 0px;	}
 	.navbar-responsive-collapse  {
-        width: 110%   !important; 
+        width: 112%   !important; 
         left:-9px  !important;
+        overflow:hidden;
         padding-bottom:5px;
         background: #fff;
     }
@@ -368,7 +354,7 @@ h6 {
     #emblema-misto{
         width:173px;}
     #emblema-misto div{
-    padding: 0px 10px;}
+        padding: 0px 10px;}
     #emblema-misto .line{
         margin:11px 0px;
         width:20px; height:1px;}
@@ -427,7 +413,8 @@ h6 {
 	width: 80px; height: 80px;
     border-radius: 40px;
     background-color: #6293CB;
-    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);}
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transition: .8s all; -o-transition: .8s all; transition: .8s all;}
 #arrows div {
 	background-image: url('../images/go-down.svg');
     background-repeat: no-repeat;
@@ -455,7 +442,7 @@ h6 {
 /* _______________________________________________ НАША ВОДA */
 #slide-2 {
     margin-top: 50px;
-    z-index:1;
+    z-index:0;
 	background-color: #ffffff;
     font-size: 20px;
     color: #222;}
@@ -580,8 +567,8 @@ h6 {
     color: #ffffff;
     text-align: center;
     font-size: 14px;
-    width: 110%;
-    left: -3.4%;
+    width: 109%;
+    left: -3.5%;
     height: 333px;
     }
 
@@ -642,7 +629,7 @@ h6 {
 }
 @media (min-width: 1400px) {
     .nasha-woda-row-2 {
-        width: 130%;left: -13.5%;} }
+        width: 126.3%;left: -12.1%;} }
 @media (min-width: 1500px) {
     .nasha-woda-row-2 {
         width: 138%;left: -17.7%;}

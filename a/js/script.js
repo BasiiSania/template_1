@@ -395,7 +395,19 @@ function zminaTsina(val) {
 
 $(window).scroll(function() {
 
-    //After scrolling 100px from the top...
+    //After scrolling 50px from the top...
+    if ( $(window).scrollTop() >= 50 ) {
+        $('#arrows').css({
+            'opacity': '0'
+        });
+
+    //Otherwise remove inline styles and thereby revert to original stying
+    } else {
+        $('#arrows').attr('style', '');
+
+    }
+    
+    //After scrolling 630px from the top...
     if ( $(window).scrollTop() >= 630 ) {
         $('#zamovyty-btn').css({
             'color': '#ffffff',
@@ -429,11 +441,6 @@ function chasDostavky(currentDiv){
 //    alert("FIN!");
 
     return true;
-}
-
-function temptemptmetpme()
-{
-    
 }
 
 function zamovlenniaSend()
