@@ -472,13 +472,13 @@ h6 {
     font-size: 48px;
     background:url(../images/waves-background-1.png) no-repeat;
     background-position: 0% 70%;
-    background-size: 100%}
+    }
 @media (max-width:1199px) {
     .nasha-woda-row-1 {
         padding: 10px 11% 0px 11%;}
     #slide-2 h3{
-        background-position: 0px 21px;
-        background-size: 279px 62px ;}
+        width: max-content;
+        background-position: 0px 30.5px;}
     .nasha-woda-row-1 .row{
         padding: 27px 0px 0px 0px;}
     .nasha-woda-row-1 img{top:-3px}
@@ -492,8 +492,7 @@ h6 {
     #slide-2 h3{
         width:100%;
         padding-bottom: 20px;
-        background-position: 0px 30px;
-        background-size: 379px 62px ;}
+        background-position: 0px 29px;}
 }
 .img-full {min-width: 100%;margin:0px;}
 .box {
@@ -551,8 +550,7 @@ h6 {
     text-align: left;
     max-width:300px;
     background:url(../images/waves-background-1.png) no-repeat;
-    background-position: 0% 60%;
-    background-size: 250px 70px;}
+    background-position: 0% 70%;}
 #slide-3 p{
     padding: 10px;
     text-align: left;
@@ -639,8 +637,7 @@ h6 {
         height: auto; }
     #slide-3 h3 {
         max-width: none;
-        background-position: 0px 26px;
-        background-size: 390px 71px;
+        background-position: 0px 30px;
         margin: 4% 9%;
         padding-bottom: 10px}
     #slide-3 p {
@@ -675,8 +672,7 @@ h6 {
     #plant-svg:hover {
             background-position: -7% 19%;}
     #slide-3 h3{
-        background-position: 0px 31px;
-        background-size: 300px 71px;
+        background-position: 0px 33px;
         margin-top: 60px;
         font-size:40px
     }
@@ -703,8 +699,10 @@ h6 {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     text-align:left;
+    width: max-content;
     background-image:url(../images/waves-background-1.png);
     background-repeat: no-repeat;
+    padding-right: 2px;
     }
 
 @media(min-width:1199px) {
@@ -713,17 +711,12 @@ h6 {
         min-height:516px;
     }
     #slide-4 .row {
-            width: 120%; left: -7%;}
+        width: 110%; left:-73px;}
     .slide-4-title {
         font-size: 45px;
         line-height: 120%;
-
         background-position: 0% 70%;
-        background-size: 280px 80px;
-
-        margin: 0px;
-        left:40px;
-        top:-10px;} }
+        margin: 0px auto;} }
 @media(max-width:1199px) and (min-width:768px) {
     #slide-4 .row {
         width:115%; left:-55px;
@@ -732,10 +725,10 @@ h6 {
         margin-bottom:50px}
     .slide-4-title {
         font-size: 45px;
-        background-position: 0px 34px;
-        background-size: 409px 60px;
+        background-position: 0px 33.5px;
+        background-size: 410px 64px;
         margin: 0px 0px 25px 90px;
-        padding-bottom:10px}
+        padding-bottom:2px}
 }
 @media(max-width:767px) {
     #slide-4 .row {
@@ -747,7 +740,6 @@ h6 {
     .slide-4-title {
         font-size: 40px;
         background-position: 0px 28px;
-        background-size: 100% 60px;
         margin: 0px 10% 25px 10%;
         padding: 0px;}  }
 @media(max-width:377px) {
@@ -758,36 +750,27 @@ h6 {
 #slide-4 h6 {
     font-size:28px;
     padding:0px;
-    width:240px;
+    width: max-content;
     margin: 20px auto;
-    left:-12%;
     text-align: right;
 /*    width: 88%;*/
 }
-#work-time{
+#slide-4-work-time{
     text-align: right;
     line-height: 160%;
     font-size: 20px;
-    max-width:310px;}
+    width: max-content;
+    margin: 0px auto;}
 #zamovyty-btn3 {
-/*    z-index: 10000;*/
-	display: block;
-	margin: 15px auto;
-    margin-top: 40px;
-	left: -11%; 
-    width:240px;
-  padding: 11px 28px 11px 28px;
-  font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight:700;
-    font-family: "Roboto Slab";
-    letter-spacing: 1px;
-    color: #ffffff;
-    border: 0px;
-    border-radius: 30px;
-    box-shadow: 0px 2px 7px 0.00px rgba(6, 71, 101, 0.26);
-   
+    display: block;
+    margin: 15px auto;
+    margin-top: 40px;	
+    width:240px; padding: 11px 28px 11px 28px; font-size: 16px;
+    text-align: center;text-transform: uppercase;
+    font-weight:700;font-family: "Roboto Slab";
+    letter-spacing: 1px;color: #ffffff;
+    border: 0px;border-radius: 30px;
+    box-shadow: 0px 2px 7px 0.00px rgba(6, 71, 101, 0.26);   
   -webkit-transition: .2s all;
   -o-transition: .2s all;
   transition: .2s all;
@@ -795,14 +778,12 @@ h6 {
 }
 #zamovyty-btn3:hover,
 #zamovyty-btn3:focus{
-    box-shadow: 0px 2px 43px 0.00px 
-        rgba(6, 71, 101, 0.43);
+    box-shadow: 0px 2px 43px 0.00px rgba(6, 71, 101, 0.43);
     text-decoration: none; }
 #zamovyty-btn3:active{
    text-decoration: none; }
 #slide-4-tsilodobovo{
-    font-size:20px;
-    left:-39px;}
+    font-size:20px;}
 
 #slide-4 ul {
 	text-align: center;
@@ -1044,7 +1025,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     font-size:0.1px;
     height: 21px;
     background:url(../images/waves-background-1.png);
-    background-position: 0px 0px;
+    
 }
 #slide-5 .form-group{
     padding: 18px 20px 29px 20px;
