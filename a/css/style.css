@@ -241,27 +241,23 @@ h6 {
     color:#ffffff;
     font-size: 16px;
     margin-bottom: 0px;
-    padding-top: 50px;
-}
+    padding-top: 50px;}
+
 #header-left{
     background: -webkit-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%); background: -moz-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%); background: -o-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%); background: -ms-linear-gradient(90deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%); background: linear-gradient(0deg, #6293CB 0%, #5FB9DE 68%, #5FC3E3 100%);
-    min-height: 650px;
-}
-
+    min-height: 700px;}
 #header-image{
     background: url(../images/photo_top_x2.jpg) no-repeat center top;
     background-size: cover;
-    min-height: 550px;
-}
-
+    min-height: 550px;}
 #maxwidth{
-        max-width: 400px;
-        min-width: 214px;
-        margin: 0 auto;
+    max-width: 400px;
+    min-width: 214px;
+    margin: 0 auto;
     }
 @media (max-width: 1199px) {
     #header-image {
-		display: none;}
+	display: none;}
     #maxwidth{
         max-width: none;
         width:65%;}
@@ -368,7 +364,7 @@ h6 {
     #home-row-1 h5 {
         width: 230px;
         margin: 0 auto;
-        top: 109px;    }
+        top: 79px;    }
 }
 
 #zamovity_button{
@@ -396,7 +392,7 @@ h6 {
      color: #fff;
    text-decoration: none; }
 @media (max-width: 767px) {
-    #zamovity_button{top: -50px;}
+    #zamovity_button{top: -90px;}
 }
 
 #slide-1-under-btn{ position:absolute;
@@ -407,8 +403,7 @@ h6 {
 /*_____________________________________________________СТРІЛКА ПРОКРУТКИ ВНИЗ*/
 #arrows {
     z-index: 1;
-	top: 655px;	
-	position: fixed;
+    position: fixed; bottom: 15px;	
     left:0; right:0; margin: 0 auto;
 	width: 80px; height: 80px;
     border-radius: 40px;
@@ -429,15 +424,20 @@ h6 {
     font-size:0.01px; width:60px; height:60px;
     color: rgba(200, 200, 200, 0);}
 #arrow-down.disabled {	background-position: 0 -30px;
-} .navigation-slide { 	cursor: pointer;} #arrows div.disabled {	cursor: default; }
+} .navigation-slide { 	cursor: pointer;} #arrows div.disabled { cursor: default; }
 
-@media screen and (min-height:900px) {
-    #arrows {
-        top: 719px;}
+@media screen and (min-height:820px) {
+    #arrows {bottom: initial; top:730px}
 }
-@media screen and (max-height:590px)  and (max-width:767px) {
+
+@media screen and (min-height:620px) and (max-width:767px) {
     #arrows {
-	top: 485px;	 background-color: rgba(0, 0, 0, 0.1);}
+        bottom: initial; top:530px;}
+}
+@media screen and (max-height:619px) {
+    #arrows {
+        bottom: -25px;
+        background-color: rgba(0, 0, 0, 0.1);}
 }
 /* _______________________________________________ НАША ВОДA */
 #slide-2 {
