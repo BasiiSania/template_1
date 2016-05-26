@@ -367,9 +367,19 @@ jQuery(document).ready(function ($) {
             showOnFocus: false
         });
     $("#menu-link-5").click(function(){
-      // перехід до гугл-форми по кліку на пункт меню -ЗВ'ЯЗОК-
-      window.location.href = "https://docs.google.com/forms/d/1jy1g8fZrPQOX_BGiJrkfKKTDACQ-HxTKgR-6mFRGvNE/viewform";
-    });    
+      //  гугл-формa по кліку на пункт меню -ЗВ'ЯЗОК-
+        $('#eco-google-form').attr('style', '');
+        $('#eco-google-form').css({
+            'position': 'fixed'
+        });
+    });  
+    $('#eco-google-form').css({
+        'display': 'none'
+    });
+    $("#eco-google-form-close").click(function(){
+        $('#eco-google-form').css({
+            'display': 'none'});
+    });
 });
 
 $('.nasha-woda-row-2 .col-lg-3').on('mouseover', function() {
