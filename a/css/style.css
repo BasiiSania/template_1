@@ -15,17 +15,16 @@ html {
 }
 
 body {
-	height: 100%;
-	max-width: 100%;
-    
-	background-color: #fff;
+    height: 100%;
+    max-width: 100%;
+    background-color: #fff;
     font-family: "Open Sans", sans-serif;
     color:#3c3c3c;    
     font-weight: 400;
-    font-size:14px;
-	
-	overflow-x: hidden;
-	-webkit-font-smoothing: antialiased !important;
+    font-size:14px;	
+    -webkit-font-smoothing: antialiased !important;
+    overflow: hidden;
+    overflow-y: auto;
 }
 h1,
 h2,
@@ -52,9 +51,10 @@ h6 {
 ::-moz-focus-inner {border:0;}
 
 .slide {
-	
 	padding: 100px 0px 0px 0px;
 	text-align: center;       
+      
+	max-width: 100%; position: relative; overflow: hidden !important;
 }
 @media (max-width: 768px) {
     .slide {
@@ -601,8 +601,9 @@ h6 {
 	text-align: center;}
 	
 #plant-svg {
-	background: url(../images/plant.svg) no-repeat;
-	background-size: 30%;
+    background: url(../images/plant.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
     background-position: 64% 18%;
     background-color: #3AADE3;
     height:320px;
@@ -620,16 +621,12 @@ h6 {
     height:340px;top:-10px;
     }
 }
-@media (min-width: 1300px) {
-    .nasha-woda-row-2 {
-        width: 122%;left: -10%;}
-}
-@media (min-width: 1400px) {
-    .nasha-woda-row-2 {
-        width: 126.3%;left: -12.1%;} }
+@media (min-width: 1300px) and (max-width: 1399px) {
+    .nasha-woda-row-2 {width: 122%;left: -10%;} }
+@media (min-width: 1400px) and (max-width: 1499px){
+    .nasha-woda-row-2 {width: 126.3%;left: -12.1%;} }
 @media (min-width: 1500px) {
-    .nasha-woda-row-2 {
-        width: 138%;left: -17.7%;}
+    .nasha-woda-row-2 {width: 138%;left: -17.7%;}
 }
 @media (max-width: 1199px) {
     .nasha-woda-row-2 {
