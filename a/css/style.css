@@ -743,33 +743,30 @@ h6 {
         left:-14%; }
 }
 
-#slide-4 h6 {
+#slide-4-phones {
+    display: inline-block;
     font-size:28px;
     padding:0px;
-    width: max-content;
     margin: 20px auto;
     text-align: right;
-/*    width: 88%;*/
 }
 #slide-4-work-time{
+    display: inline-block;
     text-align: right;
     line-height: 160%;
     font-size: 20px;
-    width: max-content;
     margin: 0px auto;}
 #zamovyty-btn3 {
     display: block;
     margin: 15px auto;
-    margin-top: 40px;	
+    margin-top: 30px;	
     width:240px; padding: 11px 28px 11px 28px; font-size: 16px;
     text-align: center;text-transform: uppercase;
     font-weight:700;font-family: "Roboto Slab";
     letter-spacing: 1px;color: #ffffff;
     border: 0px;border-radius: 30px;
     box-shadow: 0px 2px 7px 0.00px rgba(6, 71, 101, 0.26);   
-  -webkit-transition: .2s all;
-  -o-transition: .2s all;
-  transition: .2s all;
+    -webkit-transition: .2s all; -o-transition: .2s all;  transition: .2s all;
     background: -webkit-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -moz-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -o-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -ms-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: linear-gradient(0deg, #09affb 0%,  #80d8fd 100%);
 }
 #zamovyty-btn3:hover,
@@ -782,7 +779,7 @@ h6 {
     font-size:20px;}
 
 #slide-4 ul {
-	text-align: center;
+    text-align: center;
     font-size:23px; 
     text-transform: uppercase;
     font-weight:700;
@@ -878,10 +875,9 @@ z-index:2;}
 #dostavka-r .col-xs-3{
     font-size:20px; 
     font-weight:400; 
-    color:#333;
     line-height: 30pt;}
 #dostavka-r .col-xs-6 {
-    z-index:5; background-color: #fff; font-size:23px; font-weight:400; color:#333; line-height: 28pt;
+    z-index:5; background-color: #fff; font-size:23px; font-weight:400; line-height: 28pt;
 }
 @media(max-width:767px){
     #dostavka-r {
@@ -890,12 +886,11 @@ z-index:2;}
     #dostavka-r .col-xs-3{
         font-size:17px; 
         font-weight:400; 
-        color:#333;
         line-height: 27pt;}
     #dostavka-r .col-xs-6 {
         z-index:5; 
         background-color: #fff; 
-        font-size:20px; font-weight:400; color:#333; 
+        font-size:20px; font-weight:400;
         line-height: 25pt;
     }
 }
