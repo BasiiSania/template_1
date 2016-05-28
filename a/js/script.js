@@ -370,7 +370,7 @@ jQuery(document).ready(function ($) {
       //  гугл-формa по кліку на пункт меню -ЗВ'ЯЗОК-
         $('#eco-google-form').attr('style', '');
         $('#eco-google-form').css({
-            'position': 'fixed'
+            'display': 'block'
         });
     });  
     $('#eco-google-form').css({
