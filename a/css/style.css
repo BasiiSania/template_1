@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'MuseoUkr';
+    src: url('font/Museo_Cyrillic_500.otf') format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
 * {
 	position: relative;
 }
@@ -32,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'MuseoUkr','Roboto Slab', sans-serif;
 /*font-family: "museo", sans-serif;
     font-weight:700;*/
 }
@@ -64,14 +71,14 @@ h6 {
 /* _____________________________________________________________ ВЕРХ, МЕНЮ */
 
 #phone-number{
-    font-family: "Roboto Slab", sans-serif;
+    font-family: 'MuseoUkr','Roboto Slab', sans-serif;
     line-height: 17pt;
     position: fixed;
     margin: 0 auto;
     left:0; right:0;
     top: 19px;
     padding-top: 0px;
-    font-weight:700;
+    font-weight:500;
     font-size: 18px;
     letter-spacing: 1pt;
     width:95%;
@@ -93,8 +100,8 @@ h6 {
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
-    font-weight:700;
-    font-family: "Roboto Slab";
+    font-weight:500;
+    font-family: 'MuseoUkr','Roboto Slab', sans-serif;
     -webkit-transition: .2s all;-o-transition: .2s all;transition: .2s all;
     border-radius: 30px;
     color: #39AEE4;
@@ -286,9 +293,9 @@ h6 {
     padding:0px;
     margin: 70px 0px 40px 0px;
     color: #1071B7;
-    font-family: "Roboto Slab", sans-serif;
+    font-family: 'MuseoUkr','Roboto Slab', sans-serif;
     font-size: 20px;
-    font-weight: 700; letter-spacing: 0.5pt;}
+    font-weight: 500; letter-spacing: 0.5pt;}
 #emblema-div img{
     padding:10px;
     margin: 0px;}
@@ -306,7 +313,7 @@ h6 {
 
 #home-row-1 h2 {
     color:#ffffff;
-    font-weight: 600;
+    font-weight: 500;
     font-size:35px;
     letter-spacing: 0.6px;
     margin: 50px 0px  20px 0px;
@@ -318,7 +325,8 @@ h6 {
     right:30px;
     min-width: 218px;
     padding: 10px 0px;
-    color:#fff; font-weight: 600; font-size: 18px; letter-spacing: 1pt;
+    font-family: 'MuseoUkr','Roboto Slab', sans-serif;
+    color:#fff; font-weight: 500; font-size: 18px; letter-spacing: 1pt;
     text-align: right;}
 #slide-1-phones img{
     width:30px;top:10px;right:10px}
@@ -371,9 +379,9 @@ h6 {
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'MuseoUkr','Roboto Slab', sans-serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 1px;
     -webkit-transition: .2s all; -o-transition: .2s all; transition: .2s all;
     border-radius: 30px;
@@ -740,6 +748,8 @@ h6 {
 }
 
 #slide-4-phones {
+    font-family: 'MuseoUkr','Roboto Slab', sans-serif;
+    font-weight: 500;
     display: inline-block;
     font-size:28px;
     padding:0px;
@@ -758,7 +768,7 @@ h6 {
     margin-top: 30px;	
     width:240px; padding: 11px 28px 11px 28px; font-size: 16px;
     text-align: center;text-transform: uppercase;
-    font-weight:700;font-family: "Roboto Slab";
+    font-weight:500;font-family: 'MuseoUkr','Roboto Slab', sans-serif;
     letter-spacing: 1px;color: #ffffff;
     border: 0px;border-radius: 30px;
     box-shadow: 0px 2px 7px 0.00px rgba(6, 71, 101, 0.26);   
@@ -1193,9 +1203,9 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
-    font-weight:700;
+    font-weight:500;
     letter-spacing: 0.5pt;
-    font-family: "Roboto Slab";
+    font-family: 'MuseoUkr','Roboto Slab', sans-serif;
     -webkit-transition: .2s all;-o-transition: .2s all;
         transition: .2s all;
     border-radius: 30px;
@@ -1239,9 +1249,9 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     padding:0px;
     margin: 40px 0px 20px 0px;
     color: #1071B7;
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 18px;
-    font-weight: 700; letter-spacing: 0.5pt;}
+    font-family: 'MuseoUkr','Roboto Slab', sans-serif;
+    font-size: 18px;font-weight: 500; 
+    letter-spacing: 0.5pt;}
 #footer-emblema-div img{
     padding:10px;
     margin: 0px;}
