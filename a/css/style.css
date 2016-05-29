@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MuseoUkr';
-    src: url('font/Museo_Cyrillic_500.otf') format("opentype");
+    src: url('../font/Museo_Cyrillic_500.otf') format("opentype");
     font-weight: 500;
     font-style: normal;
 }
