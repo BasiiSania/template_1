@@ -422,7 +422,7 @@ $(window).scroll(function() {
         $('#zamovyty-btn').css({
             'color': '#ffffff',
             'border': '3px solid #ffffff',
-            'top': '-23px'
+            'top': '-25px'
         });
         $('#phone-number').css({
             'color': '#ffffff',

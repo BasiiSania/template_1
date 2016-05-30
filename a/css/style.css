@@ -71,22 +71,16 @@ h6 {
 /* _____________________________________________________________ ВЕРХ, МЕНЮ */
 
 #phone-number{
-    font-family: 'MuseoUkr','Roboto Slab', sans-serif;
-    line-height: 17pt;
+    font-family: 'MuseoUkr', 'Roboto Slab', sans-serif;
+    font-weight:500; font-size: 18px; line-height: 17pt;
+    color: #39AEE4; text-align: left;
     position: fixed;
     margin: 0 auto;
     left:0; right:0;
     top: 19px;
     padding-top: 0px;
-    font-weight:500;
-    font-size: 18px;
-    letter-spacing: 1pt;
     width:95%;
     max-width:1200px;
-    text-align: left;
-    color: #39AEE4;
-    text-transform:uppercase;  
-    
     background: url(../images/phone_blue_white.png) no-repeat;
     background-size: 30px;
     background-position: 1px 5px;
@@ -97,14 +91,12 @@ h6 {
     width: 180px;
     padding: 11px 28px 11px 28px;
     top: -25px;
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight:500;
+    text-align: center;color: #39AEE4;
+    text-transform: uppercase;font-size: 16px;
+    font-weight:500;letter-spacing: 1px;
     font-family: 'MuseoUkr','Roboto Slab', sans-serif;
     -webkit-transition: .2s all;-o-transition: .2s all;transition: .2s all;
     border-radius: 30px;
-    color: #39AEE4;
     border: 2px solid #3a91e2;
     border-color: #39AEE4;
     background: none;}
@@ -128,6 +120,7 @@ h6 {
         display: block;
         top:3px;}
     #zamovyty-btn {
+        margin-top:2px;
         width:130px; top: -23px;
         font-size: 14px;
         padding: 8px 10px 8px 10px;
@@ -141,6 +134,7 @@ h6 {
 	transition: .25s all linear;
 	height: 80px;
     font-size:15px;
+    letter-spacing: 1px;
 	text-align: center;
 }
 #nav-menu{}
@@ -322,19 +316,17 @@ h6 {
     padding: 0% 10%;}
 #slide-1-row-2 .col-sm-6{  min-height:30px }
 #slide-1-phones {
-    right:30px;
+    padding: 5px 0px;right:30px;
     min-width: 218px;
-    padding: 10px 0px;
     font-family: 'MuseoUkr','Roboto Slab', sans-serif;
-    color:#fff; font-weight: 500; font-size: 18px; letter-spacing: 1pt;
+    color:#fff; font-weight: 500; font-size: 18px;
     text-align: right;}
 #slide-1-phones img{
     width:30px;top:10px;right:10px}
 #work-time{
-    line-height: 20pt;
-    text-align: right;
-    right:30px;
+    padding: 5px 0px;right:30px;
     min-width: 214px;
+    line-height: 20pt;text-align: right;
 }
 @media (max-width: 767px) {
     #home-row-1,
@@ -360,7 +352,7 @@ h6 {
         width:20px; height:1px;}
     #home-row-1 h2 {
         font-size: 27px;
-        font-weight: 700; margin: 25px 0; }
+        margin: 25px 0; }
     #title-text{
         padding: 0% 6%;}
     #home-row-1 .other-info{    display: none;    }
@@ -376,16 +368,11 @@ h6 {
     padding: 11px 28px 11px 28px;
     margin: 20px auto;
     width: 165px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
+    color: #ffffff;text-align: center;text-transform: uppercase;
     font-family: 'MuseoUkr','Roboto Slab', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-size: 16px;font-weight: 500;letter-spacing: 1px;
     -webkit-transition: .2s all; -o-transition: .2s all; transition: .2s all;
-    border-radius: 30px;
-    border: 0px;
+    border-radius: 30px;border: 0px;
     box-shadow: 0px 2px 7px 0.00px rgba(6, 71, 101, 0.26);
     background: -webkit-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -moz-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -o-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -ms-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: linear-gradient(0deg, #09affb 0%,  #80d8fd 100%);
 }
@@ -413,7 +400,7 @@ h6 {
     border-radius: 40px;
     background-color: #6293CB;
     box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
-    -webkit-transition: .8s all; -o-transition: .8s all; transition: .8s all;}
+    -webkit-transition: .4s all; -o-transition: .4s all; transition: .4s all;}
 #arrows div {
 	background-image: url('../images/go-down.svg');
     background-repeat: no-repeat;
@@ -450,6 +437,17 @@ h6 {
     background-color: #ffffff;
     font-size: 20px;
     color: #222;}
+#slide-2 h3 {
+    width:55%;
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 700;
+    text-align: left;
+    color:#3a3a3a;
+    font-size: 48px;
+    background:url(../images/waves/lg/1-01.png) no-repeat;
+    background-size: 142px;
+    background-position: 0% 70%;
+    }
 #slide-2 h4 {
     font-family: "Open Sans", sans-serif; 
     font-weight: 600;
@@ -467,23 +465,12 @@ h6 {
     font-weight: 600;
     font-size: 18px;
     text-align: left;}
-#slide-2 h3 {
-    width:55%;
-    font-family: "Open Sans", sans-serif; 
-    font-weight: 700;
-    text-align: left;
-    color:#3a3a3a;
-    font-size: 48px;
-    background:url(../images/waves/lg/1-01.png) no-repeat;
-    background-size: 142px;
-    background-position: 0% 70%;
-    }
 @media (max-width:1199px) {
     .nasha-woda-row-1 {
         padding: 10px 11% 0px 11%;}
     #slide-2 h3{
         width: max-content;
-        padding-bottom: 15px;
+        padding-bottom: 20px;
         background:url(../images/waves/sm/3-01.png) no-repeat;
         background-size: 437px;
         background-position: 0px 31px;}
@@ -491,17 +478,20 @@ h6 {
         padding: 27px 0px 0px 0px;}
     .nasha-woda-row-1 img{top:-3px}
     .nasha-woda-row-1 h4 {
-        margin: 0px 0px 0px 10px;
+        margin: 0px 0px 0px 30px;
     line-height: 18pt}
     .nasha-woda-row-1 p {
-        padding: 3px 0px 0px 0px;}
+        padding: 3px 0px 0px 20px;}
 }
 @media (max-width:767px) {
     #slide-2 h3{
         width:100%;
         background:url(../images/waves/xs/1-01.png) no-repeat;
         background-size: 289px;
-        background-position: 0px 31px;}
+        background-position: 0px 25px;
+        font-size:40px; line-height: 30pt;}
+    .nasha-woda-row-1 p {
+        padding-left: 0px;}
 }
 .img-full {min-width: 100%;margin:0px;}
 .box {
@@ -681,11 +671,11 @@ h6 {
     #plant-svg:hover {
             background-position: -7% 19%;}
     #slide-3 h3{
+        margin-top: 60px;
         background:url(../images/waves/xs/1-01.png) no-repeat;
         background-size: 305px;
-        background-position: 0px 23px;
-        margin-top: 60px;
-        font-size:40px
+        background-position: 0px 25px;
+        font-size:40px; line-height: 30pt;
     }
     #slide-3 p{
         padding: 10px;
@@ -719,6 +709,7 @@ h6 {
 
 @media(min-width:1199px) {
     #slide-4 {
+        display:inline-block;
         padding-bottom: 60px;
         min-height:516px;
     }
@@ -740,8 +731,8 @@ h6 {
         background:url(../images/waves/sm/3-01.png);
         background-repeat: no-repeat; background-size: 437px;
         background-position: 0px 33.5px;
-        margin: 0px 0px 25px 90px;
-        padding-bottom:5px}
+        margin: 0px 0px 20px 90px;
+        padding-bottom:10px}
 }
 @media(max-width:767px) {
     #slide-4 .row {
@@ -763,13 +754,11 @@ h6 {
 }
 
 #slide-4-phones {
-    font-family: 'MuseoUkr','Roboto Slab', sans-serif;
-    font-weight: 500;
     display: inline-block;
+    padding:0px;margin: 20px auto;
+    text-align: right; font-weight: 500;
+    font-family: 'MuseoUkr','Roboto Slab', sans-serif;
     font-size:28px;
-    padding:0px;
-    margin: 20px auto;
-    text-align: right;
 }
 #slide-4-work-time{
     display: inline-block;
@@ -784,7 +773,7 @@ h6 {
     width:240px; padding: 11px 28px 11px 28px; font-size: 16px;
     text-align: center;text-transform: uppercase;
     font-weight:500;font-family: 'MuseoUkr','Roboto Slab', sans-serif;
-    letter-spacing: 1px;color: #ffffff;
+    letter-spacing: 1px; color: #ffffff;
     border: 0px;border-radius: 30px;
     box-shadow: 0px 2px 7px 0.00px rgba(6, 71, 101, 0.26);   
     -webkit-transition: .2s all; -o-transition: .2s all;  transition: .2s all;
@@ -847,11 +836,11 @@ h6 {
 #slide-4 .tab-pane{
     padding: 25px 0px;}
 #slide-4-info{ box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
-background: #fff;    
-height:411px; /* прирівняно до висоти #slide-4 ul */
-margin:0px;
-left:2.1%;
-z-index:2;}
+    background: #fff;    
+    height:411px; /* прирівняно до висоти #slide-4 ul */
+    margin:0px;
+    left:2.1%;
+    z-index:2;}
 #slide-4 .tab-pane p{
     padding:5px;}
 
@@ -1217,17 +1206,13 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     margin-top: 49px; margin-bottom:50px; 
 	left:0; right:0;
     padding: 11px 28px 11px 28px;
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight:500;
-    letter-spacing: 0.5pt;
+    text-align: center;color: #ffffff;
+    font-size: 16px;text-transform: uppercase;
+    font-weight:500;letter-spacing: 1px;
     font-family: 'MuseoUkr','Roboto Slab', sans-serif;
     -webkit-transition: .2s all;-o-transition: .2s all;
         transition: .2s all;
-    border-radius: 30px;
-    color: #ffffff;
-    border: 0px;
+    border-radius: 30px;border: 0px;
     box-shadow: 0px 2px 7px 0.00px rgba(6, 71, 101, 0.26);
     background: -webkit-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); 
         background: -moz-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); 
@@ -1299,7 +1284,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
         padding:0px;
         margin: 29px 0px 0px 0px;
         font-size: 14px;
-        font-weight: 700; }
+        font-weight: 500; }
     #footer-emblema-div img{
         padding: 10px 0px;
         margin: 3px;    }
