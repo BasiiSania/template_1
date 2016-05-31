@@ -63,7 +63,12 @@ h6 {
       
 	max-width: 100%; position: relative; overflow: hidden !important;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
+    .slide {
+        padding-top:80px;
+    }
+}
+@media (max-width: 767px) {
     .slide {
         padding-top:60px;
     }
@@ -383,7 +388,7 @@ h6 {
      color: #fff;
    text-decoration: none; }
 @media (max-width: 767px) {
-    #zamovity_button{top: -90px;}
+    #zamovity_button{top: -120px;}
 }
 
 #slide-1-under-btn{ position:absolute;
@@ -647,16 +652,20 @@ h6 {
         background:url(../images/waves/sm/3-01.png) no-repeat;
         background-size: 437px;
         background-position: 0px 30px;
-        margin: 4% 9%;
-        padding-bottom: 15px}
+        margin: 10px 10%;
+        padding-bottom: 20px}
     #slide-3 p {
         margin: 1% 8%;  
         font-size: 18px;}
 }
 @media (max-width: 767px) {
+    
+    #slide-3 .row {
+        margin: 0 auto; 
+        max-width:500px;}
     .nasha-woda-row-2 {
         width: auto;    
-        max-width: 360px;
+        max-width: 360px !important;
         margin: 0 auto;
         left:-2.5%}
     .nasha-woda-row-2 .col-lg-3{
@@ -670,7 +679,7 @@ h6 {
         height:50px;width:80%;
         margin: 25px 0px 15px 0px;}
     .nasha-woda-row-2 .col-lg-3 h4 {
-        padding: 10% 35%;
+        padding: 10% 35% 10% 80px;
         top:20px;
         line-height: 20pt;
     }
@@ -682,13 +691,15 @@ h6 {
     #plant-svg:hover {
             background-position: -7% 19%;}
     #slide-3 h3{
-        margin-top: 60px;
+        margin: 60px 0px 10px 5%;
         background:url(../images/waves/xs/1-01.png) no-repeat;
         background-size: 305px;
         background-position: 0px 25px;
-        font-size:40px; line-height: 30pt;
+        font-size:40px; line-height: 1.1;
     }
     #slide-3 p{
+        max-width: 500px;
+        margin: 0 auto;
         padding: 10px;
         text-align: left;
         font-size: 16px;
@@ -738,7 +749,7 @@ h6 {
         margin:0px auto;
         margin-bottom:50px}
     .slide-4-title {
-        font-size: 40px;
+        font-size: 48px;
         background:url(../images/waves/sm/3-01.png);
         background-repeat: no-repeat; background-size: 437px;
         background-position: 0px 33.5px;
@@ -753,10 +764,10 @@ h6 {
         left: -5%;
         margin-bottom:50px}
     .slide-4-title {
-        font-size: 35px;
+        font-size: 40px; line-height: 1.1;
         background:url(../images/waves/xs/1-01.png);
-        background-repeat: no-repeat; background-size: 359px 33px;
-        background-position: 0px 27px;
+        background-repeat: no-repeat; background-size: 309px 33px;
+        background-position: 0px 33px;
         margin: 0px 10% 25px 5%;
         padding: 0px 0px 15px 0px;}  }
 @media(max-width:377px) {
@@ -1077,7 +1088,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 
 @media (max-width:768px) {
     #slide-5 h3{
-        font-size:30px;
+        font-size:40px;
         padding-top: 15px;}
     #slide-5 .container{
         max-width:550px;}
