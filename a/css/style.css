@@ -620,6 +620,7 @@ h6 {
     #plant-svg:hover,
     .nasha-woda-row-2 .col-lg-3:hover{
     height:340px;top:-10px;
+    padding-top:10px;
     }
 }
 @media (min-width: 1300px) and (max-width: 1399px) {
