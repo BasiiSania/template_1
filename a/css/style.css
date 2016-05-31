@@ -115,7 +115,7 @@ h6 {
         display: none;}
 }
 
-@media (max-width: 768px) and (min-width: 550px) {
+@media (max-width: 767px) and (min-width: 550px) {
     #phone-number {
         display: block;
         top:3px;}
@@ -640,7 +640,8 @@ h6 {
         margin: 4% 9%;
         padding-bottom: 15px}
     #slide-3 p {
-        margin: 1% 8%;    }
+        margin: 1% 8%;  
+        font-size: 18px;}
 }
 @media (max-width: 767px) {
     .nasha-woda-row-2 {
@@ -681,7 +682,7 @@ h6 {
         padding: 10px;
         text-align: left;
         font-size: 16px;
-        font-weight:600;
+        font-weight:400;
         line-height: 18pt;
     }
 }
