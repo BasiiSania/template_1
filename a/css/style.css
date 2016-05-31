@@ -762,7 +762,8 @@ h6 {
         margin: 0 auto; 
         max-width:450px;
         left: -5%;
-        margin-bottom:50px}
+        margin-bottom:50px;
+        height: 720px}
     .slide-4-title {
         font-size: 40px; line-height: 1.1;
         background:url(../images/waves/xs/1-01.png);
@@ -893,17 +894,16 @@ h6 {
     #slide-4 .tab-pane{
         padding: 25px 0px;}
     #slide-4-info{
+        position: absolute; top: 125px;
         background: #fff;    
-        width:93%;
+        width:86%; left:7%;
         margin:0 auto;
         z-index:2;
-    
-        left:0;
         height:auto;
         min-height:460px}
-    #slide-4 .tab-pane p{
-        padding:0px;}   }
-
+    #slide-4 .tab-pane p {
+        padding:0px;}   
+}
 #dostavka-r .col-xs-3{
     font-size:20px; 
     font-weight:400; 
