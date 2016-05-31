@@ -349,7 +349,7 @@ h6 {
         padding: 10px 0px;
         margin: 3px;    }
     #emblema-misto{
-        width:173px;}
+        width:180px;}
     #emblema-misto div{
         padding: 0px 10px;}
     #emblema-misto .line{
@@ -365,7 +365,7 @@ h6 {
     #slide-1-phones {
         width: 230px;
         margin: 0 auto;
-        top: 79px;    }
+        top: 79px; right:40px   }
 }
 
 #zamovity_button{
