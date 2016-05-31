@@ -65,7 +65,7 @@ h6 {
 }
 @media (max-width: 768px) {
     .slide {
-    padding-top:60px;
+        padding-top:60px;
     }
 }
 /* _____________________________________________________________ ВЕРХ, МЕНЮ */
@@ -140,7 +140,7 @@ h6 {
 #nav-menu{}
 .navbar-responsive-collapse {
     overflow: visible; 
-    width:62%; left:19%;
+    width:68%; left:16%;
     margin: 0 auto;
 }
 .navbar.inv {
@@ -331,7 +331,7 @@ h6 {
 @media (max-width: 767px) {
     #home-row-1,
     #slide-1-row-2 {
-        padding: 20px 0px;}
+        padding: 20px 0px 0px 0px;}
     #home-row-1 p {
         font-size: 16px;    }
     #emblema-div{
@@ -432,7 +432,6 @@ h6 {
 }
 /* _______________________________________________ НАША ВОДA */
 #slide-2 {
-    margin-top: 50px;
     z-index:0;
     background-color: #ffffff;
     font-size: 20px;
@@ -469,9 +468,10 @@ h6 {
     text-align: left;}
 @media (max-width:1199px) {
     .nasha-woda-row-1 {
-        padding: 10px 11% 50px 11%;}
+        padding: 0px 11% 50px 11%;}
     #slide-2 h3{
         width: max-content;
+        margin-top: 0px;
         padding-bottom: 20px;
         background:url(../images/waves/sm/3-01.png) no-repeat;
         background-size: 437px;
