@@ -324,7 +324,7 @@ h6 {
 #slide-1-phones img{
     width:30px;top:10px;right:10px}
 #work-time{
-    padding: 5px 0px;right:30px;
+    padding: 10px 0px;right:30px;
     min-width: 214px;
     line-height: 20pt;text-align: right;
 }
@@ -448,6 +448,8 @@ h6 {
     background-size: 142px;
     background-position: 0% 70%;
     }
+.nasha-woda-row-1 {
+        padding: 0px 0px 50px 0px;}
 #slide-2 h4 {
     font-family: "Open Sans", sans-serif; 
     font-weight: 600;
@@ -467,7 +469,7 @@ h6 {
     text-align: left;}
 @media (max-width:1199px) {
     .nasha-woda-row-1 {
-        padding: 10px 11% 0px 11%;}
+        padding: 10px 11% 50px 11%;}
     #slide-2 h3{
         width: max-content;
         padding-bottom: 20px;
@@ -478,8 +480,8 @@ h6 {
         padding: 27px 0px 0px 0px;}
     .nasha-woda-row-1 img{top:-3px}
     .nasha-woda-row-1 h4 {
-        margin: 0px 0px 0px 30px;
-    line-height: 18pt}
+        margin: 0px;
+        line-height: 18pt}
     .nasha-woda-row-1 p {
         padding: 3px 0px 0px 20px;}
 }
@@ -490,9 +492,12 @@ h6 {
         background-size: 289px;
         background-position: 0px 25px;
         font-size:40px; line-height: 30pt;}
+    .nasha-woda-row-1 {
+        padding: 0px 6% 30px 6%;}
     .nasha-woda-row-1 p {
         padding-left: 0px;}
 }
+/*сss з шаблону*/
 .img-full {min-width: 100%;margin:0px;}
 .box {
     margin-bottom: 0px;
@@ -500,9 +505,13 @@ h6 {
     background: #fff;
 /*    background: rgba(255,255,255,0.9);*/
 }
-@media screen and (min-width:1200px) {.box:after {content: ''; display: table; clear: both;}
+@media screen and (min-width:1200px) {
+    .box:after {content: ''; display: table; clear: both;}
 }
 /*кінець сss з шаблону*/
+#carousel-example-generic{
+    overflow: visible !important;
+    padding: 0px;}
 #carousel-right-arrow {
     background-image: url(../images/arrow-right.svg);
     background-repeat:  no-repeat;
