@@ -78,7 +78,7 @@
                     
 					<li data-slide="4" ><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon icon-gears" ></span> <span class="text">Ціни та доставка</span></a></li>
                     
-					<li data-slide="5" ><a id="menu-link-5" href="https://docs.google.com/forms/d/1jy1g8fZrPQOX_BGiJrkfKKTDACQ-HxTKgR-6mFRGvNE/viewform" title="Next Section"><span class="icon icon-heart"></span> <span class="text"> Зв’язок</span></a></li>
+                                        <li data-slide="5" ><a id="menu-link-5" href="https://docs.google.com/forms/d/1jy1g8fZrPQOX_BGiJrkfKKTDACQ-HxTKgR-6mFRGvNE/viewform" title="Next Section"><span class="icon icon-heart"></span> <span class="text"> Зв&rsquo;язок</span></a></li>
 				</ul>
 <!--<button type="button" class="btn btn-primary btn-lg navbar-btn visible-lg-block">Замовити</button>-->
 				<div class="row">
@@ -264,7 +264,7 @@
 				<div class="col-lg-3 col-sm-6" id="plant-svg">
 <!--					<img src="images/plant.svg">-->
 					<h4>Власне виробництво</h4>
-                    Вода "Еко" добувається з артезіанської скважини глибиною 120 метрів з шарів не пов'язаних з поверхнею ґрунту
+                    Вода "Еко" добувається з артезіанської скважини глибиною 120 метрів з шарів не пов&rsquo;язаних з поверхнею ґрунту
 				</div>
 				<div class=" col-lg-3 col-sm-6">
 					<div>
@@ -627,7 +627,7 @@
       <input type="text" class="form-control" id="inputPhone" 
 	placeholder="Телефон" aria-describedby="help3" name="Тел.номер" required>
 	<span id="help3" class="help-block" style="top:29px">
-        Ми зв'яжемось з вами у випадку форсмажору</span>
+        Ми зв&rsquo;яжемось з вами у випадку форсмажору</span>
   </div>    
 </div>
 <div class="col-sm-6">
@@ -700,7 +700,59 @@ name="Кількість" onchange="zminaZamovVartist(this.value)">
 <div id="eco-google-form" style="">
     <div  id="eco-google-form-close"  style="">закрити
     </div>
-    <iframe src="https://docs.google.com/forms/d/1jy1g8fZrPQOX_BGiJrkfKKTDACQ-HxTKgR-6mFRGvNE/viewform?embedded=true" width="460" height="800" frameborder="0" marginheight="0" marginwidth="0">Завантаження...</iframe>
+    <div class="container">
+        <div class="row"><h3>Зв&rsquo;язатись з нами</h3>
+            <div id='slide-5-waves'>.</div>
+            У випадку будь-яких питань чи пропозицій, будь-ласка, напишіть нам за допомогою форми нижче
+        </div>
+        <form class="form-horizontal" role="form" id="contactform" method="POST">
+          <div class="form-group" style="display:none">
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_subject" value="Форма-звернення на сайті Еко" />
+                <input type="hidden" name="_next" value="ecovoda-kr/diakuyemo.html" />
+          </div>
+        <div class="row">    
+        <div class="col-sm-6">
+          <div class="form-group">
+            <div >
+              <input type="text" class="form-control" id="inputName2"
+                 placeholder="Ваше ім'я" aria-describedby="helpBlock22" name="Ім'я" required>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group ">
+            <div >
+              <input type="text" class="form-control" id="inputContact2" 
+                placeholder="Ваш контакт" aria-describedby="help-kontakt" name="Контакт">
+        	<span id="help-kontakt" class="help-block">
+                Телефон або E-mail</span>
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-sm-12">
+          <div class="form-group ">
+            <div >
+              <textarea rows="10"  class="form-control" id="inputPovidomlennia" 
+                  placeholder="Чим ми можемо допомогти?" name="Текст" required>
+              </textarea>
+            </div>
+          </div>
+        </div>  
+        <div class="col-sm-12">
+          <div class="form-group" id="nadislaty2-div">
+            <div class="col-sm-12">
+              <button type="submit" class="btn btn-default" 
+              onclick="return contaktSend();" id="nadislaty2-btn">
+                  Надіслати</button>
+            </div>
+          </div>
+        </div>
+
+        </div> <!-- кінець row-->    
+        </form>
+    </div>
 </div>
 
     <!-- === slide-6 === -->

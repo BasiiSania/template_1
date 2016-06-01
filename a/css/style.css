@@ -323,8 +323,9 @@ h6 {
 #slide-1-phones {
     padding: 5px 0px;right:30px;
     min-width: 218px;
-    font-family: 'MuseoUkr','Roboto Slab', sans-serif;
-    color:#fff; font-weight: 500; font-size: 18px;
+    color:#ffffff;
+    font-family: 'MuseoUkr','Roboto Slab', sans-serif; 
+    font-weight: 500; font-size: 18px;
     text-align: right;}
 #slide-1-phones img{
     width:30px;top:10px;right:10px}
