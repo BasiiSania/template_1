@@ -739,6 +739,7 @@ h6 {
     #slide-4 .row {
         width: 110%; left:-73px;}
     .slide-4-title {
+        width: 290px;
         font-size: 45px;
         line-height: 120%;
         background-position: 0% 70%;
@@ -955,31 +956,7 @@ h6 {
         margin-bottom:20px;
     }
 }
-/*-- Зв-язок --*/
 
-#eco-google-form {
-    display:none;
-    position: fixed; top:-60px;left:0;
-    z-index:10; 
-    width:100%;
-    background: rgba(0,0,0,0.5); 
-    padding:150px 0;}
-#eco-google-form-close {
-     z-index:12; 
-     position: absolute; left:-50px; 
-     margin-left:70%; margin-top:18px;
-     width:200px; 
-     text-align: center;
-     color: #ddd; font-size:20px; 
-     cursor: pointer;}
-#eco-google-form-close:hover {
-    font-weight: 600; }
-#eco-google-form iframe{ 
-    margin-left: 30%; }
-@media (max-width: 767px) {
-    #eco-google-form-close {margin-left:0%; text-align: right; width:45%}
-    #eco-google-form iframe{ width: 350px }
-}
 /*__
 ______________________________________________________ЗАМОВИТИ*/
 
@@ -1032,6 +1009,18 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 #slide-5 .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */color:    #444;opacity:  1;}
 #slide-5 .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */color:    #444;}
 
+#eco-google-form .form-control{
+    border-radius: 0px;
+/*    border: 4px solid #CCCCCC !important;*/
+    border: 0px solid #fff !important;
+    font-size: 20px;
+    color:#333;
+    height:43px;}
+#eco-google-form .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */color:    #444 ;}
+#eco-google-form .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:    #444;opacity:  1;}
+#eco-google-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */color:    #444;opacity:  1;}
+#eco-google-form .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */color:    #444;}
+
 /* ============================== */
 
 #slide-5 {
@@ -1048,14 +1037,8 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     padding-bottom: 0px !important;}
 
 @media (max-width:768px) and (min-width:371px) {
-    #slide-5 .container{
-        background-position: 50% 110%;
-        background-size: 122%}
     #slide-5 {padding-bottom: 60px;}}
 @media (max-width:370px) {
-    #slide-5 .container{
-        background-position: 50% 107.5%;
-        background-size: 157%}
     #slide-5 {padding-bottom: 60px;}
 }
 
@@ -1093,7 +1076,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
         padding-top: 15px;}
     #slide-5 .container{
         max-width:550px;}
-    form {
+    #slide-5 form {
         margin:10px 13%;}
     #slide-5 .form-group{
         padding: 18px 0px 19px 0px;}
@@ -1263,6 +1246,128 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
         width:139.9%; left:-13.5%;  }
 }
 
+/*_________-- ЗВ-ЯЗОК --*/
+#eco-google-form {
+    display:none;
+    position: fixed; top:-60px;left:0;
+    z-index:10; 
+    width:100%;
+    background: rgba(0,0,0,0.5); 
+    padding:150px 0;}
+#eco-google-form-close {
+     z-index:12; 
+     position: absolute; left:-50px; 
+     margin-left:70%; margin-top:18px;
+     width:200px; 
+     text-align: center;
+     color: #ddd; font-size:20px; 
+     cursor: pointer;}
+#eco-google-form-close:hover {
+    font-weight: 600; }
+#eco-google-form iframe{ 
+    margin-left: 30%; }
+@media (max-width: 767px) {
+    #eco-google-form-close {margin-left:0%; text-align: right; width:45%}
+    #eco-google-form iframe{ width: 350px }
+}
+#eco-google-form .container{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
+/*    min-height: 677px;*/
+    max-width:900px;
+    padding-bottom: 0px !important;
+    font-size: 20px; font-weight: 600;}
+#eco-google-form form {margin:40px 30px 0px 30px; 
+    text-align: left;
+    z-index:2;}
+#eco-google-form h3 {
+    font-family: "Open Sans", sans-serif; font-weight: 700;
+    color: #444;
+    font-size:40px;
+    text-align: left;
+    padding: 55px 0px 0px 50px;}
+#eco-google-form-waves{
+    font-size:0.1px;
+    height: 25px;
+    background:url(../images/waves/lg/4-01.png);
+    background-repeat: no-repeat;
+    background-size: 850px;}
+#eco-google-form p {
+    padding: 30px 10% 0px 50px;}
+#eco-google-form .form-group{
+    padding: 18px 20px 29px 20px;
+}
+#eco-google-form .help-block{ 
+    position: absolute; margin-top:40px;
+    top: 11px;
+    color:#aaa; font-weight:400; }
+
+
+@media (max-width:768px) {
+    #eco-google-form h3{
+        font-size:40px;
+        padding-top: 15px;}
+    #eco-google-form .container{
+        max-width:550px;}
+    #eco-google-form form {
+        margin:10px 13%;}
+    #eco-google-form .form-group{
+        padding: 18px 0px 19px 0px;}
+    #eco-google-form .help-block{ 
+        font-size:13px; font-weight: 600}
+    #eco-google-form .form-control{
+        font-size: 16px;
+        font-weight: 600}
+}
+
+
+#nadislaty2-div{
+    background-image: url(../images/photo_button_lg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 64.7%;
+    background-size: 700px;
+    margin-bottom: 0px;
+    width:140%; left:-16%;
+}
+#nadislaty2-btn {
+	display: block;
+	margin: 0px auto;
+    margin-top: 49px; margin-bottom:50px; 
+	left:0; right:0;
+    padding: 11px 28px 11px 28px;
+    text-align: center;color: #ffffff;
+    font-size: 16px;text-transform: uppercase;
+    font-weight:500;letter-spacing: 1px;
+    font-family: 'MuseoUkr','Roboto Slab', sans-serif;
+    -webkit-transition: .2s all;-o-transition: .2s all;
+        transition: .2s all;
+    border-radius: 30px;border: 0px;
+    box-shadow: 0px 2px 7px 0.00px rgba(6, 71, 101, 0.26);
+    background: -webkit-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); 
+        background: -moz-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); 
+        background: -o-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -ms-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); 
+        background: linear-gradient(0deg, #09affb 0%,  #80d8fd 100%);}
+#nadislaty2-btn:hover,
+#nadislaty2-btn:focus{
+     box-shadow: 0px 2px 43px 0.00px rgba(6, 71, 101, 0.43);
+   text-decoration: none;
+    outline:none;}
+#nadislaty2-btn:active{
+   text-decoration: none; 
+}
+@media (max-width:767px) {
+    #nadislaty2-btn {
+        font-size: 14px;
+        margin-top: 35px; margin-bottom:40px; 
+    }
+    #nadislaty2-div{
+        width:115%; left:-4%;
+        background-position: 50% 61%;
+        background-size: 630px;}   }
+@media (max-width:550px) {
+    #nadislaty2-div{
+        width:139.9%; left:-13.5%;  }
+}
 /*ФУТЕР*/
 #slide-6 {
     margin:0px;
@@ -1327,18 +1432,18 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 }
 
 #slide-7 {
-	background-color: #e4e6e5;
-	color: #4e4e4e;
-	font-size: 35px;
-	line-height: 50px;
-	text-align: center;
+    background-color: #e4e6e5;
+    color: #4e4e4e;
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center; 
 }
 
 #lightbox-out {
-	background-color: rgba( 0, 0, 0, 0.7 );
-	height: 100%;
-	position: fixed;
-	width: 100%;
+    background-color: rgba( 0, 0, 0, 0.7 );
+    height: 100%;
+    position: fixed;
+    width: 100%;
 /*	z-index: 99999;*/
 }
 
