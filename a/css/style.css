@@ -972,10 +972,10 @@ form input[type="password"] {
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
   
+  -webkit-box-shadow:0px 0px 0.5px 3px #efefef;
   -moz-box-shadow:0px 0px 0.5px 3px #efefef;
   box-shadow: 0px 0px 0.5px 3px #efefef;
   outline: none !important;
-  -webkit-box-shadow:0px 0px 0.5px 3px #efefef;
 }
 form input[type="text"]:focus,
 form input[type="email"]:focus,
@@ -1107,7 +1107,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     background: #fff;
 	-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
     -webkit-transition: all 250ms ease-in-out; -moz-transition: all 250ms ease-in-out; -o-transition: all 250ms ease-in-out; transition: all 250ms ease-in-out;
-    -webkit-box-shadow:0px 0px 0.5px 3px #efefef; -moz-box-shadow:0px 0px 0.5px 3px #efefef; box-shadow: 0px 0px 0.5px 3px #efefef;}
+    -webkit-box-shadow:0px 0px 0.5px 3px #ffefef; -moz-box-shadow:0px 0px 0.5px 3px #ffefef; box-shadow: 0px 0px 0.5px 3px #ffefef;}
 .radio-inline:hover{
 	background: #cef;
     color: #fff;}
@@ -1269,10 +1269,10 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
 /*    min-height: 677px;*/
     max-width:900px;
-    height: 88%;
+    height: 100%;
     padding-bottom: 0px !important;
     }
-#eco-google-form form {height: 100%;
+#contactform {height: 82%; 
     margin:0px 30px 0px 30px; 
     text-align: left;
     z-index:2;}
@@ -1283,10 +1283,11 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     text-align: left;
     padding: 55px 0px 0px 50px;}
 #eco-google-form p{font-size: 20px; font-weight: 600;}
-#contactform .row{height: 100%}
+#contactform .row{height: 100%;
+    overflow: hidden; overflow-y: scroll;}
 #contactform .bottom{
     position: absolute;
-    bottom: 170px;
+    bottom: 0px;
 }
 #eco-google-form-waves{
     font-size:0.1px;
@@ -1304,9 +1305,11 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     top: 11px;
     color:#aaa; font-weight:400; }
 #eco-google-form .form-control{
-        -webkit-box-shadow:0px 0px 0.5px 3px #efefef; -moz-box-shadow:0px 0px 0.5px 3px #efefef; box-shadow: 0px 0px 0.5px 3px #efefef;}
+        box-shadow: 0px 0px 0.5px 3px #efefef;
+        -webkit-box-shadow:0px 0px 0.5px 3px #efefef;
+        -moz-box-shadow:0px 0px 0.5px 3px #efefef;}
 #eco-google-form textarea{
-    margin-bottom:290px; overflow-y: scroll;
+    margin-bottom:150px;
     height: inherit !important;
     border: 0px solid #fff !important;
   -webkit-transition: all 250ms ease-in-out;-moz-transition: all 250ms ease-in-out;-o-transition: all 250ms ease-in-out;transition: all 250ms ease-in-out;
@@ -1335,9 +1338,9 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     #eco-google-form .container{
         height: 100%;
         max-width:550px;}
-    #eco-google-form form {
+    #contactform  {
         margin:0px 13%;}
-    #contactform .row{height: 100%}
+    #contactform .row{height: 400px;}
     #eco-google-form .form-group{
         padding: 0px 0px 25px 0px;}
     #eco-google-form .help-block{ 
