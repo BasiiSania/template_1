@@ -347,6 +347,8 @@ jQuery(document).ready(function ($) {
     myform.setAttribute('action', 'https://formspree.io/' + 'bereg' + 'ovoi0210' + '@' + 'gmail' + '.' + 'com');
 //    myform.setAttribute('action', 'https://formspree.io/' + 'ba' + 'syanya' + '@' + 'ukr' + '.' + 'net');
     
+    var myform =  document.getElementById('contactform');
+    myform.setAttribute('action', 'https://formspree.io/' + 'bereg' + 'ovoi0210' + '@' + 'gmail' + '.' + 'com');
     
 //    $('#slide-4-tabs li:first').addClass('active');
     var today = new Date();
@@ -451,7 +453,23 @@ function chasDostavky(currentDiv){
 //    alert("FIN!");
 
     return true;
-}
+};
+function contaktSend()
+{
+    var myform =  document.getElementById('contactform');
+    if (myform["inputName2"].value=="" ||
+       myform["inputContact2"].value=="" ){
+        
+        $('#text-zapovnit-polia2').css({
+            'display': 'block'
+        });
+        return false;
+    }
+    else{
+        myform.submit();
+        return true;    
+    }
+};
 
 function zamovlenniaSend()
 {

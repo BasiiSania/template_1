@@ -971,11 +971,11 @@ form input[type="password"] {
   -moz-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-    
-  -webkit-box-shadow:0px 0px 0.5px 3px #efefef;
+  
   -moz-box-shadow:0px 0px 0.5px 3px #efefef;
   box-shadow: 0px 0px 0.5px 3px #efefef;
   outline: none !important;
+  -webkit-box-shadow:0px 0px 0.5px 3px #efefef;
 }
 form input[type="text"]:focus,
 form input[type="email"]:focus,
@@ -1255,21 +1255,21 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     background: rgba(0,0,0,0.5); 
     padding:50px 0 0px 0;}
 #eco-google-form-close {
-     z-index:12; 
+     z-index:15; 
      position: absolute;
      margin-left:76%; margin-top:40px;
-     width:200px; 
+     width:200px; line-height: 50pt;
      text-align: center;
-     color: #ddd; font-size:20px; 
+     color: #A0E2FF; font-size:25px; 
      cursor: pointer;}
 #eco-google-form-close:hover {
-    font-weight: 600; }
+    color: #ddd; }
 #eco-google-form .container{
     background-color: #ffffff;
     box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
 /*    min-height: 677px;*/
     max-width:900px;
-    height: 100%;
+    height: 88%;
     padding-bottom: 0px !important;
     }
 #eco-google-form form {height: 100%;
@@ -1286,7 +1286,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 #contactform .row{height: 100%}
 #contactform .bottom{
     position: absolute;
-    bottom: 240px;
+    bottom: 170px;
 }
 #eco-google-form-waves{
     font-size:0.1px;
@@ -1303,7 +1303,11 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     position: absolute; margin-top:40px;
     top: 11px;
     color:#aaa; font-weight:400; }
+#eco-google-form .form-control{
+        -webkit-box-shadow:0px 0px 0.5px 3px #efefef; -moz-box-shadow:0px 0px 0.5px 3px #efefef; box-shadow: 0px 0px 0.5px 3px #efefef;}
 #eco-google-form textarea{
+    margin-bottom:290px; overflow-y: scroll;
+    height: inherit !important;
     border: 0px solid #fff !important;
   -webkit-transition: all 250ms ease-in-out;-moz-transition: all 250ms ease-in-out;-o-transition: all 250ms ease-in-out;transition: all 250ms ease-in-out;
   -webkit-box-shadow:0px 0px 0.5px 3px #efefef;-moz-box-shadow:0px 0px 0.5px 3px #efefef;box-shadow: 0px 0px 0.5px 3px #efefef;
@@ -1316,29 +1320,45 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 
 @media (max-width:768px) {
     #eco-google-form-close {
-     margin-left:67%; top:30px}
+     margin-left:67%; top:25px}
     #eco-google-form h3{
         font-size:35px;
         padding-top: 0px; padding-right: 100px}
+    #eco-google-form-waves{
+        margin-right:9%}
     #eco-google-form p{font-size:14px;
-    padding: 10px 10%;}
+    padding: 10px 0px;}
     #contactform .bottom{
         position: absolute;
-        bottom: 150px;
+        bottom: 100px;
     }
     #eco-google-form .container{
+        height: 100%;
         max-width:550px;}
     #eco-google-form form {
         margin:0px 13%;}
+    #contactform .row{height: 100%}
     #eco-google-form .form-group{
         padding: 0px 0px 25px 0px;}
     #eco-google-form .help-block{ 
+        top: 0px;
         font-size:13px; font-weight: 600}
     #eco-google-form .form-control{
+        height:8%;
         font-size: 16px;
         font-weight: 600}
 }
-#nadislaty2-div{
+#text-zapovnit-polia2 {
+    display:none;position: absolute;
+    bottom: 150px; z-index:14;
+    text-align:center; font-size:20px; font-weight:700; color: #EF9DB1; 
+    -webkit-transition: all 550ms ease-in-out; -moz-transition: all 550ms ease-in-out; -o-transition: all 550ms ease-in-out; transition: all 550ms ease-in-out;}
+@media (max-width:767px) {
+    #text-zapovnit-polia2 {
+        position: absolute; bottom: 103px;
+        font-size:17px;}
+}
+#nadislaty2-div{ z-index:13;
     background-image: url(../images/photo_button_lg.jpg);
     background-repeat: no-repeat;
     background-position: 50% 64.7%;
@@ -1375,17 +1395,17 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 @media (max-width:767px) {
     #nadislaty2-btn {
         font-size: 14px;
-        margin-top: 35px; margin-bottom:40px; 
+        margin-top: 55px; margin-bottom:40px; 
     }
     #nadislaty2-div{
-        width:115%; left:-4%;
-        background-position: 50% 61%;
+        width:125%; left:-9%;
+        background-position: 50% 56%;
         background-size: 630px;
         padding-bottom:0px !important;
         margin-bottom:0px !important}   }
 @media (max-width:550px) {
     #nadislaty2-div{
-        width:139.9%; left:-13.5%;  }
+        width:150%; left:-17%;  }
 }
 /*ФУТЕР*/
 #slide-6 {
