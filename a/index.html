@@ -697,14 +697,14 @@ name="Кількість" onchange="zminaZamovVartist(this.value)">
 	</div><!-- /slide5 -->
         
 <!-- ЗВ-ЯЗОК-->
-<div id="eco-google-form" style="">
-    <div  id="eco-google-form-close"  style="">
+<div id="zviazok-slide" style="">
+    <div  id="zviazok-slide-close"  style="">
         <span class="icon-2x icon-angle-right"></span>
         <span class="icon-2x icon-angle-left" style="left:-13px"></span>
     </div>
     <div class="container">
         <div class="row"><h3>Зв&rsquo;язатись з нами</h3>
-            <div id='eco-google-form-waves'>.</div>
+            <div id='zviazok-slide-waves'>.</div>
             
         </div>
         <form class="form-horizontal" role="form" id="contactform" method="POST">
@@ -713,21 +713,8 @@ name="Кількість" onchange="zminaZamovVartist(this.value)">
                 <input type="hidden" name="_subject" value="Форма-звернення на сайті Еко" />
                 <input type="hidden" name="_next" value="diakuyemo.html" />
           </div>
-        <div class="row">  
+        <div class="row">  <!--float bottom-->
         <p>У випадку будь-яких питань чи пропозицій, будь-ласка, напишіть нам за допомогою форми нижче</p>
-        <div class=" col-xs-12 bottom"> <!--float bottom-->
-          <div class="form-group" id="nadislaty2-div">
-            <div class="col-xs-12" id="text-zapovnit-polia2" style="">
-                Будь-ласка, заповніть всі поля!
-            </div>
-            <div class="col-xs-12">
-              <button type="submit" class="btn btn-default" 
-              onclick="return contaktSend();" id="nadislaty2-btn">
-                  Надіслати</button>
-            </div>
-          </div>
-        </div>
-            
         <div class="col-sm-6  col-xs-12">
           <div class="form-group">
             <div >
@@ -741,7 +728,7 @@ name="Кількість" onchange="zminaZamovVartist(this.value)">
             <div >
               <input type="text" class="form-control" id="inputContact2" 
                 placeholder="Ваш контакт" aria-describedby="help-kontakt" name="Контакт" required>
-        	<span id="help-kontakt" class="help-block">
+            <span id="help-kontakt" class="help-block">
                 Телефон або E-mail</span>
             </div>
           </div>
@@ -749,12 +736,23 @@ name="Кількість" onchange="zminaZamovVartist(this.value)">
         <div class="col-xs-12">
           <div class="form-group">
             <div >
-              <textarea rows="5"  class="form-control" id="inputPovidomlennia" 
-                  placeholder="Чим ми можемо допомогти?" name="Текст">
-              </textarea>
+              <textarea rows="3"  class="form-control" id="inputPovidomlennia" 
+                  placeholder="Чим ми можемо допомогти?" name="Текст" required></textarea>
             </div>
           </div>
-        </div>  
+        </div>
+        <div class="col-xs-12"> 
+          <div class="form-group" id="nadislaty2-div">
+            <div class="col-xs-12" id="text-zapovnit-polia2" style="">
+                Будь-ласка, заповніть всі поля!
+            </div>
+            <div class="col-xs-12">
+              <button type="submit" class="btn btn-default" 
+              onclick="return contaktSend();" id="nadislaty2-btn">
+                  Надіслати</button>
+            </div>
+          </div>
+        </div> 
 
         </div> <!-- кінець row-->    
         </form>

@@ -1009,17 +1009,17 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 #slide-5 .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */color:    #444;opacity:  1;}
 #slide-5 .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */color:    #444;}
 
-#eco-google-form .form-control {
+#zviazok-slide .form-control {
     border-radius: 0px;
 /*    border: 4px solid #CCCCCC !important;*/
     border: 0px solid #fff !important;
     font-size: 20px;
     color:#333;
     height:43px;}
-#eco-google-form .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */color:    #444 ;}
-#eco-google-form .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:    #444;opacity:  1;}
-#eco-google-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */color:    #444;opacity:  1;}
-#eco-google-form .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */color:    #444;}
+#zviazok-slide .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */color:    #444 ;}
+#zviazok-slide .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:    #444;opacity:  1;}
+#zviazok-slide .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */color:    #444;opacity:  1;}
+#zviazok-slide .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */color:    #444;}
 
 /* ============================== */
 
@@ -1247,24 +1247,24 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 }
 
 /*_________-- ЗВ-ЯЗОК --*/
-#eco-google-form {
+#zviazok-slide {
     display:none;
     position: fixed; top:0px; left:0;
     z-index:10; 
     width:100%; height: 100%;
     background: rgba(0,0,0,0.5); 
     padding:50px 0 0px 0;}
-#eco-google-form-close {
+#zviazok-slide-close {
      z-index:15; 
      position: absolute;
-     margin-left:76%; margin-top:40px;
+     margin-left:71%; margin-top:50px;
      width:200px; line-height: 50pt;
      text-align: center;
      color: #A0E2FF; font-size:25px; 
      cursor: pointer;}
-#eco-google-form-close:hover {
+#zviazok-slide-close:hover {
     color: #ddd; }
-#eco-google-form .container{
+#zviazok-slide .container{
     background-color: #ffffff;
     box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
 /*    min-height: 677px;*/
@@ -1272,82 +1272,72 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     height: 100%;
     padding-bottom: 0px !important;
     }
-#contactform {height: 82%; 
-    margin:0px 30px 0px 30px; 
-    text-align: left;
-    z-index:2;}
-#eco-google-form h3 {
+#zviazok-slide h3 {
     font-family: "Open Sans", sans-serif; font-weight: 700;
     color: #444;
     font-size:40px;
     text-align: left;
     padding: 55px 0px 0px 50px;}
-#eco-google-form p{font-size: 20px; font-weight: 600;}
-#contactform .row{height: 100%;
-    overflow: hidden; overflow-y: scroll;}
-#contactform .bottom{
-    position: absolute;
-    bottom: 0px;
-}
-#eco-google-form-waves{
+#zviazok-slide-waves{
     font-size:0.1px;
     height: 25px;
+    margin-right:50px;
     background:url(../images/waves/lg/4-01.png);
     background-repeat: no-repeat;
     background-size: 850px;}
-#eco-google-form p {
-    padding: 30px 10% 0px 50px;}
-#eco-google-form .form-group{
-    padding: 18px 20px 29px 20px;
-}
-#eco-google-form .help-block{ 
-    position: absolute; margin-top:40px;
-    top: 11px;
-    color:#aaa; font-weight:400; }
-#eco-google-form .form-control{
+#contactform {
+    height: 75%;max-height: 550px;
+    position: absolute;bottom:-2px;
+    margin:0px 30px 0px 30px; 
+    text-align: left;
+    z-index:2;}
+#contactform .row{
+    max-height:100%;
+    overflow: hidden; overflow-y: scroll;}
+#contactform p {
+    font-size: 20px; font-weight: 600;
+    padding: 30px 10% 0px 20px;}
+#contactform .form-group{
+    padding: 18px 20px 0px 20px;}
+#contactform .help-block{
+    color:#aaa; font-weight:400; 
+margin-bottom: 0}
+#contactform .form-control{
         -webkit-box-shadow:0px 0px 0.5px 3px #efefef;
         -moz-box-shadow:0px 0px 0.5px 3px #efefef;
-    box-shadow: 0px 0px 0.5px 13px #efefef !important;}
-#eco-google-form textarea{
-    margin-bottom:150px;
+    box-shadow: 0px 0px 0.5px 3px #efefef !important;}
+#contactform textarea{
     height: inherit !important;
     border: 0px solid #fff !important;
-  -webkit-transition: all 250ms ease-in-out;-moz-transition: all 250ms ease-in-out;-o-transition: all 250ms ease-in-out;transition: all 250ms ease-in-out;
-  -webkit-box-shadow:0px 0px 0.5px 3px #efefef;-moz-box-shadow:0px 0px 0.5px 3px #efefef;box-shadow: 0px 0px 0.5px 3px #efefef;
-  outline: none !important;
+    -webkit-transition: all 250ms ease-in-out;-moz-transition: all 250ms ease-in-out;-o-transition: all 250ms ease-in-out;transition: all 250ms ease-in-out;
+    -webkit-box-shadow:0px 0px 0.5px 3px #efefef;-moz-box-shadow:0px 0px 0.5px 3px #efefef;box-shadow: 0px 0px 0.5px 3px #efefef;
+    outline: none !important;}
+#contactform textarea:focus{
+    -webkit-box-shadow:0px 0px 0.5px 3px #f8f8f8 !important; -moz-box-shadow:0px 0px 0.5px 3px #f8f8f8 !important; box-shadow: 0px 0px 0.5px 3px #f8f8f8 !important; 
+    outline: none !important;
 }
-#eco-google-form textarea:focus{
-  -webkit-box-shadow:0px 0px 0.5px 3px #f8f8f8 !important; -moz-box-shadow:0px 0px 0.5px 3px #f8f8f8 !important; box-shadow: 0px 0px 0.5px 3px #f8f8f8 !important; 
-  outline: none !important;
-}
-
 @media (max-width:768px) {
-    #eco-google-form-close {
-     margin-left:67%; top:25px}
-    #eco-google-form h3{
-        font-size:35px;
-        padding-top: 0px; padding-right: 100px}
-    #eco-google-form-waves{
-        margin-right:9%}
-    #eco-google-form p{font-size:14px;
-    padding: 10px 0px;}
-    #contactform .bottom{
-        position: absolute;
-        bottom: 100px;
-    }
-    #eco-google-form .container{
-        height: 100%;
+    #zviazok-slide-close {
+     margin-left:64%; top:10px}
+    #zviazok-slide h3{
+        font-size:30px;
+        padding: 0px 40% 0px 40px;}
+    #zviazok-slide-waves{
+        margin-right:0}
+    #zviazok-slide .container{
         max-width:550px;}
-    #contactform  {
-        margin:0px 13%;}
-    #contactform .row{height: 400px;}
-    #eco-google-form .form-group{
-        padding: 0px 0px 25px 0px;}
-    #eco-google-form .help-block{ 
-        top: 0px;
+    #contactform {
+        max-height: 550px;
+        margin:0px 8%;}
+    #contactform .row{}
+    #zviazok-slide p{
+        font-size:14px; padding: 10px;}
+    #zviazok-slide .form-group{
+        padding: 10px;}
+    #zviazok-slide .help-block{ 
         font-size:13px; font-weight: 600}
-    #eco-google-form .form-control{
-        height:8%;
+    #zviazok-slide .form-control{
+        height:35px;
         font-size: 16px;
         font-weight: 600}
 }
@@ -1364,15 +1354,15 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 #nadislaty2-div{ z-index:13;
     background-image: url(../images/photo_button_lg.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 64.7%;
+    background-position: 50% 62.1%;
     background-size: 700px;
-    margin-bottom: 0px;
+    margin: 0px;
     width:140%; left:-16%;
 }
 #nadislaty2-btn {
 	display: block;
 	margin: 0px auto;
-    margin-top: 49px; margin-bottom:50px; 
+    margin-top: 49px; margin-bottom:70px; 
 	left:0; right:0;
     padding: 11px 28px 11px 28px;
     text-align: center;color: #ffffff;
@@ -1401,15 +1391,11 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
         margin-top: 55px; margin-bottom:40px; 
     }
     #nadislaty2-div{
-        width:125%; left:-9%;
-        background-position: 50% 56%;
+        width:125%; left:-12%;
+        background-position: 10% 55%;
         background-size: 630px;
         padding-bottom:0px !important;
         margin-bottom:0px !important}   }
-@media (max-width:550px) {
-    #nadislaty2-div{
-        width:150%; left:-17%;  }
-}
 /*ФУТЕР*/
 #slide-6 {
     margin:0px;

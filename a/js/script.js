@@ -370,16 +370,16 @@ jQuery(document).ready(function ($) {
         });
     $("#menu-link-5").click(function(){
       //  гугл-формa по кліку на пункт меню -ЗВ'ЯЗОК-
-        $('#eco-google-form').attr('style', '');
-        $('#eco-google-form').css({
+        $('#zviazok-slide').attr('style', '');
+        $('#zviazok-slide').css({
             'display': 'block'
         });
     });  
-    $('#eco-google-form').css({
+    $('#zviazok-slide').css({
         'display': 'none'
     });
-    $("#eco-google-form-close").click(function(){
-        $('#eco-google-form').css({
+    $("#zviazok-slide-close").click(function(){
+        $('#zviazok-slide').css({
             'display': 'none'});
     });
 });
