@@ -716,6 +716,8 @@ h6 {
 	background-color: #ffffff;
     color:#3c3b3b;
 }
+#slide-4 .container{
+    }
 #slide-4 .row {
     min-width: 385px;
 }
@@ -732,12 +734,11 @@ h6 {
 
 @media(min-width:1199px) {
     #slide-4 {
-        display:inline-block;
         padding-bottom: 60px;
         min-height:516px;
     }
     #slide-4 .row {
-        width: 110%; left:-73px;}
+        width: 110%; }
     .slide-4-title {
         width: 290px;
         font-size: 45px;
@@ -746,7 +747,7 @@ h6 {
         margin: 0px auto;} }
 @media(max-width:1199px) and (min-width:768px) {
     #slide-4 .row {
-        width:115%; left:-55px;
+        width:115%;
         max-width:840px;
         margin:0px auto;
         margin-bottom:50px}
