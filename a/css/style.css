@@ -942,12 +942,11 @@ h6 {
     text-align: center}
 
 #opys-tovariv-r{}
+#opys-tovariv-r .col-xs-4{padding:0px}
 #opys-tovariv-r img{
-    width:140px; 
-    right: -5%;}
+    width:140px; margin-left:0px }
 #opys-tovariv-r .col-xs-8{
     text-align: left; 
-    padding-left: 10%; 
     line-height: 14pt}
 @media(max-width:767px) {
     #opys-tovariv-r{}
