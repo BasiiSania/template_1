@@ -939,6 +939,16 @@ h6 {
     color:#555;
     height:43px;
     text-align: center}
+#bottles-chooser{
+    margin: 0 auto;
+    text-align: center}
+.bottle {
+    display: inline;}
+.bottle svg{
+    width:20px;
+    fill: rgba(162,227,255,0.4);}
+.bottle svg:hover{
+    fill: rgba(162,227,255,0.9);}
 
 #opys-tovariv-r{}
 #opys-tovariv-r .col-xs-4{padding:0px}
@@ -1263,7 +1273,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
      cursor: pointer;}
 #zviazok-slide-close:hover {
     color: #ddd; }
-#zviazok-slide .container{
+#zviazok-slide .container{overflow: hidden;
     background-color: #ffffff;
     box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
 /*    min-height: 677px;*/
@@ -1277,7 +1287,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     font-size:40px;
     text-align: left;
     padding: 35px 0px 0px 50px;}
-#zviazok-slide-waves{
+.zviazok-slide-waves{
     font-size:0.1px;
     height: 25px;
     margin-right:50px;
@@ -1394,6 +1404,18 @@ margin-bottom: 0}
         background-size: 630px;
         padding-bottom:0px !important;
         margin-bottom:0px !important}   }
+
+#contact-form-success{display:none;}
+#contact-form-success .zviazok-slide-waves{
+    padding:0px; background-size: 100%;
+    width:105%;left:-3%}
+#contact-form-success h3{
+    padding:0px; text-align: center;}
+#contact-form-success p {
+    font-size: 20px; font-weight: 600;
+    padding: 30px auto;
+    text-align: center;}
+
 /*ФУТЕР*/
 #slide-6 {
     margin:0px;

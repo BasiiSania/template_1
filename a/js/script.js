@@ -344,11 +344,13 @@ jQuery(document).ready(function ($) {
 //    Далі мої скрипти
     
     var myform =  document.getElementById('mainform');
-    myform.setAttribute('action', 'https://formspree.io/' + 'bereg' + 'ovoi0210' + '@' + 'gmail' + '.' + 'com');
+    var mail_part = 210;
+    myform.setAttribute('action', 'https://formspree.io/' + 'bereg' + 'ovoi0' + mail_part.toString() + '@' + 'gmail' + '.' + 'com');
 //    myform.setAttribute('action', 'https://formspree.io/' + 'ba' + 'syanya' + '@' + 'ukr' + '.' + 'net');
     
     var myform =  document.getElementById('contactform');
     myform.setAttribute('action', 'https://formspree.io/' + 'bereg' + 'ovoi0210' + '@' + 'gmail' + '.' + 'com');
+//    myform.setAttribute('action', 'https://formspree.io/' + 'ba' + 'syanya' + '@' + 'ukr' + '.' + 'net');
     
 //    $('#slide-4-tabs li:first').addClass('active');
     var today = new Date();
@@ -390,14 +392,20 @@ $('.nasha-woda-row-2 .col-lg-3').on('mouseover', function() {
   });
 });
 $('.nasha-woda-row-2 .col-lg-3').on('mouseleave', function() {
-  $(this).find('svg').children().css({
-    'fill': '#ffffff'
-  });
+  $(this).find('svg').children().attr('style', '');
+});
+
+
+$('.bottle svg').click(function(){
+  $('.bottle svg').attr('style', '');
+  $(this).find('svg').css('fill', 'rgba(162,227,255,0.9)');
 });
 
 function zminaZamovVartist(val) {
     var vartist_num = val*35;
     document.getElementById('zamov-vartist').innerHTML = vartist_num.toString();
+    $('.bottle svg').css('fill', 'rgba(162,227,255,0.9)');
+    $('.bottle')[val].find('svg').css('fill', 'rgba(162,227,255,0.1)');
 }
 
 function zminaTsina(val) {
@@ -467,6 +475,10 @@ function contaktSend()
     }
     else{
         myform.submit();
+        $('#zviazok-slide .container').css('height','80%');
+        $('#zviazok-slide .row').css('display','none');
+        $('#zviazok-slide form').css('display','none');
+        $('#contact-form-success').css('display','block');
         return true;    
     }
 };
