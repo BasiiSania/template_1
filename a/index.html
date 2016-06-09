@@ -572,6 +572,11 @@ TODO: потестити параметри на тачскріні-->
                 <img src="images/calendar.svg"  style="width:18px; top:-3px; margin-left:2px">
                 </span>
         </div>
+        
+           <div class="help-text-selector">Завтра</div>
+           <div class="help-text-selector">Післязавтра</div>
+           <div class="help-text-selector hidden-xs hidden-sm">Найближча субота</div>
+            <div class="help-text-selector visible-xs visible-sm">Субота</div>
       </div><!--
 		<span id="help1" class="help-block">
             Завтра  післязавтра  найближча&nbsp;субота</span>-->
@@ -643,8 +648,10 @@ TODO: потестити параметри на тачскріні-->
    <div class="form-group ">
       <input type="text" class="form-control" id="inputPhone" 
 	placeholder="Телефон" aria-describedby="help3" name="Тел.номер" required>
-	<span id="help3" class="help-block" style="top:29px">
+	<span id="help3" class="help-block hidden-xs" style="top:29px">
         Ми зв&rsquo;яжемось з вами у випадку форсмажору</span>
+    <span class="help-block visible-xs" style="top:29px">
+        На випадок форсмажору</span>
   </div>    
 </div>
 <div class="col-sm-6">
@@ -652,9 +659,10 @@ TODO: потестити параметри на тачскріні-->
     
       <input type="email" class="form-control" id="inputMail" 
 	placeholder="E-mail" aria-describedby="help4" name="_replyto">
-	<span id="help4" class="help-block" style="top:29px">
+	<span id="help4" class="help-block hidden-xs" style="top:29px">
         Ми вишлемо вам підтвердження замовлення</span>
-    
+     <span class="help-block visible-xs" style="top:29px">
+        Вишлемо вам підтвердження</span>
  </div>
 </div>
 <div class="col-sm-12">
@@ -683,7 +691,7 @@ name="Кількість" onchange="zminaZamovVartist(this.value)">
     <div class="col-sm-12">
       <button type="submit" class="btn btn-default" 
       onclick="return zamovlenniaSend();" id="nadislaty-btn">
-          Надіслати замовлення</button>
+          Надіслати <span class="hidden-xs">замовлення</span></button>
     </div>
   </div>
 </div>

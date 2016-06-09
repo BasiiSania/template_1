@@ -1070,17 +1070,16 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     background:url(../images/waves/lg/4-01.png);
     background-repeat: no-repeat;
     background-size: 911px;
-    
 }
 #slide-5 .form-group{
     padding: 18px 20px 29px 20px;
+    height:95px;
 }
 #slide-5 .help-block{ 
     position: absolute; margin-top:40px;
+    padding-left:10px;
     top: 11px;
     color:#aaa; font-weight:400; }
-
-
 @media (max-width:768px) {
     #slide-5 h3{
         font-size:40px;
@@ -1090,12 +1089,21 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     #slide-5 form {
         margin:10px 13%;}
     #slide-5 .form-group{
-        padding: 18px 0px 19px 0px;}
+        padding: 18px 0px 19px 0px;
+        height:85px;
+    }
     #slide-5 .help-block{ 
-        font-size:13px; font-weight: 600}
+        font-size:14px; font-weight: 600}
     #slide-5 .form-control{
         font-size: 16px;
         font-weight: 600}
+}
+.help-text-selector{
+    width:content; margin-bottom: 0px;
+    padding:5px 6% 5px 3%; 
+    color:#6FCFF9; 
+    float:left;
+    cursor: pointer;
 }
 /*
 .radio-inline input {display: none;
@@ -1106,8 +1114,8 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 .radio-inline {
     position: relative;
     float: left;
-    padding:0px; margin: 0px;
-    padding-right:3px;
+    padding:0px 3px 0px 0px; 
+    margin: 0px;
     width:33.3%;
     border-radius:0px;
     font-size:20px;
@@ -1125,6 +1133,10 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 #slide-5 input[type="radio"]{
     display:none}
 @media (max-width:767px) {
+    .help-text-selector{
+        font-size: 14px; font-weight: 700;
+        padding:5px 4% 5px 3%; 
+    }
     .radio-inline{
         font-size:16px;
         font-weight:600;
@@ -1135,9 +1147,10 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     #form-tshas{
         width:106%;
         padding: 0 auto;}
-    #form-tshas .help-block{left:5%}
+    #form-tshas .help-block{}
 }
 #form-kilkist{
+    height:auto !important;
     margin-bottom:0px !important; 
     padding-bottom:0px !important;}
 #inputNumber {
@@ -1210,6 +1223,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 }
 
 #nadislaty-div{
+    height: auto !important;
     background-image: url(../images/photo_button_lg.jpg);
     background-repeat: no-repeat;
     background-position: 50% 64.7%;
@@ -1249,12 +1263,12 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
         margin-top: 35px; margin-bottom:40px; 
     }
     #nadislaty-div{
-        width:115%; left:-4%;
-        background-position: 50% 61%;
+        width:115%; left:-4%; top:10px;
+        background-position: 50% 62%;
         background-size: 630px;}   }
 @media (max-width:550px) {
     #nadislaty-div{
-        width:139.9%; left:-13.5%;  }
+        width:149.9%; left:-18%;  }
 }
 
 /*_________-- ЗВ-ЯЗОК --*/
@@ -1476,9 +1490,9 @@ margin-bottom: 0}
 
     #footer-title-text{
        background-size: 150%;
-        padding: 3% 0%;
-	width: 260px;
-	font-size:13px;}
+       padding: 3% 0%;
+	   width: 230px;
+	   font-size:13px;}
 }
 
 #slide-7 {

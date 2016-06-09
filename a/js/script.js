@@ -402,12 +402,6 @@ $('.bottle svg').click(function(){
     zminaTsina(val);
     return true;
 });
-
-function zminaZamovVartist(val) {
-    var vartist_num = val*35;
-    document.getElementById('zamov-vartist').innerHTML = vartist_num.toString();
-}
-
 function zminaTsina(val) {
     var vartist_num = val*35;
     document.getElementById('textTsina').innerHTML = vartist_num.toString();
@@ -455,6 +449,15 @@ $(window).scroll(function() {
 
     }
 });
+
+$('#mydatepicker .help-text-selector').click(function(){
+   $(this).parent().find('input').attr('value',  $(this).text());
+    return true;
+});
+function zminaZamovVartist(val) {
+    var vartist_num = val*35;
+    document.getElementById('zamov-vartist').innerHTML = vartist_num.toString();
+}
 
 function chasDostavky(currentDiv){
     $('#slide-5 label').attr('style', '');
