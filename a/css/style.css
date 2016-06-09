@@ -940,15 +940,17 @@ h6 {
     height:43px;
     text-align: center}
 #bottles-chooser{
-    margin: 0 auto;
+    right:29%;
     text-align: center}
 .bottle {
-    display: inline;}
+    float:right;
+    display: inline; right:-9px;}
 .bottle svg{
-    width:20px;
-    fill: rgba(162,227,255,0.4);}
-.bottle svg:hover{
+    float:right;
+    width:25px;
     fill: rgba(162,227,255,0.9);}
+.bottle svg:hover{
+    fill: rgba(58,173,226,1);}
 
 #opys-tovariv-r{}
 #opys-tovariv-r .col-xs-4{padding:0px}

@@ -349,7 +349,7 @@ jQuery(document).ready(function ($) {
 //    myform.setAttribute('action', 'https://formspree.io/' + 'ba' + 'syanya' + '@' + 'ukr' + '.' + 'net');
     
     var myform =  document.getElementById('contactform');
-    myform.setAttribute('action', 'https://formspree.io/' + 'bereg' + 'ovoi0210' + '@' + 'gmail' + '.' + 'com');
+    myform.setAttribute('action', 'https://formspree.io/' + 'bereg' + 'ovoi0' +mail_part.toString() + '@' + 'gmail' + '.' + 'com');
 //    myform.setAttribute('action', 'https://formspree.io/' + 'ba' + 'syanya' + '@' + 'ukr' + '.' + 'net');
     
 //    $('#slide-4-tabs li:first').addClass('active');
@@ -397,20 +397,29 @@ $('.nasha-woda-row-2 .col-lg-3').on('mouseleave', function() {
 
 
 $('.bottle svg').click(function(){
-  $('.bottle svg').attr('style', '');
-  $(this).find('svg').css('fill', 'rgba(162,227,255,0.9)');
+  var val = $(this).parent().find('svg').length;
+    $('#number-tsina').attr('value', val.toString());
+    zminaTsina(val);
+    return true;
 });
 
 function zminaZamovVartist(val) {
     var vartist_num = val*35;
     document.getElementById('zamov-vartist').innerHTML = vartist_num.toString();
-    $('.bottle svg').css('fill', 'rgba(162,227,255,0.9)');
-    $('.bottle')[val].find('svg').css('fill', 'rgba(162,227,255,0.1)');
 }
 
 function zminaTsina(val) {
     var vartist_num = val*35;
     document.getElementById('textTsina').innerHTML = vartist_num.toString();
+    $('.bottle svg').attr('style','');
+    if (val<=8){
+        $('.bottle svg:gt('+(8-val).toString()+')').css('fill', 'rgba(58,173,226,0.9)');
+    }
+    else {
+      $('.bottle svg').css('fill', 'rgba(58,173,226,0.9)');  
+    };
+//    alert(bottls.length.toString()); 
+    return true;
 }
 
 $(window).scroll(function() {
@@ -458,10 +467,8 @@ function chasDostavky(currentDiv){
     
     $(currentDiv).parent().find('input').attr('checked', true);
 
-//    alert("FIN!");
+    return true;    };
 
-    return true;
-};
 function contaktSend()
 {
     var myform =  document.getElementById('contactform');
