@@ -39,8 +39,7 @@ h4,
 h5,
 h6 {
   font-family: 'MuseoUkr','Roboto Slab', sans-serif;
-/*font-family: "museo", sans-serif;
-    font-weight:700;*/
+  font-weight:500;
 }
 
 .justify-text {
@@ -997,7 +996,7 @@ form input[type="password"]:focus{
 }
  #slide-5 .date {border: none !important;
     -webkit-box-shadow:0px 0px 0.5px 3px #f8f8f8; -moz-box-shadow:0px 0px 0.5px 3px #f8f8f8; box-shadow: 0px 0px 0.5px 3px #f8f8f8; z-index: 0; } 
-#slide-5 .input-group-addon{background-color: #fff;border-radius: 0px;font-size: 20px;height:43px;
+.date .input-group-addon{background-color: #fff;border-radius: 0px;font-size: 20px;height:43px;
 border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !important; -moz-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !important; box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !important; z-index: 1; }
 #slide-5 .date input {
     -webkit-box-shadow:-1.5px 0px 0.5px 2px rgba(100,100,100,0.1); -moz-box-shadow:-1.5px 0px 0.5px 2px rgba(100,100,100,0.1); box-shadow: -1.5px 0px 0.5px 2px rgba(100,100,100,0.1); z-index: 0; }
@@ -1154,10 +1153,24 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     margin-bottom:0px !important; 
     padding-bottom:0px !important;}
 #inputNumber {
+    min-width:55px;
     font-size: 20px !important;
     font-weight: 400 !important;
     color:#333 !important;
 }
+#form-kilkist .input-group-addon{
+    border:none;
+    padding:0px; margin: 0px;
+    width:43px;height:43px;
+    font-size:20px;color:#333;
+    text-align: center;cursor: pointer;
+    background: #fff;border-radius:0px;
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+    -webkit-transition: all 250ms ease-in-out; -moz-transition: all 250ms ease-in-out; -o-transition: all 250ms ease-in-out; transition: all 250ms ease-in-out;
+    -webkit-box-shadow:0px 0px 0.5px 3px #efefef; -moz-box-shadow:0px 0px 0.5px 3px #efefef; box-shadow: 0px 0px 0.5px 3px #efefef;}
+#form-kilkist .input-group-addon:hover{
+	background: #cef;
+    color: #fff;}
 #form-kilkist .col-sm-3 {
     left:-14px;
     min-height:70px;
@@ -1434,6 +1447,7 @@ margin-bottom: 0}
 
 /*ФУТЕР*/
 #slide-6 {
+    z-index:1;
     margin:0px;
     background-color: #222;
     padding: 0px 0px 40px 0px;

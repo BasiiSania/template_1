@@ -290,7 +290,6 @@ jQuery(document).ready(function ($) {
 * = Arrows click  *
 ******************/
 jQuery(document).ready(function ($) {
-	//Cache some variables
 	var arrows = $('#arrows div');
 	
 	arrows.click(function(e) {
@@ -341,18 +340,15 @@ jQuery(document).ready(function ($) {
 		}
 	});
     
-//    Далі мої скрипти
-    
+    //Далі мої скрипти
     var myform =  document.getElementById('mainform');
     var mail_part = 210;
     myform.setAttribute('action', 'https://formspree.io/' + 'bereg' + 'ovoi0' + mail_part.toString() + '@' + 'gmail' + '.' + 'com');
 //    myform.setAttribute('action', 'https://formspree.io/' + 'ba' + 'syanya' + '@' + 'ukr' + '.' + 'net');
-    
-    var myform =  document.getElementById('contactform');
+    myform =  document.getElementById('contactform');
     myform.setAttribute('action', 'https://formspree.io/' + 'bereg' + 'ovoi0' +mail_part.toString() + '@' + 'gmail' + '.' + 'com');
 //    myform.setAttribute('action', 'https://formspree.io/' + 'ba' + 'syanya' + '@' + 'ukr' + '.' + 'net');
     
-//    $('#slide-4-tabs li:first').addClass('active');
     var today = new Date();
     var dd = today.getDate();
     var mm = today.getMonth()+1; //January is 0!
@@ -370,66 +366,25 @@ jQuery(document).ready(function ($) {
             todayHighlight: true,
             showOnFocus: false
         });
-    $("#menu-link-5").click(function(){
-      //  гугл-формa по кліку на пункт меню -ЗВ'ЯЗОК-
+    $("#menu-link-5").click(function(){ //  -ЗВ'ЯЗОК-
         $('#zviazok-slide').attr('style', '');
-        $('#zviazok-slide').css({
-            'display': 'block'
-        });
+        $('#zviazok-slide').css('display', 'block');
     });  
-    $('#zviazok-slide').css({
-        'display': 'none'
-    });
+    $('#zviazok-slide').css('display', 'none');
     $("#zviazok-slide-close").click(function(){
         $('#zviazok-slide').css({
             'display': 'none'});
     });
-});
-
-$('.nasha-woda-row-2 .col-lg-3').on('mouseover', function() {
-  $(this).find('svg').children().css({
-    'fill': '#3AADE3'
-  });
-});
-$('.nasha-woda-row-2 .col-lg-3').on('mouseleave', function() {
-  $(this).find('svg').children().attr('style', '');
-});
-
-
-$('.bottle svg').click(function(){
-  var val = $(this).parent().find('svg').length;
-    $('#number-tsina').attr('value', val.toString());
-    zminaTsina(val);
-    return true;
-});
-function zminaTsina(val) {
-    var vartist_num = val*35;
-    document.getElementById('textTsina').innerHTML = vartist_num.toString();
-    $('.bottle svg').attr('style','');
-    if (val<=8){
-        $('.bottle svg:gt('+(8-val).toString()+')').css('fill', 'rgba(58,173,226,0.9)');
-    }
-    else {
-      $('.bottle svg').css('fill', 'rgba(58,173,226,0.9)');  
-    };
-//    alert(bottls.length.toString()); 
-    return true;
-}
+});//end of jQuery(document).ready(function ($){
 
 $(window).scroll(function() {
-
     //After scrolling 50px from the top...
     if ( $(window).scrollTop() >= 50 ) {
         $('#arrows').css({
             'opacity': '0'
         });
-
-    //Otherwise remove inline styles and thereby revert to original stying
     } else {
-        $('#arrows').attr('style', '');
-
-    }
-    
+        $('#arrows').attr('style', '');}
     //After scrolling 630px from the top...
     if ( $(window).scrollTop() >= 630 ) {
         $('#zamovyty-btn').css({
@@ -440,18 +395,57 @@ $(window).scroll(function() {
         $('#phone-number').css({
             'color': '#ffffff',
             'background-position': '2px -76px'
-//            'background-size': '28px'
         });
-
-    //Otherwise remove inline styles and thereby revert to original stying
     } else {
         $('#zamovyty-btn, #phone-number').attr('style', '');
 
     }
 });
 
+//slide-3
+$('.nasha-woda-row-2 .col-lg-3').on('mouseover', function() {
+  $(this).find('svg').children().css('fill','#3AADE3');
+});
+$('.nasha-woda-row-2 .col-lg-3').on('mouseleave', function() {
+  $(this).find('svg').children().attr('style', '');
+});
+
+$('.bottle svg').click(function(){
+  var val = $(this).parent().find('svg').length;
+    $('#number-tsina').attr('value', val.toString());
+    zminaTsina(val);
+    return true;
+});
+
+function zminaTsina(val) {
+    var vartist_num = val*35;
+    document.getElementById('textTsina').innerHTML = vartist_num.toString();
+    $('.bottle svg').attr('style','');
+    if (val<=8){
+        $('.bottle svg:gt('+(8-val).toString()+')').css('fill', 'rgba(58,173,226,0.9)');
+    }
+    else {
+      $('.bottle svg').css('fill', 'rgba(58,173,226,0.9)');  
+    };
+    return true;
+}
+
 $('#mydatepicker .help-text-selector').click(function(){
    $(this).parent().find('input').attr('value',  $(this).text());
+    return true;
+});
+
+$('#form-kilkist .input-group-addon').click(function(){
+   var inputField = $(this).parent().find('input');
+   var n = parseInt(inputField.val(),10);
+   if (($(this).text()==='-') && (n>=2)){
+       n = n-1;
+       inputField.val(n); zminaZamovVartist(n);
+   };
+    if (($(this).text()==='+') && (n<=8)){
+        n = (n+1);
+        inputField.val(n); zminaZamovVartist(n);
+    };
     return true;
 });
 function zminaZamovVartist(val) {
