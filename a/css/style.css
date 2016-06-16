@@ -586,9 +586,14 @@ h6 {
 .nasha-woda-row-2 .col-lg-3{
     margin: 0px !important;
     background-color: #3AADE3;
-    height:320px;
+    height:290px;
     padding:0% 4%;}
-    
+.nasha-woda-row-2 .col-lg-3:hover{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20.58px 0.42px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: #323232;
+}   
 .nasha-woda-row-2 svg{
     height:60px;width:20%;
     fill: #ffffff;
@@ -601,12 +606,6 @@ h6 {
     font-size: 18px;
     }
 
-.nasha-woda-row-2 .col-lg-3:hover{
-    background-color: #ffffff;
-    box-shadow: 0px 0px 20.58px 0.42px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    color: #323232;
-}
 .nasha-woda-row-2 p {
 	color: #ffffff;
 	font-weight: 600;
@@ -620,8 +619,7 @@ h6 {
     background-size: 30%;
     background-position: 64% 18%;
     background-color: #3AADE3;
-    height:320px;
-}
+    height:290px;}
 #plant-svg h4{ padding-top:135px;}
 #plant-svg:hover {
 	background-repeat: no-repeat;
@@ -632,7 +630,7 @@ h6 {
 @media (min-width: 1200px) {
     #plant-svg:hover,
     .nasha-woda-row-2 .col-lg-3:hover{
-    height:340px;top:-10px;
+    height:310px;top:-10px;
     padding-top:10px;
     }
 }
@@ -730,9 +728,9 @@ h6 {
     padding-right: 2px;
     }
 
-@media(min-width:1199px) {
+@media(min-width:1200px) {
     #slide-4 {
-        padding-bottom: 60px;
+        padding-bottom: 100px;
         min-height:516px;
     }
     #slide-4 .row {
@@ -1066,8 +1064,10 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 #slide-5-waves{
     font-size:0.1px;
     height: 25px;
+    margin-right: 50px;
     background:url(../images/waves/lg/4-01.png);
     background-repeat: no-repeat;
+    background-position: -3px 0px;
     background-size: 911px;
 }
 #slide-5 .form-group{
@@ -1317,12 +1317,12 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     text-align: left;
     padding: 35px 0px 0px 50px;}
 .zviazok-slide-waves{
-    font-size:0.1px;
+    font-size:0.1px; color:#fff;
     height: 25px;
-    margin-right:50px;
+    margin-right:40px;
     background:url(../images/waves/lg/4-01.png);
-    background-repeat: no-repeat;
-    background-size: 850px;}
+    background-repeat: no-repeat; background-position: -3px 0px;
+    background-size: 860px;}
 #contactform {
     height: 75%;max-height: 550px;
     position: absolute;bottom:-2px;

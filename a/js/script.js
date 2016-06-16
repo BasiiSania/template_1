@@ -366,7 +366,7 @@ jQuery(document).ready(function ($) {
             todayHighlight: true,
             showOnFocus: false
         });
-    $("#menu-link-5").click(function(){ //  -ЗВ'ЯЗОК-
+    $("#menu-zviazok").click(function(){ //  for ontop window -ЗВ'ЯЗОК-
         $('#zviazok-slide').attr('style', '');
         $('#zviazok-slide').css('display', 'block');
     });  
