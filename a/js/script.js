@@ -369,11 +369,13 @@ jQuery(document).ready(function ($) {
     $("#menu-zviazok").click(function(){ //  for ontop window -ЗВ'ЯЗОК-
         $('#zviazok-slide').attr('style', '');
         $('#zviazok-slide').css('display', 'block');
+        $('.navbar-fixed-top').css('z-index', '10');
     });  
     $('#zviazok-slide').css('display', 'none');
     $("#zviazok-slide-close").click(function(){
         $('#zviazok-slide').css({
             'display': 'none'});
+        $('.navbar-fixed-top').attr('style', '');
     });
 });//end of jQuery(document).ready(function ($){
 
