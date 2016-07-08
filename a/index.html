@@ -7,9 +7,9 @@
     window.location.protocol = "https";
 </script>
 	<meta charset="utf-8">
-<!--	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
-TODO: потестити параметри на тачскріні-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
 	<title>Вода eko. Кіровоград</title> 
     <link rel="icon" href="favicon.png">
@@ -20,7 +20,7 @@ TODO: потестити параметри на тачскріні-->
 	<meta name="keywords" content="питна вода, замовити, Кіровоград, еко, доставка води в Кіровограді">
 	<meta property="og:title" content="Вода eko. Кіровоград">
     
-
+<!--[if IE]><![endif]    This is here for the faster loading. :-/ -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap.vertical-tabs.css">
 	<link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
@@ -770,14 +770,29 @@ TODO: потестити параметри на тачскріні-->
 
 	<!-- SCRIPTS -->
 	<script src="js/html5shiv.js"></script>
-<!--	<script src="js/jquery-1.10.2.min.js"></script>-->
-  <script src="js/jquery-1.12.3.js"></script><!-- моя заміна-->
+    <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" 
+   crossorigin="anonymous"></script>
+    <script>!window.jQuery && document.write('<script src="js/jquery-1.12.4.min.js" ><\/script>')</script>
 	<script src="js/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/bootstrap-datepicker.uk.min.js"></script>
+    
+    <!-- asynchronous google analytics
+    change the UA-XXXXX-X to be your site's ID -->
+    <script>
+     var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+     (function(d, t) {
+      var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      g.async = true;
+      g.src = '//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g, s);
+     })(document, 'script');
+    </script>
     
 	<script src="js/script.js"></script>
 	
