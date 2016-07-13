@@ -435,19 +435,20 @@ function zminaTsina(val) {
 
 $('#mydatepicker .help-text-selector').click(function(){
     slctdday = new Date();
-    if ($(this).text()=='Завтра'){
-        slctdday.setDate(slctdday.getDate()+1);
-        $('#mydatepicker .input-group.date').datepicker('update', slctdday);
-    }
-    if ($(this).text()=='Післязавтра'){
-        slctdday.setDate(slctdday.getDate()+2);
-        $('#mydatepicker .input-group.date').datepicker('setDate', slctdday);
-    }
+    var here = false;
+    if ($(this).text()=='Завтра'){slctdday.setDate(slctdday.getDate()+1); here=true;}
+    if ($(this).text()=='Післязавтра'){slctdday.setDate(slctdday.getDate()+2); here=true;}
     if (($(this).text()=='Найближча субота')||($(this).text()=='Cубота')){
-//        $(this).parent().find('input').attr('value',  $(this).text());
-        slctdday.setDate(slctdday.getDate()+4);
-        $('#mydatepicker .input-group.date').datepicker('setDate', slctdday);
-    }
+        for (i = 0; i < 7; i++) {
+            slctdday.setDate(slctdday.getDate()+1); 
+            if (slctdday.getDay()==6) { break; }    }    
+        here=true;}
+    if (here==true) {
+        if (slctdday.getDay()==7){slctdday.setDate(slctdday.getDate()+1);}
+        $('#mydatepicker .input-group.date').datepicker('setDate', slctdday);}
+    else {
+        $(this).parent().find('input').attr('value',  $(this).text());}
+    
     return true;
 });
 
