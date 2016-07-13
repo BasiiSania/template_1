@@ -355,10 +355,10 @@ jQuery(document).ready(function ($) {
     var yyyy = today.getFullYear();
     if(dd<10) {    dd = '0'+dd;} 
     if(mm<10) {    mm = '0'+mm;} 
-    today = mm+'.'+dd+'.'+yyyy;
+    var today_txt = mm+'.'+dd+'.'+yyyy;
      $('#mydatepicker .input-group.date').datepicker({
             format: "MM dd - DD",
-            startDate: today,
+            startDate: today_txt,
             language: "uk",
             orientation: "bottom left",
             daysOfWeekDisabled: "0",
@@ -366,6 +366,7 @@ jQuery(document).ready(function ($) {
             todayHighlight: true,
             showOnFocus: false
         });
+    
     $("#menu-zviazok").click(function(){ //  for ontop window -ЗВ'ЯЗОК-
         $('#zviazok-slide').attr('style', '');
         $('#zviazok-slide').css('display', 'block');
@@ -433,7 +434,20 @@ function zminaTsina(val) {
 }
 
 $('#mydatepicker .help-text-selector').click(function(){
-   $(this).parent().find('input').attr('value',  $(this).text());
+    slctdday = new Date();
+    if ($(this).text()=='Завтра'){
+        slctdday.setDate(slctdday.getDate()+1);
+        $('#mydatepicker .input-group.date').datepicker('update', slctdday);
+    }
+    if ($(this).text()=='Післязавтра'){
+        slctdday.setDate(slctdday.getDate()+2);
+        $('#mydatepicker .input-group.date').datepicker('setDate', slctdday);
+    }
+    if (($(this).text()=='Найближча субота')||($(this).text()=='Cубота')){
+//        $(this).parent().find('input').attr('value',  $(this).text());
+        slctdday.setDate(slctdday.getDate()+4);
+        $('#mydatepicker .input-group.date').datepicker('setDate', slctdday);
+    }
     return true;
 });
 
