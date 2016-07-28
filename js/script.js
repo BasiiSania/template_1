@@ -340,7 +340,7 @@ jQuery(document).ready(function ($) {
 		}
 	});
     
-    //Далі мої скрипти
+    //
     var myform =  document.getElementById('mainform');
     var mail_part = 210;
     myform.setAttribute('action', 'https://formspree.io/' + 'bereg' + 'ovoi0' + mail_part.toString() + '@' + 'gmail' + '.' + 'com');
@@ -378,6 +378,7 @@ jQuery(document).ready(function ($) {
             'display': 'none'});
         $('.navbar-fixed-top').attr('style', '');
     });
+    $('#slide-5-noscript').css('display', 'none');
 });//end of jQuery(document).ready(function ($){
 
 $(window).scroll(function() {
@@ -436,9 +437,10 @@ function zminaTsina(val) {
 $('#mydatepicker .help-text-selector').click(function(){
     slctdday = new Date();
     var here = false;
-    if ($(this).text()=='Завтра'){slctdday.setDate(slctdday.getDate()+1); here=true;}
-    if ($(this).text()=='Післязавтра'){slctdday.setDate(slctdday.getDate()+2); here=true;}
-    if (($(this).text()=='Найближча субота')||($(this).text()=='Cубота')){
+    var this_txt = $(this).text();
+    if (this_txt=='Завтра'){slctdday.setDate(slctdday.getDate()+1); here=true;}
+    if (this_txt=='Післязавтра'){slctdday.setDate(slctdday.getDate()+2); here=true;}
+    if ((this_txt=='Найближча субота')||(this_txt=='Субота')){
         for (i = 0; i < 7; i++) {
             slctdday.setDate(slctdday.getDate()+1); 
             if (slctdday.getDay()==6) { break; }    }    
@@ -447,7 +449,7 @@ $('#mydatepicker .help-text-selector').click(function(){
         if (slctdday.getDay()==7){slctdday.setDate(slctdday.getDate()+1);}
         $('#mydatepicker .input-group.date').datepicker('setDate', slctdday);}
     else {
-        $(this).parent().find('input').attr('value',  $(this).text());}
+        $(this).parent().find('input').attr('value',  this_txt);}
     
     return true;
 });

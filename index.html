@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="uk">
+    
 <head>
 <script type="text/javascript">
   var host = "ekovoda.kr.ua";
@@ -438,11 +439,15 @@
 </div></div></div></div></div></div></div></div></div>
                 </div>
             </div> 
+            <form>
             <div class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4">
-            <input type="number" class="form-control" id="number-tsina"  min="1" max="9"   step="1"   value="1"
-            name="Ціна" onchange="zminaTsina(this.value)">
+            
+            <input type="text" class="form-control" id="number-tsina"  min="1" max="9"   step="1"   value="1"
+        name="Ціна" onchange="zminaTsina(this.value)">
+            
             </div>
             <div class="col-xs-12" style="font-weight:400;font-size:18px; color:#555; padding:10px">&nbsp;&nbsp;Скільки бутилів?</div>
+            </form>
         </div>
             
         </div></div>
@@ -543,9 +548,9 @@
 <!-- === slide-5 ЗАМОВЛЕННЯ === -->
 <div class="slide story" id="slide-5" data-slide="5">
         <div class="container">
-                <div class="row"><h3>Зробити замовлення</h3>
-                    <div id='slide-5-waves'>.</div>
-		</div>
+            <div class="row"><h3>Зробити замовлення</h3>
+                <div id='slide-5-waves'>.</div>
+            </div>
     
             
 <!--<form role="form" id="contactform" class="form-horizontal" action="https://formspree.io/olksnr-baiii-gm-com" method="POST">
@@ -557,7 +562,9 @@
     name="_subject" value="Website contact" />
 </form>
  -->
-
+            <div id="slide-5-noscript">
+                Необхідний javascript.
+            </div>
 <form class="form-horizontal" role="form" id="mainform" method="POST">
   <div class="form-group" style="display:none">
 	<input type="text" name="_gotcha" style="display:none" />
@@ -628,7 +635,7 @@
 </div>
 <div class="col-sm-6">
    <div class="form-group ">
-      <input type="text" class="form-control" id="inputPhone" 
+      <input type="tel" class="form-control" id="inputPhone" 
 	placeholder="Телефон" aria-describedby="help3" name="Тел.номер" required>
 	<span id="help3" class="help-block hidden-xs" style="top:29px">
         Ми зв&rsquo;яжемось з вами у випадку форсмажору</span>
@@ -651,7 +658,7 @@
 <div id="form-kilkist" class="form-group" style="" >
     <div class="col-sm-3" style="margin-top:10px;">
         <div class="input-group">
-            <input type="number" class="form-control" id="inputNumber"  min="1" max="9"   step="1"   value="1" aria-describedby="help5"
+            <input type="text" class="form-control" id="inputNumber" min="1" max="9"   step="1"   value="1" aria-describedby="help5"
                 name="Кількість" onchange="zminaZamovVartist(this.value)">
             <span class="input-group-addon">+</span>
             <span class="input-group-addon">-</span>
