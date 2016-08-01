@@ -160,14 +160,29 @@ function menu_focus( element, i ) {
 	var left_pos = icon.offset().left - $('#nav-menu').offset().left;
 	var el_width =  $(element).find('.text').width();
 	
-	$('.active-menu').stop(false, false).animate(
-		{
-			left: left_pos,
-			width: el_width
-		},
-		0,
-		'easeInOutQuart'
-	);
+//	$('.active-menu').stop(false, false).animate(
+//		{
+//			left: left_pos,
+//			width: el_width
+//		},
+//		0,
+//		'easeInOutQuart'
+//	);
+    $('.active-menu').css({
+        'opacity': '0.01'
+        });
+    setTimeout(function(){
+        $('.active-menu').css({
+            'left': left_pos,
+            'width': el_width,
+            'opacity': '1'
+        });    
+    }, 400);
+//    delay(function(){
+//        
+//    },
+//    400);
+    
 }
 
 //function enable_arrows( dataslide ) {

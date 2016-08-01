@@ -118,7 +118,7 @@ h6 {
     background-position: 1px 5px;
 /*	z-index: 1;*/}
 #zamovyty-btn {
-        float: right;
+    float: right;
     margin: 0px;
     width: 180px;
     padding: 11px 28px 11px 28px;
@@ -211,14 +211,14 @@ h6 {
 	content: ' ';
 	display: block;
 	height: 6px;
-	left: 0; /*не впливає*/
+	left: 0; width: 1px; /*не впливає*/
 	position: absolute;
 	top: 0;
 	transition: all .5 linear;
-	width: 1px;
-	z-index: 8;}
-.special-active-menu {
 	z-index: 9;
+    -webkit-transition: .4s all; -o-transition: .4s all; transition: .4s all;}
+.special-active-menu {
+	z-index: 8;
     background: none;
 }
 @media (min-width: 767px) and (max-width:1099px) {
