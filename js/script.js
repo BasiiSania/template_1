@@ -174,10 +174,14 @@ function menu_focus( element, i ) {
     setTimeout(function(){
         $('.active-menu').css({
             'left': left_pos,
-            'width': el_width,
-            'opacity': '1'
+            'width': el_width
         });    
     }, 400);
+    setTimeout(function(){
+        $('.active-menu').css({
+            'opacity': '1'
+        });    
+    }, 800);
 //    delay(function(){
 //        
 //    },
