@@ -344,6 +344,9 @@ h6 {
     margin: 50px 0px  20px 0px;
 }
 #title-text{
+    font-family: 'Open Sans', sans-serif; font-weight: 400;
+    font-size: 16px;
+    line-height: 1.43;
     padding: 0% 10%;}
 #slide-1-row-2 .col-sm-6{  min-height:30px }
 #slide-1-phones {
@@ -468,7 +471,7 @@ h6 {
     background-color: #ffffff;
     font-size: 20px;
     color: #222;}
-#slide-2 h3 {
+#slide-2 h1 {
     width:55%;
     font-family: "Open Sans", sans-serif; 
     font-weight: 700;
@@ -481,10 +484,6 @@ h6 {
     }
 .nasha-woda-row-1 {
         padding: 0px 0px 50px 0px;}
-#slide-2 h4 {
-    font-family: "Open Sans", sans-serif; 
-    font-weight: 600;
-    font-size: 18px;}
 .nasha-woda-row-1 img{
     width:23px; 
     top:4px}
@@ -493,7 +492,7 @@ h6 {
     font-weight: 400;
     font-size: 14px;
     text-align: left;}
-.nasha-woda-row-1 h4 {
+.nasha-woda-row-1 h2 {
     font-family: "Open Sans", sans-serif; 
     font-weight: 600;
     font-size: 18px;
@@ -501,7 +500,7 @@ h6 {
 @media (max-width:1199px) {
     .nasha-woda-row-1 {
         padding: 0px 11% 50px 11%;}
-    #slide-2 h3{
+    #slide-2 h1{
         width: max-content;
         margin-top: 0px;
         padding-bottom: 20px;
@@ -511,14 +510,14 @@ h6 {
     .nasha-woda-row-1 .row{
         padding: 27px 0px 0px 0px;}
     .nasha-woda-row-1 img{top:-3px}
-    .nasha-woda-row-1 h4 {
+    .nasha-woda-row-1 h2 {
         margin: 0px;
         line-height: 18pt}
     .nasha-woda-row-1 p {
         padding: 3px 0px 0px 20px;}
 }
 @media (max-width:767px) {
-    #slide-2 h3{
+    #slide-2 h1{
         width:100%;
         background:url(../images/waves/xs/1-01.png) no-repeat;
         background-size: 289px;
@@ -583,7 +582,7 @@ h6 {
 	font-size: 14px;
 }
 
-#slide-3 h3 {
+#slide-3 h1 {
     font-family: "Open Sans", sans-serif;
 	font-weight: 700;
     font-size: 48px;
@@ -626,7 +625,7 @@ h6 {
     height:60px;width:20%;
     fill: #ffffff;
     padding:0px; margin: 50px 0px 10px 0px;}
-#slide-3  h4 {
+#slide-3  h2 {
     margin-top: 0px;
     padding-top: 10px;
     font-family: "Open Sans", sans-serif; 
@@ -648,7 +647,7 @@ h6 {
     background-position: 64% 18%;
     background-color: #3AADE3;
     height:290px;}
-#plant-svg h4{ padding-top:135px;}
+#plant-svg h2{ padding-top:135px;}
 #plant-svg:hover {
 	background-repeat: no-repeat;
 	background-color: #ffffff;
@@ -672,7 +671,7 @@ h6 {
 @media (max-width: 1199px) {
     .nasha-woda-row-2 {
         height: auto; }
-    #slide-3 h3 {
+    #slide-3 h1 {
         max-width: none;
         background:url(../images/waves/sm/3-01.png) no-repeat;
         background-size: 437px;
@@ -703,7 +702,7 @@ h6 {
     .nasha-woda-row-2 svg{
         height:50px;width:80%;
         margin: 25px 0px 15px 0px;}
-    .nasha-woda-row-2 .col-lg-3 h4 {
+    .nasha-woda-row-2 .col-lg-3 h2 {
         padding: 10% 35% 10% 80px;
         top:20px;
         line-height: 20pt;
@@ -711,11 +710,11 @@ h6 {
     #plant-svg {
         height:230px;
         background-position: 14% 18%;}
-    #plant-svg h4{
+    #plant-svg h2{
         padding:15px 45% 20px 80px;}
     #plant-svg:hover {
             background-position: -7% 19%;}
-    #slide-3 h3{
+    #slide-3 h1{
         margin: 60px 0px 10px 5%;
         background:url(../images/waves/xs/1-01.png) no-repeat;
         background-size: 305px;
@@ -1090,7 +1089,7 @@ ______________________________________ЗАМОВИТИ*/
     text-align: left;
     z-index:2;}
 
-#slide-5 h3 {
+#slide-5 h1 {
     font-family: "Open Sans", sans-serif; font-weight: 700;
     color: #444;
     font-size:40px;
@@ -1125,7 +1124,7 @@ ______________________________________ЗАМОВИТИ*/
     top: 11px;
     color:#aaa; font-weight:400; }
 @media (max-width:768px) {
-    #slide-5 h3{
+    #slide-5 h1{
         font-size:40px;
         padding-top: 15px;}
     #slide-5 .container{
@@ -1358,7 +1357,7 @@ ______________________________________ЗАМОВИТИ*/
     height: 100%;
     padding-bottom: 0px !important;
     }
-#zviazok-slide h3 {
+#zviazok-slide h1 {
     font-family: "Open Sans", sans-serif; font-weight: 700;
     color: #444;
     font-size:40px;
@@ -1408,7 +1407,7 @@ margin-bottom: 0}
 @media (max-width:767px) {
     #zviazok-slide-close {
         top:10px}
-    #zviazok-slide h3{
+    #zviazok-slide h1{
         font-size:30px;
         padding: 0px 40% 0px 40px;}
     #zviazok-slide-waves{
@@ -1524,14 +1523,17 @@ margin-bottom: 0}
     background-color: #1071B7;
     width:30px; height:2px;}
 
-#footer-title-text{
+.footer-title-text{
     padding: 3% 0%;
     width: 590px; margin: 0 auto;
     background-image: url(../images/footer_dots.jpg);
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: 100%;
-    color: #555; font-size:14px;
+    color: #555; font-size:14px;    
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
+    line-height: 1.43;
 }
 @media (max-width: 767px) {
     #slide-6 {padding: 0px 0px 20px 0px;}
@@ -1556,24 +1558,4 @@ margin-bottom: 0}
        padding: 3% 0%;
 	   width: 230px;
 	   font-size:13px;}
-}
-
-#slide-7 {
-    background-color: #e4e6e5;
-    color: #4e4e4e;
-    font-size: 35px;
-    line-height: 50px;
-    text-align: center; 
-}
-
-#lightbox-out {
-    background-color: rgba( 0, 0, 0, 0.7 );
-    height: 100%;
-    position: fixed;
-    width: 100%;
-/*	z-index: 99999;*/
-}
-
-.with-hover-text span {
-	display: none;
 }
