@@ -144,8 +144,6 @@ function menu_focus( element, i ) {
 			return;
 		}
 	}
-	
-//	enable_arrows( i );
 		
 	if ( i == 1 )
 		$('.navbar').removeClass('inv');
@@ -169,7 +167,7 @@ function menu_focus( element, i ) {
 //		'easeInOutQuart'
 //	);
     $('.active-menu').css({
-        'opacity': '0.01'
+        'opacity': '0'
         });
     setTimeout(function(){
         $('.active-menu').css({
@@ -177,11 +175,13 @@ function menu_focus( element, i ) {
             'width': el_width
         });    
     }, 400);
-    setTimeout(function(){
-        $('.active-menu').css({
-            'opacity': '1'
-        });    
-    }, 800);
+    if (i!=5){
+        setTimeout(function(){
+            $('.active-menu').css({
+                'opacity': '1'});    
+        }, 800);     
+    }
+    
 //    delay(function(){
 //        
 //    },
