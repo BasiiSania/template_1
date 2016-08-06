@@ -742,7 +742,6 @@ h6 {
 #slide-4 .container{
     }
 #slide-4 .row {
-    min-width: 385px;
 }
 .slide-4-title {
     font-family: "Open Sans", sans-serif;
@@ -770,33 +769,30 @@ h6 {
         margin: 0px auto;} }
 @media(max-width:1199px) and (min-width:768px) {
     #slide-4 .row {
-        width:115%;
-        max-width:840px;
-        margin:0px auto;
-        margin-bottom:50px}
+        width: 105%; left:-2%; max-width: 970px;
+        margin: 0px auto;
+        margin-bottom: 75px;}
     .slide-4-title {
         font-size: 48px;
         background:url(../images/waves/sm/3-01.png);
         background-repeat: no-repeat; background-size: 437px;
-        background-position: 0px 33.5px;
+        background-position: 0px 23.5px;
         margin: 0px 0px 20px 90px;
         padding-bottom:10px}
 }
 @media(max-width:767px) {
     #slide-4 .row {
-        width: 100%;
         margin: 0 auto; 
-        max-width:450px;
-        left: -5%;
+        width: 100%; min-width: 385px; max-width: 450px;
         margin-bottom:50px;
         height: 720px}
     .slide-4-title {
         font-size: 40px; line-height: 1.1;
         background:url(../images/waves/xs/1-01.png);
-        background-repeat: no-repeat; background-size: 309px 33px;
-        background-position: 0px 33px;
+        background-repeat: no-repeat; background-size: 359px;
+        background-position: 0px 23px;
         margin: 0px 10% 25px 5%;
-        padding: 0px 0px 15px 0px;}  }
+        padding: 0px 0px 25px 0px;}  }
 @media(max-width:377px) {
     #slide-4 .row {
         left:-14%; }
