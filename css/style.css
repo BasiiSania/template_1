@@ -206,21 +206,16 @@ h6 {
 .active-menu {
     background: url(../images/wave.svg);
     background-position: -4px 0px;
-/*    background-size: 244px 6px;*/
-    color: #fff;
-	content: ' ';
-	display: block;
-	height: 6px;
-	left: 0; width: 1px; /*не впливає*/
-	position: absolute;
-	top: 0;
-	transition: all .5 linear;
+    color: #fff; content: ' ';
+	display: block; position: absolute;
+	height: 6px; top: 0;
 	z-index: 9;
+    opacity: 0;
+	left: 10%; width: 1px; /*не впливає*/
     -webkit-transition: .4s all; -o-transition: .4s all; transition: .4s all;}
 .special-active-menu {
 	z-index: 8;
-    background: none;
-}
+    background: none;}
 @media (min-width: 767px) and (max-width:1099px) {
     .navbar-responsive-collapse 
         {width:90%; left:5%;}    }
@@ -1167,8 +1162,7 @@ ______________________________________ЗАМОВИТИ*/
     -webkit-transition: all 200ms ease-in-out; -moz-transition: all 200ms ease-in-out; -o-transition: all 200ms ease-in-out; transition: all 200ms ease-in-out;
     -webkit-box-shadow:0px 0px 0.5px 3px #efefef; -moz-box-shadow:0px 0px 0.5px 3px #efefef; box-shadow: 0px 0px 0.5px 3px #efefef;}
 .radio-inline:hover{
-	background: #cef;
-    color: #fff;}
+	background: #cef;}
 #slide-5 input[type="radio"]{
     display:none}
 @media (max-width:767px) {
@@ -1212,8 +1206,7 @@ ______________________________________ЗАМОВИТИ*/
     padding:0px 16px;
 }
 #form-kilkist .input-group-addon:hover{
-	background: #cef;
-    color: #fff;}
+	background: #cef;}
 #form-kilkist .col-sm-3 {
     left:-14px;
     min-height:70px;
