@@ -1513,8 +1513,9 @@ margin-bottom: 0}
     width:30px; height:2px;}
 
 .footer-title-text{
-    padding: 3% 0%;
+    padding: 2% 0%;
     width: 590px; margin: 0 auto;
+    background-color: #222;
     background-image: url(../images/footer_dots.jpg);
     background-repeat: no-repeat;
     background-position: 50% 100%;
@@ -1542,9 +1543,8 @@ margin-bottom: 0}
         margin:11px 0px;
         width:20px; height:1px;}
 
-    #footer-title-text{
+    .footer-title-text{
        background-size: 150%;
-       padding: 3% 0%;
 	   width: 230px;
 	   font-size:13px;}
 }
