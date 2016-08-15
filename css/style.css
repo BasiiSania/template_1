@@ -537,6 +537,7 @@ h6 {
 /*кінець сss з шаблону*/
 #carousel-example-generic{
     overflow: visible !important;
+    width: 50%; margin: 0 auto;
     padding: 0px;}
 #carousel-right-arrow {
     background-image: url(../images/arrow-right.svg);
@@ -551,7 +552,8 @@ h6 {
 .box .carousel-indicators{
     width: 137px;
     bottom: -55px;
-    left: 118%;
+/*    left: 118%;*/
+    left: 138%;
     border-color: whitesmoke;
 }
 .box .carousel-indicators li{
