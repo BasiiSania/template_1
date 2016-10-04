@@ -320,7 +320,7 @@ h6 {
     padding:10px;
     margin: 0px;}
 #emblema-misto{overflow: hidden;
-    height:30px; width:274px; 
+    height:30px; width:315px; 
     margin: 0 auto;}
 #emblema-misto div{
     float:left; 
@@ -330,9 +330,11 @@ h6 {
     margin:15px 0px;
     background-color: #1071B7;
     width:30px; height:2px;}
+#pereimenuvannia{margin: 0 auto; 
+    color:#fff;}
 
 #home-row-1 h1 {
-    color:#ffffff;
+    color:#fff;
     font-weight: 500;
     font-size:35px;
     letter-spacing: 0.6px;
@@ -374,11 +376,11 @@ h6 {
         padding: 10px 0px;
         margin: 3px;    }
     #emblema-misto{
-        width:180px;}
+        width:200px;}
     #emblema-misto div{
         padding: 0px 10px;}
     #emblema-misto .line{
-        margin:11px 0px;
+        margin:10px 0px;
         width:20px; height:1px;}
     #home-row-1 h1 {
         font-size: 27px;
@@ -1489,7 +1491,7 @@ margin-bottom: 0}
     z-index:1;
     margin:0px;
     background-color: #222;
-    padding: 0px 0px 40px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 #footer-emblema-div{
@@ -1503,7 +1505,7 @@ margin-bottom: 0}
     padding:10px;
     margin: 0px;}
 #footer-emblema-misto{overflow: hidden;
-    height:30px; width:274px; 
+    height:30px; width:305px; 
     margin: 0 auto;}
 #footer-emblema-misto div{
     float:left; 
@@ -1513,6 +1515,8 @@ margin-bottom: 0}
     margin:13px 0px;
     background-color: #1071B7;
     width:30px; height:2px;}
+#footer-pereimenuvannia{margin: 0 auto;
+    color: #555;}
 
 .footer-title-text{
     padding: 2% 0%;
@@ -1538,11 +1542,11 @@ margin-bottom: 0}
         padding: 10px 0px;
         margin: 3px;    }
     #footer-emblema-misto{
-        width:173px;}
+        width:200px;}
     #footer-emblema-misto div{
 	padding: 0px 10px;}
     #footer-emblema-misto .line{
-        margin:11px 0px;
+        margin:10px 0px;
         width:20px; height:1px;}
 
     .footer-title-text{
