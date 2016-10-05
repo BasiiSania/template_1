@@ -180,7 +180,7 @@ h6 {
     color:#333;
     font-weight:600;
     padding: 0px;
-    transition: all .5 linear;
+    -webkit-transition: .4s all; -o-transition: .4s all; transition: .4s all;
     text-transform: uppercase;}
 .nav .icon  {
     color: rgba( 180, 220, 255, 0 );
