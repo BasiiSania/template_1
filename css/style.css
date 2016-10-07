@@ -568,9 +568,23 @@ h6 {
 #slide-2-pidpys { padding: 15px 2px;}
 
 @media (max-width:1199px) {
+    #slide-2-pidpys { font-size: 15px;}
+}
+@media (max-width:999px) and (min-width:400px){
     .box .carousel-indicators{
         display: none;}
-    #slide-2-pidpys { font-size: 15px;}
+    #carousel-example-generic{
+        width:100%;}
+    .carousel-inner .item img{
+        height:420px; }
+}
+@media (max-width:399px) {
+    .box .carousel-indicators{
+        display: none;}
+    #carousel-example-generic{
+        width:100%;}
+    .carousel-inner .item img{
+        height:300px; }
 }
 /*--_________________________________________
 ПРО КОМПАНІЮ*/
