@@ -1009,7 +1009,7 @@ h6 {
 
 
 /* ===================================
-    Forms
+    Form
    ============================= */
 form input[type="text"],
 form input[type="email"],
@@ -1072,8 +1072,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 #zviazok-slide .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */color:    #444;}
 
 
-/*__
-______________________________________ЗАМОВИТИ*/
+/*_______________________________ ЗАМОВИТИ */
 
 /* ============================== */
 
@@ -1117,6 +1116,7 @@ ______________________________________ЗАМОВИТИ*/
     background-size: 911px;
 }
 #slide-5-noscript{
+/* --for developing-- display:none;*/
     position:absolute; 
     z-index:10;
     padding-top:50px;
@@ -1154,7 +1154,7 @@ ______________________________________ЗАМОВИТИ*/
 }
 .help-text-selector{
     width:content; margin-bottom: 0px;
-    padding:5px 6% 5px 3%; 
+    padding:5px 3% 5px 3%; 
     color:#6FCFF9; 
     float:left;
     cursor: pointer;
@@ -1188,19 +1188,12 @@ ______________________________________ЗАМОВИТИ*/
 @media (max-width:767px) {
     .help-text-selector{
         font-size: 14px; font-weight: 700;
-        padding:5px 4% 5px 3%; 
+        padding:5px 3% 5px 3%; 
     }
     .radio-inline{
         font-size:16px;
         font-weight:600;
-        line-height: 25pt;} }
-@media (max-width:370px) {
-    .radio-inline{
-        width:max-content;}
-    #form-tshas{
-        width:106%;
-        padding: 0 auto;}
-    #form-tshas .help-block{}
+        line-height: 25pt;}
 }
 #form-kilkist{
     height:auto !important;
@@ -1339,7 +1332,8 @@ ______________________________________ЗАМОВИТИ*/
         width:149.9%; left:-18%;  }
 }
 
-/*_________-- ЗВ-ЯЗОК --*/
+
+/*________________________-- ЗВ-ЯЗОК --*/
 #zviazok-slide {
     display:none;
     position: fixed; top:0px; left:0;

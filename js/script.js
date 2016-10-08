@@ -307,6 +307,7 @@ $('#mydatepicker .help-text-selector').click(function(){
     slctdday = new Date();
     var here = false;
     var this_txt = $(this).text();
+    if (this_txt=='Сьогодні'){slctdday.setDate(slctdday.getDate()); here=true;}
     if (this_txt=='Завтра'){slctdday.setDate(slctdday.getDate()+1); here=true;}
     if (this_txt=='Післязавтра'){slctdday.setDate(slctdday.getDate()+2); here=true;}
     if ((this_txt=='Найближча субота')||(this_txt=='Субота')){
