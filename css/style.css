@@ -100,9 +100,8 @@ h6 {
         padding-top:60px;
     }
 }
-/* _____________________________________________________________ ВЕРХ, МЕНЮ */
 
-#phone-number{
+.phone-number{
     font-family: 'MuseoUkr', 'Roboto Slab', sans-serif;
     font-weight:500; font-size: 18px; line-height: 17pt;
     color: #39AEE4; text-align: left;
@@ -117,7 +116,7 @@ h6 {
     background-size: 30px;
     background-position: 1px 5px;
 /*	z-index: 1;*/}
-#zamovyty-btn {
+.zamovyty-btn {
     float: right;
     margin: 0px;
     width: 180px;
@@ -132,32 +131,32 @@ h6 {
     border: 2px solid #3a91e2;
     border-color: #39AEE4;
     background: none;}
-#zamovyty-btn:hover,
-#zamovyty-btn:focus{
+.zamovyty-btn:hover,
+.zamovyty-btn:focus{
     background-color: rgba(58, 173, 226, 0.3);
     text-decoration: none; 
-    outline:none;}
-#zamovyty-btn:active{
+    outline:none;
+    color: #fff; }
+.zamovyty-btn:active{
      color: #fff;
      background: #3aade2;
    text-decoration: none; 
 }
-@media (max-width: 1099px) {
-    #phone-number {
-        display: none;}
-}
 
-@media (max-width: 767px) and (min-width: 550px) {
-    #phone-number {
-        display: block;
-        top:3px;}
-    #zamovyty-btn {
+@media (max-width: 1099px) and 
+(min-width: 768px){
+    .phone-number {display:none} }
+@media (max-width: 767px) {
+    .phone-number {
+        position:relative;
+        top:3px;
+        max-width:330px}
+    .phone-number .zamovyty-btn {
         margin-top:2px;
         width:130px; top: -23px;
         font-size: 14px;
-        padding: 8px 10px 8px 10px;
+        padding: 8px 10px 8px 10px;}
     }
-}
 
 .navbar {
 	background-color: #fff;
@@ -220,43 +219,53 @@ h6 {
     .navbar-responsive-collapse 
         {width:90%; left:5%;}    }
 @media (max-width: 767px) {	
-	.nav li {
-        background-color: white;
-        width:98%;
-        padding: 10px 0px 10px 0px;	}
+	.navbar {
+		padding: 0px;
+        height:50px;	}	
 	.navbar-responsive-collapse  {
         width: 112%   !important; 
         left:-9px  !important;
         overflow:hidden;
-        padding-bottom:5px;
-        background: #fff;
+        padding-bottom:0px;
+        background-color:#fff;
     }
-	.active-menu {
-		display: none !important;	}
+    .navbar.inv .navbar-responsive-collapse{
+        background-color:#A2E3FF;}
 	.navbar-toggle {
         min-width: 99px;
         width:42%;
         right: 25% !important;
         font-size: 18px;
-        color: #61C0E2; color: #fff;
+        color: #3aade2;
         font-weight: 600;
         letter-spacing: 2px;
         padding: 5px 0px 1px 0px}
+    .navbar.inv .navbar-toggle {
+        color: #fff;}
     .navbar-toggle .icon-reorder {
         font-size:14px;
         padding:3px 2px 3px 4px; 
         border-radius:18px; 
-        border: 2px solid #fff;
+        border: 2px solid #3aade2;
         top:-1px}
-	.navbar {
-		background-color: #A2E3FF !important;
-		padding: 0px;
-        height:50px;	}	
+    .navbar.inv .icon-reorder {
+        border: 2px solid #fff;}
 	.navbar li {
+        background-color: white;
+        width:98%;
+        padding: 10px 0px 10px 0px;	
         padding-top: 15px !important}
+    
+    .navbar.inv li{
+        background-color: #A2E3FF;}
 	.navbar .nav a {
         color: #474747;
         font-size: 14px;}
+    .navbar.inv .nav a {
+        color: #fff;}
+    
+	.active-menu {
+		display: none !important;	}
 	.navbar.inv .icon{
         display: none;     	}
 }

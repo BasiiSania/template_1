@@ -272,17 +272,17 @@ $(window).scroll(function() {
         $('#arrows').attr('style', '');}
     //After scrolling 630px from the top...
     if ( $(window).scrollTop() >= 630 ) {
-        $('#zamovyty-btn').css({
+        $('.phone-number .zamovyty-btn').css({
             'color': '#ffffff',
             'border': '3px solid #ffffff',
             'top': '-25px'
         });
-        $('#phone-number').css({
+        $('.phone-number').css({
             'color': '#ffffff',
             'background-position': '2px -76px'
         });
     } else {
-        $('#zamovyty-btn, #phone-number').attr('style', '');
+        $('.phone-number .zamovyty-btn, .phone-number').attr('style', '');
 
     }
 });
