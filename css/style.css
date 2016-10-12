@@ -507,7 +507,7 @@ h6 {
         padding: 0px 0px 50px 0px;}
 .nasha-woda-row-1 img{
     width:23px; 
-    top:4px}
+    top:15px}
 .nasha-woda-row-1 p {
     padding: 20px 11% 0px 0px;
     font-weight: 400;
@@ -649,11 +649,11 @@ h6 {
     height: 333px;
     }
 
-.nasha-woda-row-2 .col-lg-3{
+.nasha-woda-row-2 .col-lg-3{ /*equal to #plant-svg*/
     margin: 0px !important;
     background-color: #3AADE3;
-    height:290px;
-    padding:0% 4%;}
+    height:300px; 
+    padding:0% 3%;}
 .nasha-woda-row-2 .col-lg-3:hover{
     background-color: #ffffff;
     box-shadow: 0px 0px 20.58px 0.42px rgba(0, 0, 0, 0.2);
@@ -679,13 +679,13 @@ h6 {
 	margin:10%;
 	text-align: center;}
 	
-#plant-svg {
+#plant-svg { /*equal to .col-lg-3*/ 
     background: url(../images/plant.svg);
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: 64% 18%;
     background-color: #3AADE3;
-    height:290px;}
+    height:300px;}
 #plant-svg h2{ padding-top:135px;}
 #plant-svg:hover {
 	background-repeat: no-repeat;
@@ -696,7 +696,7 @@ h6 {
 @media (min-width: 1200px) {
     #plant-svg:hover,
     .nasha-woda-row-2 .col-lg-3:hover{
-    height:310px;top:-10px;
+    height:320px;top:-10px;
     padding-top:10px;
     }
 }
@@ -799,7 +799,7 @@ h6 {
         min-height:516px;
     }
     #slide-4 .row {
-        width: 110%; }
+        width: 110%; left:-5%}
     .slide-4-title {
         width: 290px;
         font-size: 45px;
