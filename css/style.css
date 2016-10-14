@@ -213,9 +213,6 @@ h6 {
     opacity: 0;
 	left: 10%; width: 1px; /*не впливає*/
     -webkit-transition: .4s all; -o-transition: .4s all; transition: .4s all;}
-.special-active-menu {
-	z-index: 8;
-    background: none;}
 @media (min-width: 767px) and (max-width:1099px) {
     .navbar-responsive-collapse 
         {width:90%; left:5%;}    }
@@ -341,7 +338,7 @@ h6 {
     font-weight: 500; letter-spacing: 0.5pt;}
 #emblema-div img{
     padding:10px;
-    margin: 0px;}
+    margin: 0px; width:190px}
 #emblema-misto{overflow: hidden;
     height:30px; width:315px; 
     margin: 0 auto;}
@@ -387,8 +384,6 @@ h6 {
     #home-row-1,
     #slide-1-row-2 {
         padding: 20px 0px 0px 0px;}
-    #home-row-1 p {
-        font-size: 16px;    }
     #emblema-div{
         padding:0px;
         margin: 29px 0px 0px 0px;
@@ -470,8 +465,6 @@ h6 {
 	bottom: 19px;
     font-size:0.01px; width:60px; height:60px;
     color: rgba(200, 200, 200, 0);}
-#arrow-down.disabled {	background-position: 0 -30px;
-} .navigation-slide { 	cursor: pointer;} #arrows div.disabled { cursor: default; }
 
 @media screen and (min-height:820px) {
     #arrows {bottom: initial; top:730px}
@@ -549,7 +542,6 @@ h6 {
     .nasha-woda-row-1 p {
         padding-left: 0px;}
 }
-/*сss з шаблону*/
 .img-full {min-width: 100%;margin:0px;}
 .box {
     margin-bottom: 0px;
@@ -560,7 +552,6 @@ h6 {
 @media screen and (min-width:1200px) {
     .box:after {content: ''; display: table; clear: both;}
 }
-/*кінець сss з шаблону*/
 #carousel-example-generic{
     overflow: visible !important;
     width:90%; margin: 0 auto;
@@ -638,7 +629,7 @@ h6 {
     color:#222;
 }
 
-.nasha-woda-row-2 {
+.slide-3-row-1 {
     padding-top: 0px !important;
     margin-bottom: 100px;
     color: #ffffff;
@@ -649,18 +640,18 @@ h6 {
     height: 333px;
     }
 
-.nasha-woda-row-2 .col-lg-3{ /*equal to #plant-svg*/
+.slide-3-row-1 .col-lg-3{ /*equal to #plant-svg*/
     margin: 0px !important;
     background-color: #3AADE3;
     height:300px; 
     padding:0% 3%;}
-.nasha-woda-row-2 .col-lg-3:hover{
+.slide-3-row-1 .col-lg-3:hover{
     background-color: #ffffff;
     box-shadow: 0px 0px 20.58px 0.42px rgba(0, 0, 0, 0.2);
     z-index: 1;
     color: #323232;
 }   
-.nasha-woda-row-2 svg{
+.slide-3-row-1 svg{
     height:60px;width:20%;
     fill: #ffffff;
     padding:0px; margin: 50px 0px 10px 0px;}
@@ -671,13 +662,6 @@ h6 {
     font-weight: 700;
     font-size: 18px;
     }
-
-.nasha-woda-row-2 p {
-	color: #ffffff;
-	font-weight: 600;
-	font-size: 14px;
-	margin:10%;
-	text-align: center;}
 	
 #plant-svg { /*equal to .col-lg-3*/ 
     background: url(../images/plant.svg);
@@ -695,20 +679,20 @@ h6 {
 	
 @media (min-width: 1200px) {
     #plant-svg:hover,
-    .nasha-woda-row-2 .col-lg-3:hover{
+    .slide-3-row-1 .col-lg-3:hover{
     height:320px;top:-10px;
     padding-top:10px;
     }
 }
 @media (min-width: 1300px) and (max-width: 1399px) {
-    .nasha-woda-row-2 {width: 122%;left: -10%;} }
+    .slide-3-row-1 {width: 122%;left: -10%;} }
 @media (min-width: 1400px) and (max-width: 1499px){
-    .nasha-woda-row-2 {width: 126.3%;left: -12.1%;} }
+    .slide-3-row-1 {width: 126.3%;left: -12.1%;} }
 @media (min-width: 1500px) {
-    .nasha-woda-row-2 {width: 138%;left: -17.7%;}
+    .slide-3-row-1 {width: 138%;left: -17.7%;}
 }
 @media (max-width: 1199px) {
-    .nasha-woda-row-2 {
+    .slide-3-row-1 {
         height: auto; }
     #slide-3 h1 {
         max-width: none;
@@ -726,22 +710,22 @@ h6 {
     #slide-3 .row {
         margin: 0 auto; 
         max-width:500px;}
-    .nasha-woda-row-2 {
+    .slide-3-row-1 {
         width: auto;    
         max-width: 360px !important;
         margin: 0 auto;
         left:-2.5%}
-    .nasha-woda-row-2 .col-lg-3{
+    .slide-3-row-1 .col-lg-3{
         height:230px;
         text-align: left;
         padding:0px 10%;
         margin: 0px !important;}
-    .nasha-woda-row-2 .col-lg-3 div{
+    .slide-3-row-1 .col-lg-3 div{
         float: left; width:25%; margin:1px}
-    .nasha-woda-row-2 svg{
+    .slide-3-row-1 svg{
         height:50px;width:80%;
         margin: 25px 0px 15px 0px;}
-    .nasha-woda-row-2 .col-lg-3 h2 {
+    .slide-3-row-1 .col-lg-3 h2 {
         padding: 10% 35% 10% 80px;
         top:20px;
         line-height: 20pt;
@@ -1441,8 +1425,6 @@ margin-bottom: 0}
     #zviazok-slide h1{
         font-size:30px;
         padding: 0px 40% 0px 40px;}
-    #zviazok-slide-waves{
-        margin-right:0}
     #zviazok-slide .container{
         max-width:550px;}
     #contactform {
@@ -1524,14 +1506,13 @@ margin-bottom: 0}
     padding: 30px auto;
     text-align: center;}
 
-/*ФУТЕР*/
+/*___________________________*/
 #slide-6 {
     z-index:1;
     margin:0px;
     background-color: #222;
     padding: 0px 0px 0px 0px;
 }
-
 #footer-emblema-div{
     padding:0px;
     margin: 40px 0px 20px 0px;
@@ -1541,7 +1522,7 @@ margin-bottom: 0}
     letter-spacing: 0.5pt;}
 #footer-emblema-div img{
     padding:10px;
-    margin: 0px;}
+    margin: 0px; width:180px}
 #footer-emblema-misto{overflow: hidden;
     height:30px; width:305px; 
     margin: 0 auto;}
