@@ -472,7 +472,7 @@ h6 {
 
 @media screen and (min-height:620px) and (max-width:767px) {
     #arrows {
-        bottom: initial; top:530px;}
+        bottom: initial; top:550px;}
 }
 @media screen and (max-height:619px) {
     #arrows {
@@ -662,6 +662,11 @@ h6 {
     font-weight: 700;
     font-size: 18px;
     }
+#slide-3  a {color: inherit;
+    border-bottom: 2px dotted #C1ECFF;}
+#slide-3  a:hover{top: -1px;
+    text-decoration: none;
+    border-bottom: 2px solid #C1ECFF;}
 	
 #plant-svg { /*equal to .col-lg-3*/ 
     background: url(../images/plant.svg);
@@ -1541,14 +1546,17 @@ margin-bottom: 0}
     padding: 2% 0%;
     width: 590px; margin: 0 auto;
     background-color: #222;
-    background-image: url(../images/footer_dots.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-    background-size: 100%;
+/*
+background-image: url(../images/footer_dots.jpg);
+background-repeat: no-repeat;
+background-position: 50% 100%;
+background-size: 100%;
+*/
     color: #555; font-size:14px;    
     font-family: 'Open Sans', sans-serif; 
     font-weight: 400;
     line-height: 1.43;
+    border-bottom: 3px dotted #555;
 }
 @media (max-width: 767px) {
     #slide-6 {padding: 0px 0px 20px 0px;}
@@ -1569,7 +1577,7 @@ margin-bottom: 0}
         width:20px; height:1px;}
 
     .footer-title-text{
-       background-size: 150%;
+/*       background-size: 150%;*/
 	   width: 230px;
 	   font-size:13px;}
 }
