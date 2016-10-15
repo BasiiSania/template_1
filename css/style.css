@@ -919,7 +919,7 @@ h6 {
     left:2.1%;
     z-index:2;}
 #slide-4 .tab-pane p{
-    padding:5px;}
+    padding:0px;}
 
 @media(max-width:767px){
     #slide-4 ul {
@@ -956,7 +956,7 @@ h6 {
         height:auto;
         min-height:460px}
     #slide-4 .tab-pane p {
-        padding:0px;}   
+        padding:5px 0;}   
 }
 #dostavka-r .col-xs-3{
     font-size:20px; 
@@ -967,7 +967,8 @@ h6 {
 }
 @media(max-width:767px){
     #dostavka-r {
-        padding-right:0px; margin-right: 0px;
+        padding-right:0px; 
+        margin-right: 0px;
         padding-bottom:0px;}
     #dostavka-r .col-xs-3{
         font-size:17px; 
@@ -1014,7 +1015,7 @@ h6 {
     width:140px; margin-left:0px }
 #opys-tovariv-r .col-xs-8{
     text-align: left; 
-    line-height: 14pt}
+    line-height: 14pt; padding-right:20px}
 @media(max-width:767px) {
     #opys-tovariv-r{}
     #opys-tovariv-r img {
@@ -1541,25 +1542,30 @@ margin-bottom: 0}
     width:30px; height:2px;}
 #footer-pereimenuvannia{margin: 0 auto;
     color: #555;}
-
 .footer-title-text{
-    padding: 2% 0%;
-    width: 590px; margin: 0 auto;
-    background-color: #222;
+/*    border-bottom: 3px dotted #555;*/
 /*
 background-image: url(../images/footer_dots.jpg);
 background-repeat: no-repeat;
 background-position: 50% 100%;
 background-size: 100%;
 */
+    width:min-content; margin: 0 auto;
+    padding: 20px 0;
+}
+.footer-title-text h1{
+    width: 590px; margin: 0;
+    background-color: #222;
     color: #555; font-size:14px;    
     font-family: 'Open Sans', sans-serif; 
     font-weight: 400;
-    line-height: 1.43;
-    border-bottom: 3px dotted #555;
+    line-height: 1.43;}
+.footer-title-text .dots {
+    font-size:30px;width: 592px;
+    overflow: hidden;
 }
 @media (max-width: 767px) {
-    #slide-6 {padding: 0px 0px 20px 0px;}
+    #slide-6 {padding: 0;}
     #footer-emblema-div{
         padding:0px;
         margin: 29px 0px 0px 0px;
@@ -1576,8 +1582,11 @@ background-size: 100%;
         margin:10px 0px;
         width:20px; height:1px;}
 
-    .footer-title-text{
+    .footer-title-text h1{
 /*       background-size: 150%;*/
 	   width: 230px;
 	   font-size:13px;}
+    .footer-title-text .dots {
+        font-size:20px;width: 230px;
+}
 }
