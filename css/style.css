@@ -1321,13 +1321,9 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     font-weight:500;letter-spacing: 1px;
     font-family: 'MuseoUkr','Roboto Slab', sans-serif;
     -webkit-transition: .2s all;-o-transition: .2s all;
-        transition: .2s all;
     border-radius: 30px;border: 0px;
     box-shadow: 0px 2px 7px 0.00px rgba(6, 71, 101, 0.26);
-    background: -webkit-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); 
-        background: -moz-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); 
-        background: -o-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -ms-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); 
-        background: linear-gradient(0deg, #09affb 0%,  #80d8fd 100%);}
+    background: -webkit-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -moz-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -o-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: -ms-linear-gradient(90deg, #09affb 0%,  #80d8fd 100%); background: linear-gradient(0deg, #09affb 0%,  #80d8fd 100%);}
 #nadislaty-btn:hover,
 #nadislaty-btn:focus{
      box-shadow: 0px 2px 43px 0.00px rgba(6, 71, 101, 0.43);
@@ -1354,30 +1350,30 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 /*________________________-- ЗВ-ЯЗОК --*/
 #zviazok-slide {
     display:none;
-    position: fixed; top:0px; left:0;
+    position: fixed; top:0; left:0;
     z-index:10; 
     width:100%; height: 100%;
-    background: rgba(0,0,0,0.5); 
-    padding:50px 0 0px 0;}
-#zviazok-slide-close {
-     z-index:15; 
-     background-color: white;
-     position: absolute;
-     margin-left:75%; margin-top:50px;
-     width:90px; line-height: 50pt;
-     text-align: center;
-     color: #A0E2FF; font-size:25px; 
-     cursor: pointer;}
-#zviazok-slide-close:hover {
-    color: #ddd; }
+    background: rgba(128,128,128,0.9); 
+    padding:50px 0;}
 #zviazok-slide .container{overflow: hidden;
     background-color: #ffffff;
     box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
 /*    min-height: 677px;*/
     max-width:900px;
     height: 100%;
-    padding-bottom: 0px !important;
+/*    padding-bottom: 0px !important;*/
     }
+#zviazok-slide-close {
+    z-index:15; 
+    float:right; padding: 5px 10px;
+    line-height: 60px;
+    color: #20A7DF; font-size:22px; 
+    cursor: pointer;}
+#zviazok-slide-close:hover {
+    text-shadow: 0 0 1px #777}
+#zviazok-slide-close .icon-angle-left{
+    left:-6px
+}
 #zviazok-slide h1 {
     font-family: "Open Sans", sans-serif; font-weight: 700;
     color: #444;
@@ -1385,35 +1381,35 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     text-align: left;
     padding: 35px 0px 0px 50px;}
 .zviazok-slide-waves{
-    z-index:16; /* because of close-button;*/
+    z-index:15; /* because of close-button;*/
     font-size:0.1px; color:#fff;
     height: 25px;
-    margin-right:40px;
+    margin-right:35px;
     background:url(../images/waves/lg/4-01.png);
     background-repeat: no-repeat; background-position: -3px 0px;
     background-size: 860px;}
 #contactform {
-    height: 75%;
+    height: 82%;
     position: absolute;bottom:-2px;
-    z-index:16; /* because of close-button;*/
-    margin:0px 30px 0px 30px; 
+    /*z-index:16; /* because of close-button;*/
+    margin:0px 35px; left:-4px;
     text-align: left;}
 #contactform .row{
     max-height:100%;}
 #contactform p {
     font-size: 20px; font-weight: 600;
     padding: 30px 10% 0px 20px;}
-#contactform .form-group{
+#contactform .form-group{ 
     padding: 18px 20px 0px 20px;}
 #contactform .help-block{
     color:#aaa; font-weight:400; 
-margin-bottom: 0}
+    margin-bottom: 0}
 #contactform .form-control{
         -webkit-box-shadow:0px 0px 0.5px 3px #efefef;
         -moz-box-shadow:0px 0px 0.5px 3px #efefef;
     box-shadow: 0px 0px 0.5px 3px #efefef !important;}
 #contactform textarea{
-    height: inherit !important;
+    height: auto !important;
     border: 0px solid #fff !important;
     -webkit-transition: all 250ms ease-in-out;-moz-transition: all 250ms ease-in-out;-o-transition: all 250ms ease-in-out;transition: all 250ms ease-in-out;
     -webkit-box-shadow:0px 0px 0.5px 3px #efefef;-moz-box-shadow:0px 0px 0.5px 3px #efefef;box-shadow: 0px 0px 0.5px 3px #efefef;
@@ -1422,19 +1418,33 @@ margin-bottom: 0}
     -webkit-box-shadow:0px 0px 0.5px 3px #f8f8f8 !important; -moz-box-shadow:0px 0px 0.5px 3px #f8f8f8 !important; box-shadow: 0px 0px 0.5px 3px #f8f8f8 !important; 
     outline: none !important;
 }
-@media (max-height:600px){
+@media (min-height:770px){
+    #contactform textarea{
+        height: 200px !important;}
+    #contactform {
+        height: 90% !important;
+        bottom:-55px;} }
+@media (max-height:769px){
+    #zviazok-slide {padding-top:0;
+    padding-bottom:0;}
+    #zviazok-slide h1{
+        font-size:30px;
+        padding: 0px 40% 0px 40px;}
+  }
+@media (max-height:543px){
     #contactform .row{
-        overflow: hidden; overflow-y: scroll;}  }
+        overflow: hidden; overflow-y: scroll;} }
 @media (max-width:767px) {
-    #zviazok-slide-close {
-        top:10px}
     #zviazok-slide h1{
         font-size:30px;
         padding: 0px 40% 0px 40px;}
     #zviazok-slide .container{
         max-width:550px;}
+    .zviazok-slide-waves{
+        margin-right:0;}
     #contactform {
-        max-height: 550px;
+        height: 78%;
+        max-height: 650px;
         margin:0px 8%;}
     #zviazok-slide p{
         font-size:14px; padding: 10px;}
@@ -1447,6 +1457,8 @@ margin-bottom: 0}
         font-size: 16px;
         font-weight: 600}
 }
+
+
 #text-zapovnit-polia2 {
     display:none;position: absolute;
     bottom: 150px; z-index:14;
@@ -1457,7 +1469,7 @@ margin-bottom: 0}
         position: absolute; bottom: 103px;
         font-size:17px;}
 }
-#nadislaty2-div{ z-index:13;
+#nadislaty2-div {z-index:13;
     background-image: url(../images/photo_button_lg.jpg);
     background-repeat: no-repeat;
     background-position: 50% 100%;
@@ -1492,7 +1504,7 @@ margin-bottom: 0}
 @media (max-width:767px) {
     #nadislaty2-btn {
         font-size: 14px;
-        margin-top: 55px; margin-bottom:40px; 
+        margin-top: 35px; margin-bottom:40px; 
     }
     #nadislaty2-div{
         width:125%; left:-12%;
