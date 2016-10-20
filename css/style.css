@@ -554,10 +554,10 @@ h6 {
 }
 #carousel-example-generic{
     overflow: visible !important;
-    width:90%; margin: 0 auto;
+    margin: 0 auto; background: #cef;
     padding: 0px;}
 .carousel-inner .item img{
-    height:639px; width:100%; object-fit:contain; }
+    height:700px; width:100%; object-fit:contain; }
 #carousel-right-arrow {
     background-image: url(../images/arrow-right.svg);
     background-repeat:  no-repeat;
@@ -569,10 +569,10 @@ h6 {
     background-position: 0% 52%;
 }
 .box .carousel-indicators{
-    width: 137px;
-    bottom: -55px;
+    width: 100px;
+    bottom: -52px;
 /*    left: 118%;*/
-    left: 120%;
+    left: initial; right:0;
     border-color: whitesmoke;
 }
 .box .carousel-indicators li{
