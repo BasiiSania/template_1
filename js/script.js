@@ -254,8 +254,7 @@ $(window).scroll(function() {
         $('#arrows').css({
             'opacity': '0'
         });
-    } else {
-        $('#arrows').attr('style', '');}
+    }//else {$('#arrows').attr('style', '');}
 });
 
 //slide-3
