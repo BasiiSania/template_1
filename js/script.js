@@ -220,7 +220,6 @@ jQuery(document).ready(function ($) {
 		}
 	});
     
-    
     //
     var myform =  document.getElementById('mainform');
     var mail_part = 210;
@@ -288,6 +287,9 @@ $(window).scroll(function() {
 });
 
 //slide-3
+$("#slide-3 a").click(function(){
+    window.location=$(this).find("a").attr("href"); return false;
+});
 $('.slide-3-row-1 .col-lg-3').on('mouseover', function() {
   $(this).find('svg').children().css('fill','#3AADE3');
 });
@@ -295,6 +297,7 @@ $('.slide-3-row-1 .col-lg-3').on('mouseleave', function() {
   $(this).find('svg').children().attr('style', '');
 });
 
+//slide-4
 $('.bottle svg').click(function(){
   var val = $(this).parent().find('svg').length;
     $('#number-tsina').attr('value', val.toString());
