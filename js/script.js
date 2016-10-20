@@ -66,7 +66,7 @@ function menu_focus( element, i ) {
 		}
 	}
 		
-	if ( i == 1 )
+	if ( ( i == 1 )||( i == 5 ) )
 		$('.navbar').removeClass('inv');
 	else
 		$('.navbar').addClass('inv');
@@ -110,19 +110,6 @@ function menu_focus( element, i ) {
     
 }
 
-//function enable_arrows( dataslide ) {
-//	$('#arrows div').addClass('disabled');
-//	if ( dataslide != 1 ) {
-//		$('#arrow-up').removeClass('disabled');
-//	}
-//	if ( dataslide != 6 ) {
-//		$('#arrow-down').removeClass('disabled');
-//	}
-//	if ( dataslide == 3 ) {
-//		$('#arrow-left').removeClass('disabled');
-//		$('#arrow-right').removeClass('disabled');
-//	}
-//}
 
 /*************
 * = Parallax *
@@ -269,21 +256,6 @@ $(window).scroll(function() {
         });
     } else {
         $('#arrows').attr('style', '');}
-    //After scrolling 630px from the top...
-    if ( $(window).scrollTop() >= 630 ) {
-        $('#phone-number-top .zamovyty-btn').css({
-            'color': '#ffffff',
-            'border': '3px solid #ffffff',
-            'top': '-25px'
-        });
-        $('#phone-number-top').css({
-            'color': '#ffffff',
-            'background-position': '2px -76px'
-        });
-    } else {
-        $('#phone-number-top .zamovyty-btn, #phone-number-top').attr('style', '');
-
-    }
 });
 
 //slide-3

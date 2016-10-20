@@ -142,6 +142,14 @@ h6 {
      background: #3aade2;
    text-decoration: none; 
 }
+.navbar.inv #phone-number-top .zamovyty-btn {
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    top: -25px}
+.navbar.inv #phone-number-top {
+    color: #ffffff;
+    background-position: 2px -76px
+}
 
 @media (max-width: 1099px) and 
 (min-width: 768px){
@@ -168,6 +176,7 @@ h6 {
     font-size:15px;
     letter-spacing: 1px;
 	text-align: center;
+    box-shadow: 0px 0px 1px 0px rgba(122, 122, 122, 0.406);
 }
 .navbar-responsive-collapse {
     overflow: visible; 
@@ -213,7 +222,7 @@ h6 {
     opacity: 0;
 	left: 10%; width: 1px; /*не впливає*/
     -webkit-transition: .4s all; -o-transition: .4s all; transition: .4s all;}
-@media (min-width: 767px) and (max-width:1099px) {
+@media (min-width: 768px) and (max-width:1099px) {
     .navbar-responsive-collapse 
         {width:90%; left:5%;}    }
 @media (max-width: 767px) {	
