@@ -137,6 +137,7 @@ jQuery(document).ready(function ($) {
 		e.preventDefault();
 		dataslide = $(this).attr('data-slide');
         if (dataslide!=5){
+            ga('send', 'event', 'Всі дії', 'Меню: клік dataslide' + dataslide.toString());
             goToByScroll(dataslide);
         }
 		$(".nav-collapse").collapse('hide');
@@ -147,10 +148,25 @@ jQuery(document).ready(function ($) {
 		e.preventDefault();
 		dataslide = $(this).attr('data-slide');
 		if (dataslide!=5){
+            ga('send', 'event', 'Всі дії', 'Меню: клік dataslide' + dataslide.toString());
             goToByScroll(dataslide);
         }
 		$(".nav-collapse").collapse('hide');
 	});
+    
+// clicks
+    $("#zamovity_button").click(function(){
+        ga('send', 'event', 'Всі дії', 'Головна: клік Замовити');
+        goToByScroll(5);
+    });
+    $(".zamovyty-btn").click(function(){
+        ga('send', 'event', 'Всі дії', 'Меню: клік Замовити');
+        goToByScroll(5);
+    });
+    $(".zamovyty-btn3").click(function(){
+        ga('send', 'event', 'Всі дії', 'Ціни та доставка: клік Замовити онлайн');
+        goToByScroll(5);
+    });
 });
 
 /******************
@@ -233,14 +249,19 @@ jQuery(document).ready(function ($) {
             todayHighlight: true,
             showOnFocus: false
         });
+     $('#mydatepicker .input-group.date').click(function(){
+         ga('send', 'event', 'Всі дії', 'клік: Замовити: дата: datepicker');
+     });
     
     $("#menu-zviazok").click(function(){ //  for ontop window -ЗВ'ЯЗОК-
+        ga('send', 'event', 'Всі дії', 'клік: меню: Зв-язок');
         $('#zviazok-slide').attr('style', '');
         $('#zviazok-slide').css('display', 'block');
         $('.navbar-fixed-top').css('z-index', '10');
     });  
     $('#zviazok-slide').css('display', 'none');
     $("#zviazok-slide-close").click(function(){
+        ga('send', 'event', 'Всі дії', 'клік: Зв-язок: close');
         $('#zviazok-slide').css({
             'display': 'none'});
         $('.navbar-fixed-top').attr('style', '');
@@ -251,14 +272,17 @@ jQuery(document).ready(function ($) {
 $(window).scroll(function() {
     //After scrolling 50px from the top...
     if ( $(window).scrollTop() >= 50 ) {
+        ga('send', 'event', 'Всі дії', 'скрол >50px');
         $('#arrows').css({
             'opacity': '0'
         });
     }//else {$('#arrows').attr('style', '');}
 });
-
+  
+    
 //slide-3
 $("#slide-3 a").click(function(){
+    ga('send', 'event', 'Всі дії', 'клік: slide-3 a');
     window.location=$(this).find("a").attr("href"); return false;
 });
 $('.slide-3-row-1 .col-lg-3').on('mouseover', function() {
@@ -278,6 +302,7 @@ $('.bottle svg').click(function(){
 
 
 $('#mydatepicker .help-text-selector').click(function(){
+    ga('send', 'event', 'Всі дії', 'клік: Замовлення: дата: текст днів');
     slctdday = new Date();
     var here = false;
     var this_txt = $(this).text();
@@ -300,6 +325,7 @@ $('#mydatepicker .help-text-selector').click(function(){
 });
 
 $('#form-kilkist .input-group-addon').click(function(){
+    ga('send', 'event', 'Всі дії', 'клік: Замовлення: кількість');
    var inputField = $(this).parent().find('input');
    var n = parseInt(inputField.val(),10);
    if (($(this).text()==='-') && (n>=2)){
@@ -334,6 +360,7 @@ function zminaZamovVartist(val) {
 };
 
 function chasDostavky(currentDiv){
+    ga('send', 'event', 'Всі дії', 'клік: Замовлення: час доставки');
     $('#slide-5 label').attr('style', '');
         
     $(currentDiv).css({
@@ -348,6 +375,7 @@ function chasDostavky(currentDiv){
 };
 
 function contaktSend(){
+    ga('send', 'event', 'Всі дії', 'клік: Зв-язок: Надіслати');
     var myform =  document.getElementById('contactform');
     if (myform["inputName2"].value=="" ||
        myform["inputContact2"].value=="" ){
@@ -369,6 +397,7 @@ function contaktSend(){
 
 function zamovlenniaSend()
   {
+    ga('send', 'event', 'Всі дії', 'клік: Замовлення: Надіслати');
     var myform =  document.getElementById('mainform');
     if (myform["inputName"].value=="" ||
        myform["inputPhone"].value=="" ){
