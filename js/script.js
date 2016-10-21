@@ -283,7 +283,9 @@ $(window).scroll(function() {
 //slide-3
 $("#slide-3 a").click(function(){
     ga('send', 'event', 'Всі дії', 'клік: slide-3 a');
-    window.location=$(this).find("a").attr("href"); return false;
+    var url =  $(this).find("a").attr("href").toString();
+    $("<a>").attr("href", url).attr("target", "_blank")[0].click();
+    
 });
 $('.slide-3-row-1 .col-lg-3').on('mouseover', function() {
   $(this).find('svg').children().css('fill','#3AADE3');

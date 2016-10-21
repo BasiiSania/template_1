@@ -1577,13 +1577,13 @@ background-size: 100%;
     padding: 20px 0;
 }
 .footer-title-text h1{
-    width: 590px; margin: 0;
+    width: 590px; margin: 0 auto;
     background-color: #222;
     color: #555; font-size:14px;    
     font-family: 'Open Sans', sans-serif; 
     font-weight: 400;
     line-height: 1.43;}
-.footer-title-text .dots {
+.footer-title-text .dots {margin: 0 auto;
     font-size:30px;width: 592px;
     overflow: hidden;
 }
