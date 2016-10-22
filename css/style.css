@@ -215,6 +215,7 @@ h6 {
 .active-menu {
     background: url(../images/wave.svg);
     background-position: -4px 0px;
+    background-repeat: repeat-x;
     color: #fff; content: ' ';
 	display: block; position: absolute;
 	height: 6px; top: 0;
@@ -222,6 +223,8 @@ h6 {
     opacity: 0;
 	left: 10%; width: 1px; /*не впливає*/
     -webkit-transition: .4s all; -o-transition: .4s all; transition: .4s all;}
+.navbar.inv .active-menu{
+    background-position: -4px -4px;}
 @media (min-width: 768px) and (max-width:1099px) {
     .navbar-responsive-collapse 
         {width:90%; left:5%;}    }
