@@ -283,7 +283,7 @@ $(window).scroll(function() {
 //slide-3
 $("#slide-3 a").click(function(){
     ga('send', 'event', 'Всі дії', 'клік: slide-3 a');
-    var url =  $(this).find("a").attr("href").toString();
+    var url =  $(this).attr("href").toString();
     $("<a>").attr("href", url).attr("target", "_blank")[0].click();
     
 });
