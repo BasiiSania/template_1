@@ -1426,15 +1426,19 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     }
 #zviazok-slide-close {
     z-index:15; 
-    float:right; padding: 5px 10px;
+    float:right; padding: 0 10px;
     line-height: 60px;
-    color: #20A7DF; font-size:22px; 
+    color: #20A7DF; font-size:44px; 
     cursor: pointer;}
 #zviazok-slide-close:hover {
     text-shadow: 0 0 1px #777}
 #zviazok-slide-close .icon-angle-left{
     left:-6px
 }
+/*font-awesome:______*/
+.icon-angle-left:before{content:"\f104";}
+.icon-angle-right:before{content:"\f105";}
+
 #zviazok-slide h1 {
     font-family: "Open Sans", sans-serif; font-weight: 700;
     color: #444;
