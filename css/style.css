@@ -1099,7 +1099,7 @@ form input[type="number"],
 form input[type="tel"],
 form input[type="password"] {
     -webkit-transition: all 250ms ease-in-out;transition: all 250ms ease-in-out;
-    -webkit-box-shadow:0px 0px 0.5px 3px #efefef;box-shadow: 0px 0px 0.5px 3px #efefef;
+    -webkit-box-shadow:0px 0px 0.5px 3px #efefef;
     border-radius: 1px;
     outline: none !important;
 }
@@ -1492,7 +1492,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     #zviazok-slide {padding-top:0;
     padding-bottom:0;}
     #zviazok-slide h1{
-        font-size:30px;
+        font-size:25px;
         padding: 0px 40% 0px 40px;}
   }
 @media (max-height:543px){
@@ -1500,7 +1500,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
         overflow: hidden; overflow-y: scroll;} }
 @media (max-width:767px) {
     #zviazok-slide h1{
-        font-size:30px;
+        font-size:25px;
         padding: 0px 40% 0px 40px;}
     #zviazok-slide .container{
         max-width:550px;}
