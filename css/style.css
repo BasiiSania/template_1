@@ -1098,12 +1098,10 @@ form input[type="email"],
 form input[type="number"],
 form input[type="tel"],
 form input[type="password"] {
-  -webkit-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-  
-  -webkit-box-shadow:0px 0px 0.5px 3px #efefef;
-  box-shadow: 0px 0px 0.5px 3px #efefef;
-  outline: none !important;
+    -webkit-transition: all 250ms ease-in-out;transition: all 250ms ease-in-out;
+    -webkit-box-shadow:0px 0px 0.5px 3px #efefef;box-shadow: 0px 0px 0.5px 3px #efefef;
+    border-radius: 1px;
+    outline: none !important;
 }
 form input[type="text"]:focus,
 form input[type="email"]:focus,
