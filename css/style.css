@@ -1,3 +1,54 @@
+/*fontawesome*/
+@font-face{font-family:'FontAwesome';src:url('../font/fontawesome-webfont-v=3.2.1.eot');src:url('../font/fontawesome-webfont-.eot#iefix&v=3.2.1') format('embedded-opentype'),url('../font/fontawesome-webfont-v=3.2.1.woff') format('woff'),url('../font/fontawesome-webfont-v=3.2.1.ttf') format('truetype'),url('../font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');font-weight:normal;font-style:normal;}[class^="icon-"],[class*=" icon-"]{font-family:FontAwesome;font-weight:normal;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased;*margin-right:.3em;}
+[class^="icon-"]:before,[class*=" icon-"]:before{text-decoration:inherit;display:inline-block;speak:none;}
+.icon-large:before{vertical-align:-10%;font-size:1.3333333333333333em;}
+a [class^="icon-"],a [class*=" icon-"]{display:inline;}
+[class^="icon-"].icon-fixed-width,[class*=" icon-"].icon-fixed-width{display:inline-block;width:1.1428571428571428em;text-align:right;padding-right:0.2857142857142857em;}[class^="icon-"].icon-fixed-width.icon-large,[class*=" icon-"].icon-fixed-width.icon-large{width:1.4285714285714286em;}
+/*fontawesome END*/
+/*!
+ * bootstrap-vertical-tabs - v1.2.1
+ * https://dbtek.github.io/bootstrap-vertical-tabs
+ * 2014-11-07
+ * Copyright (c) 2014 İsmail Demirbilek
+ * License: MIT
+ */
+.sideways {
+  margin-top:50px;
+  border: none;
+  position: relative;}
+.sideways>li {
+  height: 20px;
+  width: 120px;
+  margin-bottom: 100px;}
+.sideways>li>a {
+  border-bottom: 1px solid #ddd;
+  border-right-color: transparent;
+  text-align: center;
+  border-radius: 4px 4px 0px 0px;}
+.sideways>li.active>a,
+.sideways>li.active>a:hover,
+.sideways>li.active>a:focus {
+  border-bottom-color: transparent;
+  border-right-color: #ddd;
+  border-left-color: #ddd;}
+.sideways.tabs-left {
+  left: -50px;}
+.sideways.tabs-right {
+  right: -50px;}
+.sideways.tabs-right>li {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);}
+.sideways.tabs-left>li {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);}
+/*vertical-tabs END*/
+
 @font-face {
     font-family: 'MuseoUkr';
     src: url('../font/Museo_Cyrillic_500.otf') format("opentype");
@@ -256,6 +307,7 @@ h6 {
         padding: 5px 0px 1px 0px}
     .navbar.inv .navbar-toggle {
         color: #fff;}
+    .icon-reorder:before{content:"\f0c9";}
     .navbar-toggle .icon-reorder {
         font-size:15px;
         padding:3px 2px 3px 4px; 
@@ -1064,6 +1116,7 @@ form input[type="password"]:focus{
  #slide-5 .date {border: none !important;
     -webkit-box-shadow:0px 0px 0.5px 3px #f8f8f8; box-shadow: 0px 0px 0.5px 3px #f8f8f8; z-index: 0; } 
 .date .input-group-addon{background-color: #fff;border-radius: 0px;font-size: 20px;height:43px;
+    cursor: pointer;
 border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !important; box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !important; z-index: 1; }
 #slide-5 .date input {
     -webkit-box-shadow:-1.5px 0px 0.5px 2px rgba(100,100,100,0.1); box-shadow: -1.5px 0px 0.5px 2px rgba(100,100,100,0.1); z-index: 0; }
