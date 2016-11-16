@@ -382,7 +382,7 @@ function contaktSend(){
     if (myform["inputName2"].value=="" ||
        myform["inputContact2"].value=="" ){
         
-        $('#text-zapovnit-polia2').css({
+        $('#contact-errors-message').css({
             'display': 'block'
         });
         return false;
@@ -404,7 +404,7 @@ function zamovlenniaSend()
     if (myform["inputName"].value=="" ||
        myform["inputPhone"].value=="" ){
         
-        $('#text-zapovnit-polia').css({
+        $('#zamovlennia-errors-message').css({
             'display': 'block'
         });
         return false;
