@@ -136,9 +136,6 @@ h6 {
      color: #fff;
    text-decoration: none; }
 
-
-
-
 /*______________________*/
 
 .phone-number{
@@ -426,8 +423,14 @@ h6 {
     font-family: 'MuseoUkr','Roboto Slab', sans-serif; 
     font-weight: 500; font-size: 18px;
     text-align: right;}
-#slide-1-phones img{
-    width:30px;top:10px;right:10px}
+#slide-1-phones-pict{
+    display: inline-block;
+    content: " ";
+    height:30px; width:30px;
+    top:18px; right:10px;
+    background-image: url("../images/phone_empty.svg");
+    background-size: cover;
+}
 #work-time{
     padding: 10px 0px;right:30px;
     min-width: 214px;
@@ -465,9 +468,6 @@ h6 {
         width: 230px;
         margin: 0 auto;
         top: 79px; right:40px   }
-}
-
-@media (max-width: 767px) {
     #zamovity_button{top: -80px;}
 }
 
@@ -518,7 +518,7 @@ h6 {
     #arrows {
         display:none; }
 }
-/* ________________________________ НАША ВОДA */
+/* _____________________ НАША ВОДA */
 #slide-2 {
     z-index:0;
     background-color: #ffffff;
@@ -540,15 +540,23 @@ h6 {
 .nasha-woda-row-1 img{
     width:23px; 
     top:15px}
-.nasha-woda-row-1 p {
-    padding: 20px 11% 0px 0px;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: left;}
+.nasha-woda-row-1 .lists-check{
+    background-image: url("../images/check_mark.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 0;
+    content: " "; height: 23px;
+    top:18px;
+}
 .nasha-woda-row-1 h2 {
     font-family: "Open Sans", sans-serif; 
     font-weight: 600;
     font-size: 18px;
+    text-align: left;}
+.nasha-woda-row-1 p
+    {padding: 20px 11% 0px 0px;
+    font-weight: 400;
+    font-size: 14px;
     text-align: left;}
 @media (max-width:1199px) {
     .nasha-woda-row-1 {
@@ -562,7 +570,7 @@ h6 {
         background-position: 0px 31px;}
     .nasha-woda-row-1 .row{
         padding: 27px 0px 0px 0px;}
-    .nasha-woda-row-1 img{top:-3px}
+    .nasha-woda-row-1 .lists-check{top:0px}
     .nasha-woda-row-1 h2 {
         margin: 0px;
         line-height: 18pt}
@@ -578,9 +586,13 @@ h6 {
         font-size:40px; line-height: 30pt;}
     .nasha-woda-row-1 {
         padding: 0px 10% 30px 10%;}
-    .nasha-woda-row-1 p {
-        padding-left: 0px;}
+    .nasha-woda-row-1 .col-sm-8
+/*    ,.nasha-woda-row-1 .col-sm-3*/
+        {padding:0;}
+    .nasha-woda-row-1 p
+        {padding-left: 0px;}
 }
+
 .img-full {min-width: 100%;margin:0px;}
 .box {
     margin-bottom: 0px;
@@ -660,13 +672,6 @@ h6 {
     background:url(../images/waves/lg/2-01.png) no-repeat;
     background-size: 252px;
     background-position: 0% 70%;}
-#slide-3 p{
-    padding: 10px;
-    text-align: left;
-    font-size: 20px;
-    line-height: 26pt;
-    color:#222;
-}
 
 .slide-3-row-1 {
     padding-top: 0px !important;
@@ -745,9 +750,6 @@ h6 {
         background-position: 0px 30px;
         margin: 10px 10%;
         padding-bottom: 20px}
-    #slide-3 p {
-        margin: 1% 8%;  
-        font-size: 18px;}
 }
 @media (max-width: 767px) {
     
@@ -788,15 +790,38 @@ h6 {
         background-position: 0px 25px;
         font-size:40px; line-height: 1.1;
     }
-    #slide-3 p{
+}
+
+#slide-3 p{
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 26pt;
+    color:#222;
+}
+#slide-3 p:before{
+     display:inline-block;
+    content: " ";
+    width:30px; height:20px;
+    opacity:0.6; 
+    background-image: url("../images/arrow2.svg");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 0px 5px;
+}
+@media (max-width: 1199px) {
+    #slide-3 p {
+        margin: 1% 8%;  
+        font-size: 18px;}  }
+@media (max-width: 767px) {
+    #slide-3 p {
         max-width: 500px;
         margin: 0 auto;
         padding: 10px;
         text-align: left;
         font-size: 16px;
         font-weight:400;
-        line-height: 18pt;
-    }
+        line-height: 18pt;}
 }
 
 	
@@ -876,22 +901,29 @@ h6 {
     font-family: 'MuseoUkr','Roboto Slab', sans-serif;
     font-size:28px;
 }
+#slide-4-phones-pict{
+    display: inline-block;
+    content: " ";
+    height:40px; width:40px;
+    top:28px; margin:0px 5px;
+    background-image: url("../images/phone_empty_black.svg");
+    background-size: cover;
+}
 #slide-4-work-time{
     display: inline-block;
     text-align: right;
     line-height: 160%;
     font-size: 20px;
     margin: 0px auto;}
-
 .zamovyty-btn3 {
     display: block;
     margin: 15px auto;
     margin-top: 30px;	
     width:240px; 
 }
-
 #slide-4-tsilodobovo{
-    font-size:20px;}
+    font-size:20px;
+}
 
 #slide-4 ul {
     text-align: center;
@@ -1109,10 +1141,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
 #zviazok-slide .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */color:    #444;opacity:  1;}
 #zviazok-slide .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */color:    #444;}
 
-
-/*_______________________________ ЗАМОВИТИ */
-
-/* ============================== */
+/*____________________ ЗАМОВИТИ */
 
 #slide-5 {
     z-index:1;
@@ -1192,9 +1221,16 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
         font-size: 16px;
         font-weight: 600}
 }
+.date .input-group-addon{
+    min-width: 44px;
+    background-image: url("../images/calendar.svg");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 14px 11px;
+}
 .help-text-selector{
-    width:content; margin-bottom: 0px;
-    padding:5px 3% 5px 3%; 
+    width: content; margin-bottom: 0px;
+    padding: 5px 3% 5px 3%; 
     color:#6FCFF9; 
     float:left;
     cursor: pointer;
