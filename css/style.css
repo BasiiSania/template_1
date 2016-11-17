@@ -99,6 +99,9 @@ h6 {
   h2, h3{ page-break-after: avoid; }
 }
 
+/*****************************
+* My styles ******************
+******************************/
 .slide {
 	padding: 100px 0px 0px 0px;
 	text-align: center;       
@@ -136,8 +139,37 @@ h6 {
      color: #fff;
    text-decoration: none; }
 
-/*______________________*/
+/* ================= Form  */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="tel"],
+form input[type="password"] {
+    -webkit-transition: all 250ms ease-in-out;transition: all 250ms ease-in-out;
+    -webkit-box-shadow:0px 0px 0.5px 3px #efefef;box-shadow: 0px 0px 0.5px 3px #efefef;
+    border-radius: 1px;
+    outline: none !important;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="tel"]:focus,
+form input[type="password"]:focus{
+  -webkit-box-shadow:0px 0px 0.5px 3px #f8f8f8 !important; box-shadow: 0px 0px 0.5px 3px #f8f8f8 !important; 
+  outline: none !important;
+}
+.form-control{
+    border-radius: 1px;
+    border: 0px solid #f7f7f7 !important;
+    font-size: 20px;
+    color:#444;
+    height:43px;}
+.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */color:    #444 ;}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */color:    #444;opacity:  1;}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */color:    #444;}
 
+
+/*___________TOP_BAR__________*/
 .phone-number{
     font-family: 'MuseoUkr', 'Roboto Slab', sans-serif;
     font-weight:500; font-size: 18px; line-height: 17pt;
@@ -277,11 +309,12 @@ h6 {
         background-color:#fff;
 		box-shadow: 0px 3px 5px 0px rgba(122, 122, 122, 0.406);
     }
-    .navbar.inv .navbar-responsive-collapse{
 /*
+    .navbar.inv .navbar-responsive-collapse
+    {
         background-color:#A2E3FF;
-*/
         }
+*/
 	.navbar-toggle {
         min-width: 99px;
         width:42%;
@@ -1057,8 +1090,9 @@ h6 {
   outline: none !important;
 }
 #bottles-chooser{
-    right:29%;
-    text-align: center}
+    left:50%;
+    width:290px; 
+}
 .bottle {
     float:right;
     display: inline; right:-9px;}
@@ -1084,62 +1118,6 @@ h6 {
         margin-bottom:20px;
     }
 }
-
-
-/* ===================================
-    Form
-   ============================= */
-form input[type="text"],
-form input[type="email"],
-form input[type="number"],
-form input[type="tel"],
-form input[type="password"] {
-    -webkit-transition: all 250ms ease-in-out;transition: all 250ms ease-in-out;
-    -webkit-box-shadow:0px 0px 0.5px 3px #efefef;box-shadow: 0px 0px 0.5px 3px #efefef;
-    border-radius: 1px;
-    outline: none !important;
-}
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form input[type="number"]:focus,
-form input[type="tel"]:focus,
-form input[type="password"]:focus{
-  -webkit-box-shadow:0px 0px 0.5px 3px #f8f8f8 !important; box-shadow: 0px 0px 0.5px 3px #f8f8f8 !important; 
-  outline: none !important;
-}
- #slide-5 .date {border: none !important;
-    -webkit-box-shadow:0px 0px 0.5px 3px #f8f8f8; box-shadow: 0px 0px 0.5px 3px #f8f8f8; z-index: 0; } 
-.date .input-group-addon{background-color: #fff;border-radius: 0px;font-size: 20px;height:43px;
-    cursor: pointer;
-border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !important; box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !important; z-index: 1; }
-#slide-5 .date input {
-    -webkit-box-shadow:-1.5px 0px 0.5px 2px rgba(100,100,100,0.1); box-shadow: -1.5px 0px 0.5px 2px rgba(100,100,100,0.1); z-index: 0; }
-#slide-5 .date input:focus {
-  -webkit-box-shadow: 3px 0px 0.5px 0px rgba(100,100,100,0.1) !important;
-  box-shadow: 3px 0px 0.5px 0px rgba(100,100,100,0.1) !important;
-  outline: none !important;
-    z-index: 2; 
-}
-#slide-5 .form-control{
-    border-radius: 1px;
-    border: 0px solid #f7f7f7 !important;
-    font-size: 20px;
-    color:#444;
-    height:43px;}
-#slide-5 .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */color:    #444 ;}
-#slide-5 .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */color:    #444;opacity:  1;}
-#slide-5 .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */color:    #444;}
-
-#zviazok-slide .form-control {
-    border-radius: 1px;
-    border: 0px solid #f7f7f7 !important;
-    font-size: 20px;
-    color:#444;
-    height:43px;}
-#zviazok-slide .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */color:    #444 ;}
-#zviazok-slide .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:    #444;opacity:  1;}
-#zviazok-slide .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */color:    #444;opacity:  1;}
-#zviazok-slide .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */color:    #444;}
 
 /*____________________ ЗАМОВИТИ */
 
@@ -1220,6 +1198,20 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     #slide-5 .form-control{
         font-size: 16px;
         font-weight: 600}
+}
+#slide-5 .date {border: none !important;
+    -webkit-box-shadow:0px 0px 0.5px 3px #f8f8f8; box-shadow: 0px 0px 0.5px 3px #f8f8f8; z-index: 0; } 
+.date .input-group-addon{
+    background-color: #fff;border-radius: 0px;font-size: 20px;height:43px;
+    cursor: pointer;
+    border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !important; box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !important; z-index: 1; }
+#slide-5 .date input {
+    -webkit-box-shadow:-1.5px 0px 0.5px 2px rgba(100,100,100,0.1); box-shadow: -1.5px 0px 0.5px 2px rgba(100,100,100,0.1); z-index: 0; }
+#slide-5 .date input:focus {
+  -webkit-box-shadow: 3px 0px 0.5px 0px rgba(100,100,100,0.1) !important;
+  box-shadow: 3px 0px 0.5px 0px rgba(100,100,100,0.1) !important;
+  outline: none !important;
+    z-index: 2; 
 }
 .date .input-group-addon{
     min-width: 44px;
@@ -1548,7 +1540,7 @@ border:none; -webkit-box-shadow: 1.5px 0px 0.5px 2px rgba(100,100,100,0.1) !impo
     padding: 30px auto;
     text-align: center;}
 
-/*___________________________*/
+/*______________FOOTER___*/
 #slide-6 {
     z-index:1;
     margin:0px;
