@@ -362,7 +362,8 @@ form input[type="password"]:focus{
         display: none;     	}
 }
 
-/* __________________________________ГОЛОВНА */
+
+/* _________________ПОЛОВНА */
 #slide-1 {
     color:#ffffff;
     font-size: 16px;
@@ -376,17 +377,17 @@ form input[type="password"]:focus{
     background: url(../images/photo_top_x2.jpg) no-repeat center top;
     background-size: cover;
     min-height: 550px;}
-#maxwidth{
+#slide-1-width{
     max-width: 400px;
-    min-width: 214px;
+    min-width:230px;
     margin: 0 auto;
     }
 @media (max-width: 1199px) {
     #header-image {
 	display: none;}
-    #maxwidth{
-        max-width: none;
-        width:65%;}
+    #slide-1-width{
+        width:65%
+        }
 }
 @media (max-width: 767px) {
     #header-left{
@@ -415,20 +416,19 @@ form input[type="password"]:focus{
     margin: 70px 0px 40px 0px;
     color: #1071B7;
     font-family: 'MuseoUkr','Roboto Slab', sans-serif;
-    font-size: 20px;
-    font-weight: 500; letter-spacing: 0.5pt;}
+    font-size: 20px; font-weight: 500; letter-spacing: 0.5pt;}
 #emblema-div img{
     padding:10px;
     margin: 0px; width:190px}
-#emblema-misto{overflow: hidden;
-    height:30px; width:315px; 
-    margin: 0 auto;}
+#emblema-misto{
+    margin: 0 auto;
+    width: max-content;}
 #emblema-misto div{
-    float:left; 
+    display: inline-block; 
     margin: 0px;
     padding: 0px 20px;}
 #emblema-misto .line{
-    margin:15px 0px;
+    bottom:5px;
     background-color: #1071B7;
     width:30px; height:2px;}
 #pereimenuvannia{margin: 0 auto; 
@@ -475,18 +475,18 @@ form input[type="password"]:focus{
         padding:0px;
         margin: 29px 0px 0px 0px;
         font-size: 14px;
-        font-weight: 700; }
+        font-weight: 700;}
     #emblema-div img{
-        width: 50%;/* width: 130px;*/
+        width: 50%; max-width:140px;
         padding: 10px 0px;
         margin: 3px;    }
-    #emblema-misto{
-        width:200px;}
+    #emblema-misto{}
     #emblema-misto div{
         padding: 0px 10px;}
     #emblema-misto .line{
-        margin:10px 0px;
-        width:20px; height:1px;}
+        bottom:3px;
+        width:20px; height:1px;
+        }
     #home-row-1 h1 {
         font-size: 27px;
         margin: 25px 0; }
@@ -1538,6 +1538,7 @@ form input[type="password"]:focus{
     padding: 30px auto;
     text-align: center;}
 
+
 /*______________FOOTER___*/
 #slide-6 {
     z-index:1;
@@ -1555,15 +1556,15 @@ form input[type="password"]:focus{
 #footer-emblema-div img{
     padding:10px;
     margin: 0px; width:180px}
-#footer-emblema-misto{overflow: hidden;
-    height:30px; width:305px; 
+#footer-emblema-misto{
+    width:305px;width:max-content; 
     margin: 0 auto;}
 #footer-emblema-misto div{
-    float:left; 
+    display:inline-block; 
     margin: 0px;
     padding: 0px 20px;}
 #footer-emblema-misto .line{
-    margin:13px 0px;
+    bottom:4px;
     background-color: #1071B7;
     width:30px; height:2px;}
 #footer-pereimenuvannia{margin: 0 auto;
@@ -1571,10 +1572,10 @@ form input[type="password"]:focus{
 .footer-title-text{
 /*    border-bottom: 3px dotted #555;*/
 /*
-background-image: url(../images/footer_dots.jpg);
-background-repeat: no-repeat;
-background-position: 50% 100%;
-background-size: 100%;
+    background-image: url(../images/footer_dots.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 100%;
 */
     width:min-content; margin: 0 auto;
     padding: 20px 0;
@@ -1601,11 +1602,10 @@ background-size: 100%;
         padding: 10px 0px;
         margin: 3px;    }
     #footer-emblema-misto{
-        width:200px;}
+        }
     #footer-emblema-misto div{
-	padding: 0px 10px;}
+	   padding: 0px 10px;}
     #footer-emblema-misto .line{
-        margin:10px 0px;
         width:20px; height:1px;}
 
     .footer-title-text h1{
