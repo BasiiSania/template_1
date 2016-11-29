@@ -1491,8 +1491,6 @@ form input[type="password"]:focus{
         font-size: 16px;
         font-weight: 600}
 }
-
-
 #contact-errors-message {
     display:none;position: absolute;
     bottom: 240px; z-index:14;
@@ -1527,20 +1525,36 @@ form input[type="password"]:focus{
         padding-bottom:0px !important;
         margin-bottom:0px !important}   }
 
-#contact-form-success{display:none;}
+
+
+/*____form's end PAGE: gotovo.html___*/
+
+#contact-form-success{
+    margin: 80px 0}
 #contact-form-success .zviazok-slide-waves{
     padding:0px; background-size: 100%;
-    width:105%;left:-3%}
+    width:120%;left:-10%}
 #contact-form-success h3{
-    padding:0px; text-align: center;}
-#contact-form-success p {
-    font-size: 20px; font-weight: 600;
-    padding: 30px auto;
+    font-family: "Open Sans", sans-serif; font-weight: 700;
+    color: #555;
+    font-size:40px;
+    padding:0px;
     text-align: center;}
+#contact-form-success p {
+    font-size: 21px; font-weight: 600;
+    margin: 10px auto; letter-spacing: 1px;
+    text-align: center;}
+@media (max-width:767px) {
+    #contact-form-success{
+        margin: 50px 0}
+    #contact-form-success h3{
+        font-size:25px;}
+}
 
 
 /*______________FOOTER___*/
 #slide-6 {
+    width:100%;
     z-index:1;
     margin:0px;
     background-color: #222;

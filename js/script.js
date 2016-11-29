@@ -389,10 +389,6 @@ function contaktSend(){
     }
     else{
         myform.submit();
-        $('#zviazok-slide .container').css('height','80%');
-        $('#zviazok-slide .row').css('display','none');
-        $('#zviazok-slide form').css('display','none');
-        $('#contact-form-success').css('display','block');
         return true;    
     }
 };
