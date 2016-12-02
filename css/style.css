@@ -660,9 +660,32 @@ form input[type="password"]:focus{
 #carousel-example-generic{
     overflow: visible !important;
     margin: 0 auto; background: #cef;
-    padding: 0px;}
+    padding: 0px;
+}
+
+/* noscript fallback */
+/* this styles are removed by SCRIPT.JS
+*/
+#carousel-example-generic{height: max-content;}
+.carousel-inner {height: max-content;}
+.carousel-inner .item { display:block}
+
+/* WHAT DO SCRIPT.JS:
+#carousel-example-generic { height: auto;}
+.carousel-inner { height: auto;}
+.carousel-inner .item { display:none}
+.carousel-inner .active{ display:block}
+*/
+/*END noscript fallback */
+
+@media print {
+    .carousel-inner {height: max-content;}
+    .carousel-inner .item { display:block}
+}
+
 .carousel-inner .item img{
-    height:700px; width:100%; object-fit:contain; }
+    height:700px; width:100%;
+    -o-object-fit:contain; object-fit:contain; }
 #carousel-right-arrow {
     background-image: url(../images/arrow-right.svg);
     background-repeat:  no-repeat;
@@ -1181,8 +1204,7 @@ form input[type="password"]:focus{
     background-position: -3px 0px;
     background-size: 911px;
 }
-#slide-5-noscript{
-/* --for developing-- display:none;*/
+#slide-5 noscript{
     position:absolute; 
     z-index:10;
     padding-top:50px;

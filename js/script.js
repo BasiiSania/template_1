@@ -266,7 +266,6 @@ jQuery(document).ready(function ($) {
             'display': 'none'});
         $('.navbar-fixed-top').attr('style', '');
     });
-    $('#slide-5-noscript').css('display', 'none');
 
 
 $(window).scroll(function() {
@@ -278,7 +277,12 @@ $(window).scroll(function() {
         });
     }//else {$('#arrows').attr('style', '');}
 });
-  
+
+//slide-2
+$('#carousel-example-generic').css('height', 'auto');
+$('.carousel-inner').css('height', 'auto');
+$('.carousel-inner .item').css('display', 'none');
+$('.carousel-inner .active').css('display', 'block');
     
 //slide-3
 $("#slide-3 a").click(function(){
