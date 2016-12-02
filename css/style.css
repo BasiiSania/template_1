@@ -145,8 +145,9 @@ form input[type="email"],
 form input[type="number"],
 form input[type="tel"],
 form input[type="password"] {
-    -webkit-transition: all 250ms ease-in-out;transition: all 250ms ease-in-out;
-    -webkit-box-shadow:0px 0px 0.5px 3px #efefef;box-shadow: 0px 0px 0.5px 3px #efefef;
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    box-shadow: 0px 0px 0.5px 3px #efefef;
     border-radius: 1px;
     outline: none !important;
 }
@@ -155,18 +156,38 @@ form input[type="email"]:focus,
 form input[type="number"]:focus,
 form input[type="tel"]:focus,
 form input[type="password"]:focus{
-  -webkit-box-shadow:0px 0px 0.5px 3px #f8f8f8 !important; box-shadow: 0px 0px 0.5px 3px #f8f8f8 !important; 
+  box-shadow: 0px 0px 0.5px 3px #f8f8f8 !important;
   outline: none !important;
 }
 .form-control{
     border-radius: 1px;
-    border: 0px solid #f7f7f7 !important;
+    border-width: 0px !important;
     font-size: 20px;
     color:#444;
     height:43px;}
-.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */color:    #444 ;}
-.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */color:    #444;opacity:  1;}
-.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */color:    #444;}
+.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */color:    #888 ;
+   text-indent: 0px;
+    -webkit-transition: text-indent 0.3s ease;  transition: text-indent 0.3s ease;}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */color:    #888;opacity: 1;
+    text-indent: 0px;
+    transition: text-indent 0.3s ease;}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */color:    #888;
+    text-indent: 0px;
+    transition: text-indent 0.3s ease;}
+.form-control::placeholder {
+    color:    #888;
+    text-indent: 0px;
+    -webkit-transition: text-indent 0.3s ease;transition: text-indent 0.3s ease;
+}
+.form-control:focus::-webkit-input-placeholder {
+    text-indent: 500px;}
+.form-control:focus::-moz-placeholder {
+    text-indent: 500px;}
+.form-control:focus:-ms-input-placeholder {
+    text-indent: 500px;}
+.form-control:focus::placeholder {
+    text-indent: 500px;
+}
 
 
 /*___________TOP_BAR__________*/
