@@ -657,9 +657,11 @@ form input[type="password"]:focus{
 /* noscript fallback */
 /* this styles are removed by SCRIPT.JS
 */
+/*
 #carousel-example-generic{height: max-content;}
 .carousel-inner {height: max-content;}
 .carousel-inner .item { display:block}
+*/
 
 /* WHAT DO SCRIPT.JS:
 #carousel-example-generic { height: auto;}

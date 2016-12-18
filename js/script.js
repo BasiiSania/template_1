@@ -1,3 +1,4 @@
+/*"use strict";*/
 
 $(document).ready(function(e) {
 	
@@ -279,10 +280,11 @@ $(window).scroll(function() {
 });
 
 //slide-2
-$('#carousel-example-generic').css('height', 'auto');
-$('.carousel-inner').css('height', 'auto');
-$('.carousel-inner .item').css('display', 'none');
-$('.carousel-inner .active').css('display', 'block');
+//    noscript fallback
+//$('#carousel-example-generic').css('height', 'auto');
+//$('.carousel-inner').css('height', 'auto');
+//$('.carousel-inner .item').css('display', 'inherit');
+//$('.carousel-inner .active').css('display', 'block');
     
 //slide-3
 $("#slide-3 a").click(function(){
