@@ -180,6 +180,23 @@ form input[type="password"]:focus{
 .form-control:focus:-ms-input-placeholder {
     text-indent: 500px;}
 
+.error-picture {
+    display: block;
+    position:absolute;
+    content: " ";
+    height:45px;
+    width: 34px;
+    top: -5px;
+    background-image: url('../images/error-input.png');
+    background-size: 100% 100%;
+}
+.error-picture-left {
+    left:-35px;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);}
+.error-picture-right {
+    right:-35px}
+
 
 /*___________TOP_BAR__________*/
 .phone-number{

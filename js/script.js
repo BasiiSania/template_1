@@ -280,7 +280,7 @@ $(window).scroll(function() {
 });
 
 //slide-2
-//    noscript fallback
+//    no-script fallback
 //$('#carousel-example-generic').css('height', 'auto');
 //$('.carousel-inner').css('height', 'auto');
 //$('.carousel-inner .item').css('display', 'inherit');
@@ -385,12 +385,17 @@ function chasDostavky(currentDiv){
 function contaktSend(){
     ga('send', 'event', 'Всі дії', 'клік: Зв-язок: Надіслати');
     var myform =  document.getElementById('contactform');
-    if (myform["inputName2"].value=="" ||
-       myform["inputContact2"].value=="" ){
+    var badInput = "none";
+    if (myform["inputName2"].value=="") {
+        badInput = "inputName2"; }
+    else if (myform["inputContact2"].value=="" ) {
+        badInput = "inputContact2"; };
         
-        $('#contact-errors-message').css({
-            'display': 'block'
-        });
+    if (badInput != "none")
+    {
+        showErrorPicture(badInput);
+        $('#contact-errors-message').css('display','block');
+        $('#contact-errors-message').delay(13000).fadeOut('slow');
         return false;
     }
     else{
@@ -403,17 +408,35 @@ function zamovlenniaSend()
   {
     ga('send', 'event', 'Всі дії', 'клік: Замовлення: Надіслати');
     var myform =  document.getElementById('mainform');
-    if (myform["inputName"].value=="" ||
-       myform["inputPhone"].value=="" ){
-        
-        $('#zamovlennia-errors-message').css({
-            'display': 'block'
-        });
+    var badInput = "none";
+    if (myform["inputName"].value=="") {
+        badInput = "inputName"; }
+    else if (myform["inputPhone"].value=="" ) {
+        badInput = "inputPhone"; };
+    if (badInput != "none")
+    {
+        showErrorPicture(badInput);
+        $('#zamovlennia-errors-message').css('display','block');
+        $('#zamovlennia-errors-message').delay(13000).fadeOut('slow');
         return false;
     }
-    else{
+    else
+    {
         myform.submit();
-        return true;    
+        return true;
     }
     
   };
+
+function showErrorPicture(badInput)
+{
+    var badElement =  $('#'+badInput);
+    if ( (badElement.offset().left+badElement.width()) < $('body').width()/2 )
+    {
+        badElement.parent().append('<div class="error-picture error-picture-left"></div>');
+    } else
+    {
+        badElement.parent().append('<div class="error-picture error-picture-right"></div>');
+    };
+    $('.error-picture').delay(13000).fadeOut('slow');
+};
