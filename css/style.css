@@ -425,6 +425,9 @@ form input[type="password"]:focus{
     height: 100%;
     min-height: 700px;
 }
+#header-left .col-xs-10 {
+    height:100%;
+}
 #slide-1-width {
     height: 100%;
     max-width: 400px;
