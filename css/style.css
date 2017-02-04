@@ -311,10 +311,10 @@ form input[type="password"]:focus{
 	outline: none;
 }
 .active-menu {
-    background: url(../images/wave.svg);
+    background-image: url(../images/navbar_wave_blue.svg);
     background-position: -5px 0px;
     background-repeat: repeat-x;
-    background-size: 230px;
+    background-size: 244px;/*from resource*/
     color: #fff; content: ' ';
 	display: block; position: absolute;
 	height: 6px; top: 0;
@@ -323,7 +323,8 @@ form input[type="password"]:focus{
 	left: 10%; width: 1px; /*не впливає*/
     -webkit-transition: .4s all; transition: .4s all;}
 .navbar.inv .active-menu{
-    background-position: -5px -4px;}
+    background-image: url(../images/navbar_wave_white.svg);
+}
 @media (min-width: 768px) and (max-width:1099px) {
     .navbar-responsive-collapse 
         {width:90%; left:5%;}    }
