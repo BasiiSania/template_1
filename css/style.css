@@ -325,6 +325,15 @@ form input[type="password"]:focus{
 .navbar.inv .active-menu{
     background-image: url(../images/navbar_wave_white.svg);
 }
+#menu-link-5{
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: all 250ms ease-in-out;
+    border-radius: 0;
+}
+#menu-link-5:hover{
+    box-shadow: 0px 0px 0.5px 2px #3aade2;
+}
 @media (min-width: 768px) and (max-width:1099px) {
     .navbar-responsive-collapse 
         {width:90%; left:5%;}    }
@@ -393,6 +402,9 @@ form input[type="password"]:focus{
 		display: none !important;	}
 	.navbar.inv .icon{
         display: none;     	}
+    #menu-link-5{
+    box-shadow: -2px 0px 0px 0px #3aade2;
+}
 }
 
 
