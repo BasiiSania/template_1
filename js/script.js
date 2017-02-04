@@ -89,6 +89,9 @@ function menu_focus( element, i ) {
 //		'easeInOutQuart'
 //	);
     $('.active-menu').css({
+//        'transform': 'scale(0.1)',
+        'background-size': '100px',
+        'background-position': '-30px -2px',
         'opacity': '0'
         });
     setTimeout(function(){
@@ -100,8 +103,15 @@ function menu_focus( element, i ) {
     if (i!=5){
         setTimeout(function(){
             $('.active-menu').css({
-                'opacity': '1'});    
-        }, 800);     
+                'opacity': '1',
+//                'transform': 'scale(1)',
+                'background-size': '230px',
+                'background-position': '-5px 0px'
+            });  
+            $('.navbar.inv .active-menu').css({
+                'background-position': '-5px -4px'
+            });  
+        }, 800); 
     }
     
 //    delay(function(){

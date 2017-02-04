@@ -312,8 +312,9 @@ form input[type="password"]:focus{
 }
 .active-menu {
     background: url(../images/wave.svg);
-    background-position: -4px 0px;
+    background-position: -5px 0px;
     background-repeat: repeat-x;
+    background-size: 230px;
     color: #fff; content: ' ';
 	display: block; position: absolute;
 	height: 6px; top: 0;
@@ -322,7 +323,7 @@ form input[type="password"]:focus{
 	left: 10%; width: 1px; /*не впливає*/
     -webkit-transition: .4s all; transition: .4s all;}
 .navbar.inv .active-menu{
-    background-position: -4px -4px;}
+    background-position: -5px -4px;}
 @media (min-width: 768px) and (max-width:1099px) {
     .navbar-responsive-collapse 
         {width:90%; left:5%;}    }
@@ -580,7 +581,7 @@ form input[type="password"]:focus{
     margin:88px auto;
     font-size:17px}
 
-/*__________________СТРІЛКА ПРОКРУТКИ ВНИЗ*/
+/*______________СТРІЛКА ПРОКРУТКИ ВНИЗ*/
 #arrows {
     z-index: 1;
     position: fixed; 
@@ -739,9 +740,18 @@ form input[type="password"]:focus{
     .carousel-inner .item { display:block}
 }
 
+/*
+.carousel-inner .item{
+    height:700px;
+    overflow: hidden;
+}
+*/
 .carousel-inner .item img{
-    height:700px; width:100%;
-    -o-object-fit:contain; object-fit:contain; }
+    height:700px;
+    width:100%;
+    -o-object-fit:contain;
+    object-fit:contain;
+}
 #carousel-right-arrow {
     background-image: url(../images/arrow-right.svg);
     background-repeat:  no-repeat;
@@ -1732,7 +1742,7 @@ form input[type="password"]:focus{
 }
 }
 
-
+/*_________START ANIMATION___*/
 @keyframes left-right {
     1% {
     transform: translateX(4px) scale(0.98);
