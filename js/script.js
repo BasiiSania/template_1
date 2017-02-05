@@ -89,7 +89,7 @@ function menu_focus( element, i ) {
 //		'easeInOutQuart'
 //	);
     $('.active-menu').css({
-        'transform': 'scale(0.1)',
+        'transform': 'scaleX(0.01)',
 //        'background-size': '100px',
 //        'background-position': '-30px 0px',
         'opacity': '0'
@@ -104,7 +104,7 @@ function menu_focus( element, i ) {
         setTimeout(function(){
             $('.active-menu').css({
                 'opacity': '1',
-                'transform': 'scale(1)'
+                'transform': 'scaleX(1)'
 //                'background-size': '244px'
 //                'background-position': '-5px 0px'
             });  
@@ -287,11 +287,18 @@ $(window).scroll(function() {
 });
 
 //slide-2
-//    no-script fallback
-//$('#carousel-example-generic').css('height', 'auto');
-//$('.carousel-inner').css('height', 'auto');
-//$('.carousel-inner .item').css('display', 'inherit');
-//$('.carousel-inner .active').css('display', 'block');
+// ?   no-script fallback
+$("#slide-2 img").click(function(){
+    ga('send', 'event', 'Всі дії', 'Клік по фото в слайді 2');
+    var $div = $("<div>", {"class": "img-show"});
+    $div.click(function(){
+        $(this).css({
+            'display': 'none'
+        });
+    });
+    $("body").append($div);
+    $(".img-show").append($(this).clone());
+});
     
 //slide-3
 $("#slide-3 a").click(function(){
