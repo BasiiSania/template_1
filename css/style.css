@@ -592,8 +592,46 @@ form input[type="password"]:focus{
 #slide-1-under-btn{ position:absolute;
     right:0px; left:0px; 
     margin:88px auto;
-    font-size:17px}
+    font-size:17px
+}
 
+/*_____________ЗНАЧОК ПЕРЕКЛАДУ*/
+.to-translated{
+    position:fixed; 
+    right:3px; 
+    top: 83px; 
+    font-size:12px; 
+    z-index:20000; 
+    color:#ddd; 
+    border:solid 1px rgba(220, 220, 220, 0.8); 
+    padding: 2px 5px;
+    -webkit-transition: .1s all; transition: .1s all;
+    opacity: 0.7;
+}
+.to-translated:hover
+ {
+    transform: scale(1.25);
+    opacity: 1;
+    background-color: rgba(100, 100, 100, 0.1);
+    text-decoration: none; 
+    outline:none;
+    color: #fff; 
+    border:solid 1px #fff; 
+}
+.to-translated:active,
+.to-translated:focus {
+    
+    transform: scale(1);
+    background-color: none;
+    text-decoration: none; 
+    outline: none;
+    color:#ddd; 
+}
+@media (max-width: 768px) {
+    .to-translated {
+        top: 53px; 
+    }
+}
 /*______________СТРІЛКА ПРОКРУТКИ ВНИЗ*/
 #arrows {
     z-index: 1;
@@ -1066,8 +1104,11 @@ form input[type="password"]:focus{
         background:url(../images/waves/xs/1-01.png);
         background-repeat: no-repeat; background-size: 359px;
         background-position: 0px 23px;
-        margin: 0px 10% 25px 5%;
-        padding: 0px 0px 25px 0px;}  }
+        margin: 0px 10% 0px 5%;
+        padding: 0px 0px 25px 0px;
+        width: 100%;
+        min-height: 80px;
+        }  }
 @media(max-width:377px) {
     #slide-4 .row {
         left:-14%;
@@ -1255,6 +1296,12 @@ form input[type="password"]:focus{
 
 #opys-tovariv-r{}
 #opys-tovariv-r .col-xs-4{padding:0px}
+#opys-tovariv-r .tovar-name{
+    font-size: 20px; font-weight:600}
+#opys-tovariv-r .tovar-name-2{
+    font-size: 18px; font-weight:600}
+#opys-tovariv-r .tovar-opys{
+    line-height: 1.5;}
 #opys-tovariv-r img{
     width:140px; margin-left:0px }
 #opys-tovariv-r .col-xs-8{
@@ -1262,9 +1309,11 @@ form input[type="password"]:focus{
     line-height: 14pt; padding-right:20px}
 @media(max-width:767px) {
     #opys-tovariv-r{}
+    #opys-tovariv-r .tovar-opys{
+        line-height: initial;}
     #opys-tovariv-r img {
         width:130px; 
-        right: 15%;
+        right: 0;
         margin-bottom:20px;
     }
 }

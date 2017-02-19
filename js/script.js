@@ -286,6 +286,16 @@ $(window).scroll(function() {
     }//else {$('#arrows').attr('style', '');}
 });
 
+//top
+$("#to-translated").click(function(){
+    ga('send', 'event', 'Всі дії', 'клік: зміна мови');
+    var url =  $(this).attr("href").toString();
+    location.href = url;
+    // $("<a>").attr("href", url)[0].click();
+    
+});
+
+
 //slide-2
 // ?   no-script fallback
 $("#slide-2 img").click(function(){
@@ -302,8 +312,9 @@ $("#slide-2 img").click(function(){
     
 //slide-3
 $("#slide-3 a").click(function(){
-    ga('send', 'event', 'Всі дії', 'клік: slide-3 a');
+    ga('send', 'event', 'Всі дії', 'клік: slide-3 лінк');
     var url =  $(this).attr("href").toString();
+    // location.href = url;
     $("<a>").attr("href", url).attr("target", "_blank")[0].click();
     
 });
@@ -359,6 +370,15 @@ $('#form-kilkist .input-group-addon').click(function(){
         inputField.val(n); zminaZamovVartist(n);
     };
     return true;
+});
+
+//underfooter
+$("#designer-s-link").click(function(){
+    ga('send', 'event', 'Всі дії', 'клік: underfooter');
+    var url =  $(this).attr("href").toString();
+    location.href = url;
+    // $("<a>").attr("href", url).attr("target", "_blank")[0].click();
+    
 });
     
 });//end of jQuery(document).ready(function ($){
