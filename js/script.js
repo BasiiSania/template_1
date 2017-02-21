@@ -297,7 +297,6 @@ $("#to-translated").click(function(){
 
 
 //slide-2
-// ?   no-script fallback
 $("#slide-2 img").click(function(){
     ga('send', 'event', 'Всі дії', 'Клік по фото в слайді 2');
     var $div = $("<div>", {"class": "img-show"});
