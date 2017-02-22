@@ -937,6 +937,14 @@ form input[type="password"]:focus{
     padding-top:10px;
     }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+    #plant-svg,    .slide-3-row-1 .col-lg-3{ height:260px;} }
+    
+@media (min-width: 800px) and (max-width: 899px) {
+    .slide-3-row-1 {width: 116%;left: -7%;} }
+@media (min-width: 900px) and (max-width: 1199px) {
+    .slide-3-row-1 {width: 120%;left: -9%;}
+    #plant-svg,    .slide-3-row-1 .col-lg-3{ padding: 0 8%;}  }
 @media (min-width: 1300px) and (max-width: 1399px) {
     .slide-3-row-1 {width: 122%;left: -10%;} }
 @media (min-width: 1400px) and (max-width: 1499px){
@@ -966,7 +974,7 @@ form input[type="password"]:focus{
         margin: 0 auto;
         left:-2.5%}
     .slide-3-row-1 .col-lg-3{
-        height:230px;
+        height:210px; /*equals to #plant-svg{*/
         text-align: left;
         padding:0px 10%;
         margin: 0px !important;}
@@ -974,17 +982,17 @@ form input[type="password"]:focus{
         float: left; width:25%; margin:1px}
     .slide-3-row-1 svg{
         height:50px;width:80%;
-        margin: 25px 0px 15px 0px;}
+        margin: 30px 0px 15px 0px;}
     .slide-3-row-1 .col-lg-3 h2 {
-        padding: 10% 35% 10% 80px;
+        padding: 10% 35% 13% 80px;
         top:20px;
         line-height: 20pt;
     }
     #plant-svg {
-        height:230px;
+        height:210px; /*equals to.col-lg-3{*/
         background-position: 14% 18%;}
     #plant-svg h2{
-        padding:15px 45% 20px 80px;}
+        padding:10px 45% 11% 80px;}
     #plant-svg:hover {
             background-position: -7% 19%;}
     #slide-3 h1{
@@ -1004,7 +1012,7 @@ form input[type="password"]:focus{
     color:#222;
 }
 #slide-3 p:before{
-     display:inline-block;
+    display:inline-block;
     content: " ";
     width:30px; height:20px;
     opacity:0.6; 
