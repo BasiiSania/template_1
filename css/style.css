@@ -1869,19 +1869,33 @@ form input[type="password"]:focus{
     top: 0;
     right:0;
     bottom:0;
-    background: #fff;
+    background: url(../images/screenshot.png) 50% 50% no-repeat;
+    background-size: 100%;
+    background-color: #fff;
     z-index: 30;
 }
+@media (min-width: 1000px) {
+    #slide-start{
+        background-size: 60%;
+        background-repeat: repeat-x;
+        background-position: 50% 60%;
+    }
+}@media (max-width: 500px) {
+    #slide-start{
+        background-size: 500px;
+        background-position: 50% 40%;
+    }
+}
 #slide-start .col-xs-2{
-    position: absolute;
-    top: 48%;;
+    position: fixed;
+    bottom: 5%; right:5%;
 }
 
 #start-wave-1 {
     width:100%;
     content:'  ';
     height:10px;
-    background: url(../images/wave_menu.png) center center no-repeat;
+    background: url(../images/start_waves.png) center center no-repeat;
 /*    background-size:80%;    */
     /*margin: -16px 0 0 -16px;*/
     -webkit-animation-name: left-right;
@@ -1901,7 +1915,7 @@ form input[type="password"]:focus{
     width:100%;
     content:'  ';
     height:10px;
-    background: url(../images/wave_menu.png) center center no-repeat;
+    background: url(../images/start_waves.png) center center no-repeat;
     /*background-size:41px;    */
     /*margin: -16px 0 0 -16px;*/
     -webkit-animation-name: left-right;
